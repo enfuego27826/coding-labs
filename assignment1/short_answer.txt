@@ -2,21 +2,21 @@ Assignment 1: Marriage Pact — short answers
 =============================================
 
 Q1. reserve vs resize — and the capacity you chose in get_applicants.
-    YOUR ANSWER:
+    YOUR ANSWER: `reserve()` only allocates capacity without changing vector size while `resize()` actually changes the size and creates elements. I used `reserve(count)` where `count` was the number of newline characters in the file so the vector has to reallocate less which also helps avoiding the memory fragmentation problem.
 
 
 Q2. What does it mean for a std::ranges algorithm to take a projection?
     Give one example from your find_matches (or explain why a projection
     didn't help).
-    YOUR ANSWER:
+    YOUR ANSWER: A projection means transforming elements before comparison or processing without modifying the original container. I did not use a projection in `find_matches()` because the comparison logic was simple enough with a lambda directly calling `initials(student)`.
 
 
 Q3. Iterator invalidation in run_mixer. Which strategy did you choose
     (erase-returns-next-iterator / indices / restart) and why?
     What specifically goes wrong with the naive approach?
-    YOUR ANSWER:
+    YOUR ANSWER: I used the erase returns next iterator strategy because `vector::erase()` invalidates iterators at and after the erased position. The naive approach breaks because continuing to use invalidated iterators after erase leads to undefined behavior.
 
 
 Q4. at() vs []. When, if ever, would you reach for vec.at(i) over
     vec[i] in this assignment?
-    YOUR ANSWER:
+    YOUR ANSWER: `at()` does bounds checking and throws exceptions on invalid access while `[]` does not. In this assignment I mostly used `[]` since accesses were controlled, but `at()` would be useful during debugging or when indices may be unsafe or untrusted.
