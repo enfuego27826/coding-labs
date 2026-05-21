@@ -3,7 +3,7 @@
  * Adapted by Tinkercademy from Stanford CS106L Assignment 7
  * (originally by Jacob Roberts-Baca).
  */
-
+#include<algorithm>
 #include <functional>
 #include <iostream>
 #include <sstream>
@@ -51,10 +51,19 @@ template <typename T> struct ListNode {
  * @param values The values to store in the list.
  * @return A `unique_ptr` to the head of the list.
  */
-template <typename T> cs106l::unique_ptr<ListNode<T>> create_list(const std::vector<T>& values) {
-  /* STUDENT TODO: Implement this method */
-  throw std::runtime_error("Not implemented: createList");
-}
+  template <typename T> cs106l::unique_ptr<ListNode<T>> create_list(const std::vector<T>& values) {
+    /* STUDENT TODO: Implement this method */
+    if(values.empty()) return nullptr;
+    cs106l::unique_ptr<ListNode<T>> head = nullptr;
+
+    std::for_each(values.rbegin(),values.rend(),[&](const T& value){
+      auto curr = cs106l::make_unique<ListNode<T>>(value);
+      curr->next = std::move(head);
+      head = std::move(curr);
+    });
+
+    return head;
+    }
 
 /**
  * @brief Applies a function to each element in the linked list.
