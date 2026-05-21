@@ -39,23 +39,20 @@ template <typename T>
 class Tracker {
 public:
     int id_;
-    T*  data_;  // owning raw pointer — YOU are responsible for deleting this
+    std::unique_ptr<T> data_;  // owning raw pointer — YOU are responsible for deleting this
 
-    explicit Tracker(T value) {
+    explicit Tracker(T value): id_(next_id), data_(new T(value)) {
         // TODO: assign id_ using next_id()
         // TODO: allocate data_ with new
         // TODO: log "[id_] born"
+        if(!data_){ throw std::bad_alloc("No resources available for data_"); }
+        std::cerr << id_ << "  born" << std::endl;
     }
 
-    ~Tracker() {
-        // TODO: log "[id_] destroyed"
-        // TODO: delete data_
-    }
-
-    Tracker(const Tracker& other) {
+    Tracker(Tracker&& other): id(next_id()), data_(std::move(other.data_)) {
         // TODO: assign id_ using next_id()
         // TODO: deep-copy other.data_
-        // TODO: log "[id_] copied from [other.id_]"
+        // TODO: log "[id_] copied from [other.id_]" 
     }
 
     Tracker& operator=(const Tracker& other) {
@@ -63,51 +60,59 @@ public:
         // TODO: delete old data_
         // TODO: deep-copy other.data
         // TODO: log "[id_] assigned from [other.id_]"
+        if(this == &other) return *this;
+        delete data_;
+
+        if(other.data_) data_ = new T(*other.data_);
+        else data_ = nullptr;
+
+        std::cerr << id_ << " assigned from "
+        return *this;
     }
 
     // implement getters
     // (do you need multiple? think about const correctness)
     T& get() {
-        
+        return *data;
     }
 };
 
 // ─── Stage 1 main ─────────────────────────────────────────────────────────────
 // Uncomment this block for Stage 1. Comment it out before Stage 2.
 
-int main() {
-    std::cerr << "=== Stage 1: raw pointer Tracker ===\n";
+// int main() {
+//     std::cerr << "=== Stage 1: raw pointer Tracker ===\n";
 
-    // Predict the log before running:
-    //   How many "born" lines?  How many "destroyed" lines?
-    {
-        Tracker<int> a(10);
-        Tracker<int> b(20);
-        Tracker<int> c = a;   // copy constructor
+//     // Predict the log before running:
+//     //   How many "born" lines?  How many "destroyed" lines?
+//     {
+//         Tracker<int> a(10);
+//         Tracker<int> b(20);
+//         Tracker<int> c = a;   // copy constructor
 
-        std::cerr << "a=" << a.get() << " b=" << b.get() << " c=" << c.get() << "\n";
-    } // a, b, c destroyed here
+//         std::cerr << "a=" << a.get() << " b=" << b.get() << " c=" << c.get() << "\n";
+//     } // a, b, c destroyed here
 
-    std::cerr << "\n--- vector reallocation test ---\n";
-    // Watch what happens when the vector resizes: it copies elements.
-    // Count "born", "copied from", and "destroyed" lines.
-    {
-        std::vector<Tracker<int>> v;
-        v.push_back(Tracker<int>(1));
-        v.push_back(Tracker<int>(2));
-        v.push_back(Tracker<int>(3));
-        std::cerr << "vector holds " << v.size() << " trackers\n";
-    }
+//     std::cerr << "\n--- vector reallocation test ---\n";
+//     // Watch what happens when the vector resizes: it copies elements.
+//     // Count "born", "copied from", and "destroyed" lines.
+//     {
+//         std::vector<Tracker<int>> v;
+//         v.push_back(Tracker<int>(1));
+//         v.push_back(Tracker<int>(2));
+//         v.push_back(Tracker<int>(3));
+//         std::cerr << "vector holds " << v.size() << " trackers\n";
+//     }
 
-    std::cerr << "\n--- self-assignment test ---\n";
-    {
-        Tracker<int> x(99);
-        x = x;  // self-assignment: what goes wrong if you don't guard?
-        std::cerr << "x=" << x.get() << "\n";
-    }
+//     std::cerr << "\n--- self-assignment test ---\n";
+//     {
+//         Tracker<int> x(99);
+//         x = x;  // self-assignment: what goes wrong if you don't guard?
+//         std::cerr << "x=" << x.get() << "\n";
+//     }
 
-    return 0;
-}
+//     return 0;
+// }
 
 
 // =============================================================================
