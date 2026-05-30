@@ -1,0 +1,2285 @@
+/usr/include/c++/14/bits/char_traits.h:391:25: missed: statement clobbers memory: _4 = __builtin_strlen (__s_3(D));
+/usr/include/c++/14/bits/basic_string.tcc:229:13: missed: statement clobbers memory: _14 = std::__cxx11::basic_string<char>::_M_create (this_1(D), &__dnew, 0);
+/usr/include/c++/14/bits/char_traits.h:427:49: missed: statement clobbers memory: __builtin_memcpy (_13, __s_3(D), _4);
+/usr/include/c++/14/bits/basic_string.h:651:28: missed: statement clobbers memory: std::__throw_logic_error ("basic_string: construction from null is not valid");
+/usr/include/c++/14/bits/basic_string.h:651:28: note: ***** Analysis failed with vector mode V2DI
+/usr/include/c++/14/bits/basic_string.h:651:28: note: ***** Skipping vector mode V16QI, which would repeat the analysis for V2DI
+grid_bfs.cpp:60:25: note: ***** Analysis failed with vector mode VOID
+grid_bfs.cpp:67:47: note: ***** Analysis failed with vector mode V4SI
+grid_bfs.cpp:67:47: note: ***** The result for vector mode V16QI would be the same
+grid_bfs.cpp:67:47: note: ***** Re-trying analysis with vector mode VNx16QI
+grid_bfs.cpp:67:47: note: ***** Analysis failed with vector mode VNx16QI
+grid_bfs.cpp:67:47: note: ***** Re-trying analysis with vector mode V8QI
+grid_bfs.cpp:67:47: note: ***** Analysis failed with vector mode V8QI
+grid_bfs.cpp:67:47: note: ***** Re-trying analysis with vector mode VNx8QI
+grid_bfs.cpp:67:47: note: ***** Analysis failed with vector mode VNx8QI
+grid_bfs.cpp:67:47: note: ***** Re-trying analysis with vector mode V4HI
+grid_bfs.cpp:67:47: note: ***** Analysis failed with vector mode V4HI
+grid_bfs.cpp:67:47: note: ***** Re-trying analysis with vector mode VNx4QI
+grid_bfs.cpp:67:47: note: ***** Analysis failed with vector mode VNx4QI
+grid_bfs.cpp:67:47: note: ***** Re-trying analysis with vector mode V2SI
+grid_bfs.cpp:67:47: note: ***** Analysis failed with vector mode V2SI
+grid_bfs.cpp:67:47: note: ***** Re-trying analysis with vector mode VNx2QI
+grid_bfs.cpp:67:47: note: ***** Analysis failed with vector mode VNx2QI
+grid_bfs.cpp:74:30: note: ***** Analysis failed with vector mode V2DI
+grid_bfs.cpp:74:30: note: ***** Skipping vector mode V16QI, which would repeat the analysis for V2DI
+grid_bfs.cpp:115:29: missed: couldn't vectorize loop
+grid_bfs.cpp:120:20: missed: statement clobbers memory: retval.19_19 = is_open (grid_8(D), row_16, col_17);
+grid_bfs.cpp:110:7: note: vectorized 0 loops in function.
+grid_bfs.cpp:120:20: missed: statement clobbers memory: retval.19_19 = is_open (grid_8(D), row_16, col_17);
+grid_bfs.cpp:122:29: note: ***** Analysis succeeded with vector mode V2DI
+grid_bfs.cpp:122:29: note: SLPing BB part
+grid_bfs.cpp:122:29: note: Costing subgraph: 
+grid_bfs.cpp:122:29: note: node 0x1f10d1f8 (max_nunits=2, refcnt=1) vector(2) int
+grid_bfs.cpp:122:29: note: op template: D.109554.row = _34;
+grid_bfs.cpp:122:29: note: 	stmt 0 D.109554.row = _34;
+grid_bfs.cpp:122:29: note: 	stmt 1 D.109554.col = _36;
+grid_bfs.cpp:122:29: note: 	children 0x1f10d280
+grid_bfs.cpp:122:29: note: node 0x1f10d280 (max_nunits=2, refcnt=1) vector(2) int
+grid_bfs.cpp:122:29: note: op template: _34 = PHI <row_22(5), 1(6), 1(2)>
+grid_bfs.cpp:122:29: note: 	stmt 0 _34 = PHI <row_22(5), 1(6), 1(2)>
+grid_bfs.cpp:122:29: note: 	stmt 1 _36 = PHI <col_13(5), 1(6), 1(2)>
+grid_bfs.cpp:122:29: note: 	children 0x1f10d418 0x1f10d4a0 0x1f10d528
+grid_bfs.cpp:122:29: note: node (external) 0x1f10d418 (max_nunits=1, refcnt=1) vector(2) int
+grid_bfs.cpp:122:29: note: 	{ row_22, col_13 }
+grid_bfs.cpp:122:29: note: node (constant) 0x1f10d4a0 (max_nunits=1, refcnt=1) vector(2) int
+grid_bfs.cpp:122:29: note: 	{ 1, 1 }
+grid_bfs.cpp:122:29: note: node (constant) 0x1f10d528 (max_nunits=1, refcnt=1) vector(2) int
+grid_bfs.cpp:122:29: note: 	{ 1, 1 }
+grid_bfs.cpp:122:29: note: Cost model analysis: 
+grid_bfs.cpp:122:29: note: Cost model analysis for part in loop 0:
+  Vector cost: 11
+  Scalar cost: 4
+grid_bfs.cpp:122:29: missed: not vectorized: vectorization is not profitable.
+grid_bfs.cpp:122:29: note: ***** The result for vector mode V16QI would be the same
+grid_bfs.cpp:122:29: note: ***** Re-trying analysis with vector mode VNx16QI
+grid_bfs.cpp:116:29: note: ***** Analysis failed with vector mode VNx16QI
+grid_bfs.cpp:116:29: note: ***** Re-trying analysis with vector mode V8QI
+grid_bfs.cpp:122:29: note: ***** Analysis succeeded with vector mode V8QI
+grid_bfs.cpp:122:29: note: SLPing BB part
+grid_bfs.cpp:122:29: note: Costing subgraph: 
+grid_bfs.cpp:122:29: note: node 0x1f10d280 (max_nunits=2, refcnt=1) vector(2) int
+grid_bfs.cpp:122:29: note: op template: D.109554.row = _34;
+grid_bfs.cpp:122:29: note: 	stmt 0 D.109554.row = _34;
+grid_bfs.cpp:122:29: note: 	stmt 1 D.109554.col = _36;
+grid_bfs.cpp:122:29: note: 	children 0x1f10d1f8
+grid_bfs.cpp:122:29: note: node 0x1f10d1f8 (max_nunits=2, refcnt=1) vector(2) int
+grid_bfs.cpp:122:29: note: op template: _34 = PHI <row_22(5), 1(6), 1(2)>
+grid_bfs.cpp:122:29: note: 	stmt 0 _34 = PHI <row_22(5), 1(6), 1(2)>
+grid_bfs.cpp:122:29: note: 	stmt 1 _36 = PHI <col_13(5), 1(6), 1(2)>
+grid_bfs.cpp:122:29: note: 	children 0x1f10d418 0x1f10d5b0 0x1f10d390
+grid_bfs.cpp:122:29: note: node (external) 0x1f10d418 (max_nunits=1, refcnt=1) vector(2) int
+grid_bfs.cpp:122:29: note: 	{ row_22, col_13 }
+grid_bfs.cpp:122:29: note: node (constant) 0x1f10d5b0 (max_nunits=1, refcnt=1) vector(2) int
+grid_bfs.cpp:122:29: note: 	{ 1, 1 }
+grid_bfs.cpp:122:29: note: node (constant) 0x1f10d390 (max_nunits=1, refcnt=1) vector(2) int
+grid_bfs.cpp:122:29: note: 	{ 1, 1 }
+grid_bfs.cpp:122:29: note: Cost model analysis: 
+grid_bfs.cpp:122:29: note: Cost model analysis for part in loop 0:
+  Vector cost: 11
+  Scalar cost: 4
+grid_bfs.cpp:122:29: missed: not vectorized: vectorization is not profitable.
+grid_bfs.cpp:122:29: note: ***** Re-trying analysis with vector mode VNx8QI
+grid_bfs.cpp:116:29: note: ***** Analysis failed with vector mode VNx8QI
+grid_bfs.cpp:116:29: note: ***** Re-trying analysis with vector mode V4HI
+grid_bfs.cpp:122:29: note: ***** Analysis succeeded with vector mode V4HI
+grid_bfs.cpp:122:29: note: SLPing BB part
+grid_bfs.cpp:122:29: note: Costing subgraph: 
+grid_bfs.cpp:122:29: note: node 0x1f10d1f8 (max_nunits=2, refcnt=1) vector(2) int
+grid_bfs.cpp:122:29: note: op template: D.109554.row = _34;
+grid_bfs.cpp:122:29: note: 	stmt 0 D.109554.row = _34;
+grid_bfs.cpp:122:29: note: 	stmt 1 D.109554.col = _36;
+grid_bfs.cpp:122:29: note: 	children 0x1f10d280
+grid_bfs.cpp:122:29: note: node 0x1f10d280 (max_nunits=2, refcnt=1) vector(2) int
+grid_bfs.cpp:122:29: note: op template: _34 = PHI <row_22(5), 1(6), 1(2)>
+grid_bfs.cpp:122:29: note: 	stmt 0 _34 = PHI <row_22(5), 1(6), 1(2)>
+grid_bfs.cpp:122:29: note: 	stmt 1 _36 = PHI <col_13(5), 1(6), 1(2)>
+grid_bfs.cpp:122:29: note: 	children 0x1f10d418 0x1f10d308 0x1f10d4a0
+grid_bfs.cpp:122:29: note: node (external) 0x1f10d418 (max_nunits=1, refcnt=1) vector(2) int
+grid_bfs.cpp:122:29: note: 	{ row_22, col_13 }
+grid_bfs.cpp:122:29: note: node (constant) 0x1f10d308 (max_nunits=1, refcnt=1) vector(2) int
+grid_bfs.cpp:122:29: note: 	{ 1, 1 }
+grid_bfs.cpp:122:29: note: node (constant) 0x1f10d4a0 (max_nunits=1, refcnt=1) vector(2) int
+grid_bfs.cpp:122:29: note: 	{ 1, 1 }
+grid_bfs.cpp:122:29: note: Cost model analysis: 
+grid_bfs.cpp:122:29: note: Cost model analysis for part in loop 0:
+  Vector cost: 11
+  Scalar cost: 4
+grid_bfs.cpp:122:29: missed: not vectorized: vectorization is not profitable.
+grid_bfs.cpp:122:29: note: ***** Re-trying analysis with vector mode VNx4QI
+grid_bfs.cpp:116:29: note: ***** Analysis failed with vector mode VNx4QI
+grid_bfs.cpp:116:29: note: ***** Re-trying analysis with vector mode V2SI
+grid_bfs.cpp:122:29: note: ***** Analysis succeeded with vector mode V2SI
+grid_bfs.cpp:122:29: note: SLPing BB part
+grid_bfs.cpp:122:29: note: Costing subgraph: 
+grid_bfs.cpp:122:29: note: node 0x1f10d280 (max_nunits=2, refcnt=1) vector(2) int
+grid_bfs.cpp:122:29: note: op template: D.109554.row = _34;
+grid_bfs.cpp:122:29: note: 	stmt 0 D.109554.row = _34;
+grid_bfs.cpp:122:29: note: 	stmt 1 D.109554.col = _36;
+grid_bfs.cpp:122:29: note: 	children 0x1f10d1f8
+grid_bfs.cpp:122:29: note: node 0x1f10d1f8 (max_nunits=2, refcnt=1) vector(2) int
+grid_bfs.cpp:122:29: note: op template: _34 = PHI <row_22(5), 1(6), 1(2)>
+grid_bfs.cpp:122:29: note: 	stmt 0 _34 = PHI <row_22(5), 1(6), 1(2)>
+grid_bfs.cpp:122:29: note: 	stmt 1 _36 = PHI <col_13(5), 1(6), 1(2)>
+grid_bfs.cpp:122:29: note: 	children 0x1f10d418 0x1f10d528 0x1f10d5b0
+grid_bfs.cpp:122:29: note: node (external) 0x1f10d418 (max_nunits=1, refcnt=1) vector(2) int
+grid_bfs.cpp:122:29: note: 	{ row_22, col_13 }
+grid_bfs.cpp:122:29: note: node (constant) 0x1f10d528 (max_nunits=1, refcnt=1) vector(2) int
+grid_bfs.cpp:122:29: note: 	{ 1, 1 }
+grid_bfs.cpp:122:29: note: node (constant) 0x1f10d5b0 (max_nunits=1, refcnt=1) vector(2) int
+grid_bfs.cpp:122:29: note: 	{ 1, 1 }
+grid_bfs.cpp:122:29: note: Cost model analysis: 
+grid_bfs.cpp:122:29: note: Cost model analysis for part in loop 0:
+  Vector cost: 11
+  Scalar cost: 4
+grid_bfs.cpp:122:29: missed: not vectorized: vectorization is not profitable.
+grid_bfs.cpp:122:29: note: ***** Re-trying analysis with vector mode VNx2QI
+grid_bfs.cpp:116:29: note: ***** Analysis failed with vector mode VNx2QI
+grid_bfs.cpp:139:23: missed: couldn't vectorize loop
+grid_bfs.cpp:139:23: missed: not vectorized: loop nest containing two or more consecutive inner loops cannot be vectorized
+grid_bfs.cpp:115:29: missed: couldn't vectorize loop
+grid_bfs.cpp:120:20: missed: statement clobbers memory: retval.19_99 = is_open (grid_23(D), row_97, col_98);
+grid_bfs.cpp:115:29: missed: couldn't vectorize loop
+grid_bfs.cpp:120:20: missed: statement clobbers memory: retval.19_117 = is_open (grid_23(D), row_115, col_116);
+grid_bfs.cpp:132:22: note: vectorized 0 loops in function.
+grid_bfs.cpp:132:22: missed: splitting region at control altering definition _79 = operator new (_78);
+/usr/include/c++/14/bits/new_allocator.h:151:48: missed: not vectorized: statement can throw an exception: _79 = operator new (_78);
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: ***** Analysis succeeded with vector mode V2DI
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: SLPing BB part
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: Costing subgraph: 
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: node 0x1f0a5bf0 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: op template: MEM[(struct _Vector_impl_data *)requests_19(D)]._M_start = 0B;
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: 	stmt 0 MEM[(struct _Vector_impl_data *)requests_19(D)]._M_start = 0B;
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: 	stmt 1 MEM[(struct _Vector_impl_data *)requests_19(D)]._M_finish = 0B;
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: 	children 0x1f0a5c78
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: node (constant) 0x1f0a5c78 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: 	{ 0B, 0B }
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: Cost model analysis: 
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: Cost model analysis for part in loop 0:
+  Vector cost: 5
+  Scalar cost: 2
+/usr/include/c++/14/bits/stl_vector.h:99:4: missed: not vectorized: vectorization is not profitable.
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: ***** The result for vector mode V16QI would be the same
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: ***** Re-trying analysis with vector mode VNx16QI
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: ***** Analysis failed with vector mode VNx16QI
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: ***** Re-trying analysis with vector mode V8QI
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: ***** Analysis succeeded with vector mode V8QI
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: SLPing BB part
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: Costing subgraph: 
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: node 0x1f0a5c78 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: op template: MEM[(struct _Vector_impl_data *)requests_19(D)]._M_start = 0B;
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: 	stmt 0 MEM[(struct _Vector_impl_data *)requests_19(D)]._M_start = 0B;
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: 	stmt 1 MEM[(struct _Vector_impl_data *)requests_19(D)]._M_finish = 0B;
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: 	children 0x1f0a5b68
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: node (constant) 0x1f0a5b68 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: 	{ 0B, 0B }
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: Cost model analysis: 
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: Cost model analysis for part in loop 0:
+  Vector cost: 5
+  Scalar cost: 2
+/usr/include/c++/14/bits/stl_vector.h:99:4: missed: not vectorized: vectorization is not profitable.
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: ***** Re-trying analysis with vector mode VNx8QI
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: ***** Analysis failed with vector mode VNx8QI
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: ***** Re-trying analysis with vector mode V4HI
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: ***** Analysis succeeded with vector mode V4HI
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: SLPing BB part
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: Costing subgraph: 
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: node 0x1f0a5b68 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: op template: MEM[(struct _Vector_impl_data *)requests_19(D)]._M_start = 0B;
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: 	stmt 0 MEM[(struct _Vector_impl_data *)requests_19(D)]._M_start = 0B;
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: 	stmt 1 MEM[(struct _Vector_impl_data *)requests_19(D)]._M_finish = 0B;
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: 	children 0x1f0a5bf0
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: node (constant) 0x1f0a5bf0 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: 	{ 0B, 0B }
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: Cost model analysis: 
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: Cost model analysis for part in loop 0:
+  Vector cost: 5
+  Scalar cost: 2
+/usr/include/c++/14/bits/stl_vector.h:99:4: missed: not vectorized: vectorization is not profitable.
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: ***** Re-trying analysis with vector mode VNx4QI
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: ***** Analysis failed with vector mode VNx4QI
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: ***** Re-trying analysis with vector mode V2SI
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: ***** Analysis succeeded with vector mode V2SI
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: SLPing BB part
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: Costing subgraph: 
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: node 0x1f0a5bf0 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: op template: MEM[(struct _Vector_impl_data *)requests_19(D)]._M_start = 0B;
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: 	stmt 0 MEM[(struct _Vector_impl_data *)requests_19(D)]._M_start = 0B;
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: 	stmt 1 MEM[(struct _Vector_impl_data *)requests_19(D)]._M_finish = 0B;
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: 	children 0x1f0a5c78
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: node (constant) 0x1f0a5c78 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: 	{ 0B, 0B }
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: Cost model analysis: 
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: Cost model analysis for part in loop 0:
+  Vector cost: 5
+  Scalar cost: 2
+/usr/include/c++/14/bits/stl_vector.h:99:4: missed: not vectorized: vectorization is not profitable.
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: ***** Re-trying analysis with vector mode VNx2QI
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: ***** Analysis failed with vector mode VNx2QI
+/usr/include/c++/14/bits/stl_vector.h:99:4: missed: splitting region at dominance boundary bb7
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: ***** Analysis failed with vector mode VOID
+/usr/include/c++/14/bits/stl_vector.h:99:4: missed: splitting region at control altering definition _153 = operator new (prephitmp_263);
+/usr/include/c++/14/bits/stl_uninitialized.h:1129:20: missed: statement clobbers memory: __builtin_memcpy (_79, _64, _67);
+/usr/include/c++/14/bits/new_allocator.h:172:26: missed: statement clobbers memory: operator delete (_64, _70);
+grid_bfs.cpp:120:20: missed: statement clobbers memory: retval.19_117 = is_open (grid_23(D), row_115, col_116);
+grid_bfs.cpp:120:20: missed: statement clobbers memory: retval.19_99 = is_open (grid_23(D), row_97, col_98);
+/usr/include/c++/14/bits/new_allocator.h:151:48: missed: not vectorized: statement can throw an exception: _153 = operator new (prephitmp_263);
+/usr/include/c++/14/bits/vector.tcc:96:27: note: ***** Analysis succeeded with vector mode V2DI
+/usr/include/c++/14/bits/vector.tcc:96:27: note: SLPing BB part
+/usr/include/c++/14/bits/vector.tcc:96:27: note: Costing subgraph: 
+/usr/include/c++/14/bits/vector.tcc:96:27: note: node 0x1f0a5c78 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/vector.tcc:96:27: note: op template: requests_19(D)->D.93495._M_impl.D.92830._M_start = _79;
+/usr/include/c++/14/bits/vector.tcc:96:27: note: 	stmt 0 requests_19(D)->D.93495._M_impl.D.92830._M_start = _79;
+/usr/include/c++/14/bits/vector.tcc:96:27: note: 	stmt 1 requests_19(D)->D.93495._M_impl.D.92830._M_finish = _79;
+/usr/include/c++/14/bits/vector.tcc:96:27: note: 	children 0x1f0a5b68
+/usr/include/c++/14/bits/vector.tcc:96:27: note: node (external) 0x1f0a5b68 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/vector.tcc:96:27: note: 	{ _79, _79 }
+/usr/include/c++/14/bits/vector.tcc:96:27: note: Cost model analysis: 
+/usr/include/c++/14/bits/vector.tcc:96:27: note: Cost model analysis for part in loop 0:
+  Vector cost: 8
+  Scalar cost: 2
+/usr/include/c++/14/bits/vector.tcc:96:27: missed: not vectorized: vectorization is not profitable.
+/usr/include/c++/14/bits/vector.tcc:96:27: note: ***** The result for vector mode V16QI would be the same
+/usr/include/c++/14/bits/vector.tcc:96:27: note: ***** Re-trying analysis with vector mode VNx16QI
+/usr/include/c++/14/bits/stl_vector.h:1911:18: note: ***** Analysis failed with vector mode VNx16QI
+/usr/include/c++/14/bits/stl_vector.h:1911:18: note: ***** Re-trying analysis with vector mode V8QI
+/usr/include/c++/14/bits/vector.tcc:96:27: note: ***** Analysis succeeded with vector mode V8QI
+/usr/include/c++/14/bits/vector.tcc:96:27: note: SLPing BB part
+/usr/include/c++/14/bits/vector.tcc:96:27: note: Costing subgraph: 
+/usr/include/c++/14/bits/vector.tcc:96:27: note: node 0x1f0a5bf0 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/vector.tcc:96:27: note: op template: requests_19(D)->D.93495._M_impl.D.92830._M_start = _79;
+/usr/include/c++/14/bits/vector.tcc:96:27: note: 	stmt 0 requests_19(D)->D.93495._M_impl.D.92830._M_start = _79;
+/usr/include/c++/14/bits/vector.tcc:96:27: note: 	stmt 1 requests_19(D)->D.93495._M_impl.D.92830._M_finish = _79;
+/usr/include/c++/14/bits/vector.tcc:96:27: note: 	children 0x1f0a5c78
+/usr/include/c++/14/bits/vector.tcc:96:27: note: node (external) 0x1f0a5c78 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/vector.tcc:96:27: note: 	{ _79, _79 }
+/usr/include/c++/14/bits/vector.tcc:96:27: note: Cost model analysis: 
+/usr/include/c++/14/bits/vector.tcc:96:27: note: Cost model analysis for part in loop 0:
+  Vector cost: 8
+  Scalar cost: 2
+/usr/include/c++/14/bits/vector.tcc:96:27: missed: not vectorized: vectorization is not profitable.
+/usr/include/c++/14/bits/vector.tcc:96:27: note: ***** Re-trying analysis with vector mode VNx8QI
+/usr/include/c++/14/bits/stl_vector.h:1911:18: note: ***** Analysis failed with vector mode VNx8QI
+/usr/include/c++/14/bits/stl_vector.h:1911:18: note: ***** Re-trying analysis with vector mode V4HI
+/usr/include/c++/14/bits/vector.tcc:96:27: note: ***** Analysis succeeded with vector mode V4HI
+/usr/include/c++/14/bits/vector.tcc:96:27: note: SLPing BB part
+/usr/include/c++/14/bits/vector.tcc:96:27: note: Costing subgraph: 
+/usr/include/c++/14/bits/vector.tcc:96:27: note: node 0x1f0a5b68 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/vector.tcc:96:27: note: op template: requests_19(D)->D.93495._M_impl.D.92830._M_start = _79;
+/usr/include/c++/14/bits/vector.tcc:96:27: note: 	stmt 0 requests_19(D)->D.93495._M_impl.D.92830._M_start = _79;
+/usr/include/c++/14/bits/vector.tcc:96:27: note: 	stmt 1 requests_19(D)->D.93495._M_impl.D.92830._M_finish = _79;
+/usr/include/c++/14/bits/vector.tcc:96:27: note: 	children 0x1f0a5bf0
+/usr/include/c++/14/bits/vector.tcc:96:27: note: node (external) 0x1f0a5bf0 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/vector.tcc:96:27: note: 	{ _79, _79 }
+/usr/include/c++/14/bits/vector.tcc:96:27: note: Cost model analysis: 
+/usr/include/c++/14/bits/vector.tcc:96:27: note: Cost model analysis for part in loop 0:
+  Vector cost: 8
+  Scalar cost: 2
+/usr/include/c++/14/bits/vector.tcc:96:27: missed: not vectorized: vectorization is not profitable.
+/usr/include/c++/14/bits/vector.tcc:96:27: note: ***** Re-trying analysis with vector mode VNx4QI
+/usr/include/c++/14/bits/stl_vector.h:1911:18: note: ***** Analysis failed with vector mode VNx4QI
+/usr/include/c++/14/bits/stl_vector.h:1911:18: note: ***** Re-trying analysis with vector mode V2SI
+/usr/include/c++/14/bits/vector.tcc:96:27: note: ***** Analysis succeeded with vector mode V2SI
+/usr/include/c++/14/bits/vector.tcc:96:27: note: SLPing BB part
+/usr/include/c++/14/bits/vector.tcc:96:27: note: Costing subgraph: 
+/usr/include/c++/14/bits/vector.tcc:96:27: note: node 0x1f0a5c78 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/vector.tcc:96:27: note: op template: requests_19(D)->D.93495._M_impl.D.92830._M_start = _79;
+/usr/include/c++/14/bits/vector.tcc:96:27: note: 	stmt 0 requests_19(D)->D.93495._M_impl.D.92830._M_start = _79;
+/usr/include/c++/14/bits/vector.tcc:96:27: note: 	stmt 1 requests_19(D)->D.93495._M_impl.D.92830._M_finish = _79;
+/usr/include/c++/14/bits/vector.tcc:96:27: note: 	children 0x1f0a5b68
+/usr/include/c++/14/bits/vector.tcc:96:27: note: node (external) 0x1f0a5b68 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/vector.tcc:96:27: note: 	{ _79, _79 }
+/usr/include/c++/14/bits/vector.tcc:96:27: note: Cost model analysis: 
+/usr/include/c++/14/bits/vector.tcc:96:27: note: Cost model analysis for part in loop 0:
+  Vector cost: 8
+  Scalar cost: 2
+/usr/include/c++/14/bits/vector.tcc:96:27: missed: not vectorized: vectorization is not profitable.
+/usr/include/c++/14/bits/vector.tcc:96:27: note: ***** Re-trying analysis with vector mode VNx2QI
+/usr/include/c++/14/bits/stl_vector.h:1911:18: note: ***** Analysis failed with vector mode VNx2QI
+/usr/include/c++/14/bits/stl_vector.h:1911:18: missed: splitting region at dominance boundary bb22
+/usr/include/c++/14/bits/stl_uninitialized.h:1129:20: missed: statement clobbers memory: __builtin_memcpy (_153, _136, _127);
+/usr/include/c++/14/bits/new_allocator.h:172:26: missed: statement clobbers memory: operator delete (_136, _133);
+/usr/include/c++/14/bits/vector.tcc:692:30: note: ***** Analysis succeeded with vector mode V4SI
+/usr/include/c++/14/bits/vector.tcc:692:30: note: SLPing BB part
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: Costing subgraph: 
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: node 0x1f0a5b68 (max_nunits=4, refcnt=1) vector(4) int
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: op template: MEM <int> [(struct RouteRequest *)_128] = start$row_151;
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: 	stmt 0 MEM <int> [(struct RouteRequest *)_128] = start$row_151;
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: 	stmt 1 MEM <int> [(struct RouteRequest *)_128 + 4B] = start$col_139;
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: 	stmt 2 MEM <int> [(struct RouteRequest *)_128 + 8B] = SR.638_199;
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: 	stmt 3 MEM <int> [(struct RouteRequest *)_128 + 12B] = SR.639_197;
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: 	children 0x1f0a5bf0
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: node (external) 0x1f0a5bf0 (max_nunits=1, refcnt=1) vector(4) int
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: 	{ start$row_151, start$col_139, SR.638_199, SR.639_197 }
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: Cost model analysis: 
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: Cost model analysis for part in loop 1:
+  Vector cost: 11
+  Scalar cost: 4
+/usr/include/c++/14/bits/new_allocator.h:191:4: missed: not vectorized: vectorization is not profitable.
+/usr/include/c++/14/bits/vector.tcc:692:30: note: Costing subgraph: 
+/usr/include/c++/14/bits/vector.tcc:692:30: note: node 0x1f0a5d00 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/vector.tcc:692:30: note: op template: requests_19(D)->D.93495._M_impl.D.92830._M_start = _153;
+/usr/include/c++/14/bits/vector.tcc:692:30: note: 	stmt 0 requests_19(D)->D.93495._M_impl.D.92830._M_start = _153;
+/usr/include/c++/14/bits/vector.tcc:692:30: note: 	stmt 1 requests_19(D)->D.93495._M_impl.D.92830._M_finish = _268;
+/usr/include/c++/14/bits/vector.tcc:692:30: note: 	children 0x1f0a5d88
+/usr/include/c++/14/bits/vector.tcc:692:30: note: node (external) 0x1f0a5d88 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/vector.tcc:692:30: note: 	{ _153, _268 }
+/usr/include/c++/14/bits/vector.tcc:692:30: note: Cost model analysis: 
+/usr/include/c++/14/bits/vector.tcc:692:30: note: Cost model analysis for part in loop 1:
+  Vector cost: 6
+  Scalar cost: 2
+/usr/include/c++/14/bits/vector.tcc:692:30: missed: not vectorized: vectorization is not profitable.
+/usr/include/c++/14/bits/vector.tcc:692:30: note: ***** The result for vector mode V16QI would be the same
+/usr/include/c++/14/bits/vector.tcc:692:30: note: ***** Re-trying analysis with vector mode VNx16QI
+/usr/include/c++/14/bits/vector.tcc:692:30: note: ***** Analysis failed with vector mode VNx16QI
+/usr/include/c++/14/bits/vector.tcc:692:30: note: ***** Re-trying analysis with vector mode V8QI
+/usr/include/c++/14/bits/vector.tcc:692:30: note: ***** Analysis succeeded with vector mode V8QI
+/usr/include/c++/14/bits/vector.tcc:692:30: note: SLPing BB part
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: Costing subgraph: 
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: node 0x1f0a5d00 (max_nunits=4, refcnt=1) vector(4) int
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: op template: MEM <int> [(struct RouteRequest *)_128] = start$row_151;
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: 	stmt 0 MEM <int> [(struct RouteRequest *)_128] = start$row_151;
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: 	stmt 1 MEM <int> [(struct RouteRequest *)_128 + 4B] = start$col_139;
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: 	stmt 2 MEM <int> [(struct RouteRequest *)_128 + 8B] = SR.638_199;
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: 	stmt 3 MEM <int> [(struct RouteRequest *)_128 + 12B] = SR.639_197;
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: 	children 0x1f0a5d88
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: node (external) 0x1f0a5d88 (max_nunits=1, refcnt=1) vector(4) int
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: 	{ start$row_151, start$col_139, SR.638_199, SR.639_197 }
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: Cost model analysis: 
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: Cost model analysis for part in loop 1:
+  Vector cost: 11
+  Scalar cost: 4
+/usr/include/c++/14/bits/new_allocator.h:191:4: missed: not vectorized: vectorization is not profitable.
+/usr/include/c++/14/bits/vector.tcc:692:30: note: Costing subgraph: 
+/usr/include/c++/14/bits/vector.tcc:692:30: note: node 0x1f0a5bf0 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/vector.tcc:692:30: note: op template: requests_19(D)->D.93495._M_impl.D.92830._M_start = _153;
+/usr/include/c++/14/bits/vector.tcc:692:30: note: 	stmt 0 requests_19(D)->D.93495._M_impl.D.92830._M_start = _153;
+/usr/include/c++/14/bits/vector.tcc:692:30: note: 	stmt 1 requests_19(D)->D.93495._M_impl.D.92830._M_finish = _268;
+/usr/include/c++/14/bits/vector.tcc:692:30: note: 	children 0x1f0a5c78
+/usr/include/c++/14/bits/vector.tcc:692:30: note: node (external) 0x1f0a5c78 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/vector.tcc:692:30: note: 	{ _153, _268 }
+/usr/include/c++/14/bits/vector.tcc:692:30: note: Cost model analysis: 
+/usr/include/c++/14/bits/vector.tcc:692:30: note: Cost model analysis for part in loop 1:
+  Vector cost: 6
+  Scalar cost: 2
+/usr/include/c++/14/bits/vector.tcc:692:30: missed: not vectorized: vectorization is not profitable.
+/usr/include/c++/14/bits/vector.tcc:692:30: note: ***** Re-trying analysis with vector mode VNx8QI
+/usr/include/c++/14/bits/vector.tcc:692:30: note: ***** Analysis failed with vector mode VNx8QI
+/usr/include/c++/14/bits/vector.tcc:692:30: note: ***** Re-trying analysis with vector mode V4HI
+/usr/include/c++/14/bits/vector.tcc:692:30: note: ***** Analysis succeeded with vector mode V4HI
+/usr/include/c++/14/bits/vector.tcc:692:30: note: SLPing BB part
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: Costing subgraph: 
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: node 0x1f0a5bf0 (max_nunits=4, refcnt=1) vector(4) int
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: op template: MEM <int> [(struct RouteRequest *)_128] = start$row_151;
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: 	stmt 0 MEM <int> [(struct RouteRequest *)_128] = start$row_151;
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: 	stmt 1 MEM <int> [(struct RouteRequest *)_128 + 4B] = start$col_139;
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: 	stmt 2 MEM <int> [(struct RouteRequest *)_128 + 8B] = SR.638_199;
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: 	stmt 3 MEM <int> [(struct RouteRequest *)_128 + 12B] = SR.639_197;
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: 	children 0x1f0a5c78
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: node (external) 0x1f0a5c78 (max_nunits=1, refcnt=1) vector(4) int
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: 	{ start$row_151, start$col_139, SR.638_199, SR.639_197 }
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: Cost model analysis: 
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: Cost model analysis for part in loop 1:
+  Vector cost: 11
+  Scalar cost: 4
+/usr/include/c++/14/bits/new_allocator.h:191:4: missed: not vectorized: vectorization is not profitable.
+/usr/include/c++/14/bits/vector.tcc:692:30: note: Costing subgraph: 
+/usr/include/c++/14/bits/vector.tcc:692:30: note: node 0x1f0a5d88 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/vector.tcc:692:30: note: op template: requests_19(D)->D.93495._M_impl.D.92830._M_start = _153;
+/usr/include/c++/14/bits/vector.tcc:692:30: note: 	stmt 0 requests_19(D)->D.93495._M_impl.D.92830._M_start = _153;
+/usr/include/c++/14/bits/vector.tcc:692:30: note: 	stmt 1 requests_19(D)->D.93495._M_impl.D.92830._M_finish = _268;
+/usr/include/c++/14/bits/vector.tcc:692:30: note: 	children 0x1f0a5b68
+/usr/include/c++/14/bits/vector.tcc:692:30: note: node (external) 0x1f0a5b68 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/vector.tcc:692:30: note: 	{ _153, _268 }
+/usr/include/c++/14/bits/vector.tcc:692:30: note: Cost model analysis: 
+/usr/include/c++/14/bits/vector.tcc:692:30: note: Cost model analysis for part in loop 1:
+  Vector cost: 6
+  Scalar cost: 2
+/usr/include/c++/14/bits/vector.tcc:692:30: missed: not vectorized: vectorization is not profitable.
+/usr/include/c++/14/bits/vector.tcc:692:30: note: ***** Re-trying analysis with vector mode VNx4QI
+/usr/include/c++/14/bits/vector.tcc:692:30: note: ***** Analysis failed with vector mode VNx4QI
+/usr/include/c++/14/bits/vector.tcc:692:30: note: ***** Re-trying analysis with vector mode V2SI
+/usr/include/c++/14/bits/vector.tcc:692:30: note: ***** Analysis succeeded with vector mode V2SI
+/usr/include/c++/14/bits/vector.tcc:692:30: note: SLPing BB part
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: Costing subgraph: 
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: node 0x1f0a5d88 (max_nunits=2, refcnt=1) vector(2) int
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: op template: MEM <int> [(struct RouteRequest *)_128] = start$row_151;
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: 	stmt 0 MEM <int> [(struct RouteRequest *)_128] = start$row_151;
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: 	stmt 1 MEM <int> [(struct RouteRequest *)_128 + 4B] = start$col_139;
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: 	stmt 2 MEM <int> [(struct RouteRequest *)_128 + 8B] = SR.638_199;
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: 	stmt 3 MEM <int> [(struct RouteRequest *)_128 + 12B] = SR.639_197;
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: 	children 0x1f0a5b68
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: node (external) 0x1f0a5b68 (max_nunits=1, refcnt=1) vector(2) int
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: 	{ start$row_151, start$col_139, SR.638_199, SR.639_197 }
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: Cost model analysis: 
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: Cost model analysis for part in loop 1:
+  Vector cost: 12
+  Scalar cost: 4
+/usr/include/c++/14/bits/new_allocator.h:191:4: missed: not vectorized: vectorization is not profitable.
+/usr/include/c++/14/bits/vector.tcc:692:30: note: Costing subgraph: 
+/usr/include/c++/14/bits/vector.tcc:692:30: note: node 0x1f0a5c78 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/vector.tcc:692:30: note: op template: requests_19(D)->D.93495._M_impl.D.92830._M_start = _153;
+/usr/include/c++/14/bits/vector.tcc:692:30: note: 	stmt 0 requests_19(D)->D.93495._M_impl.D.92830._M_start = _153;
+/usr/include/c++/14/bits/vector.tcc:692:30: note: 	stmt 1 requests_19(D)->D.93495._M_impl.D.92830._M_finish = _268;
+/usr/include/c++/14/bits/vector.tcc:692:30: note: 	children 0x1f0a5d00
+/usr/include/c++/14/bits/vector.tcc:692:30: note: node (external) 0x1f0a5d00 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/vector.tcc:692:30: note: 	{ _153, _268 }
+/usr/include/c++/14/bits/vector.tcc:692:30: note: Cost model analysis: 
+/usr/include/c++/14/bits/vector.tcc:692:30: note: Cost model analysis for part in loop 1:
+  Vector cost: 6
+  Scalar cost: 2
+/usr/include/c++/14/bits/vector.tcc:692:30: missed: not vectorized: vectorization is not profitable.
+/usr/include/c++/14/bits/vector.tcc:692:30: note: ***** Re-trying analysis with vector mode VNx2QI
+/usr/include/c++/14/bits/vector.tcc:692:30: note: ***** Analysis failed with vector mode VNx2QI
+/usr/include/c++/14/bits/vector.tcc:692:30: missed: splitting region at dominance boundary bb37
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: ***** Analysis succeeded with vector mode V4SI
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: SLPing BB part
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: Costing subgraph: 
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: node 0x1f0a5c78 (max_nunits=4, refcnt=1) vector(4) int
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: op template: MEM <int> [(struct RouteRequest *)prephitmp_236] = start$row_151;
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: 	stmt 0 MEM <int> [(struct RouteRequest *)prephitmp_236] = start$row_151;
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: 	stmt 1 MEM <int> [(struct RouteRequest *)prephitmp_236 + 4B] = start$col_139;
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: 	stmt 2 MEM <int> [(struct RouteRequest *)prephitmp_236 + 8B] = SR.638_199;
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: 	stmt 3 MEM <int> [(struct RouteRequest *)prephitmp_236 + 12B] = SR.639_197;
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: 	children 0x1f0a5d00
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: node (external) 0x1f0a5d00 (max_nunits=1, refcnt=1) vector(4) int
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: 	{ start$row_151, start$col_139, SR.638_199, SR.639_197 }
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: Cost model analysis: 
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: Cost model analysis for part in loop 1:
+  Vector cost: 11
+  Scalar cost: 4
+/usr/include/c++/14/bits/new_allocator.h:191:4: missed: not vectorized: vectorization is not profitable.
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: ***** The result for vector mode V16QI would be the same
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: ***** Re-trying analysis with vector mode VNx16QI
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: ***** Analysis failed with vector mode VNx16QI
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: ***** Re-trying analysis with vector mode V8QI
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: ***** Analysis succeeded with vector mode V8QI
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: SLPing BB part
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: Costing subgraph: 
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: node 0x1f0a5c78 (max_nunits=4, refcnt=1) vector(4) int
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: op template: MEM <int> [(struct RouteRequest *)prephitmp_236] = start$row_151;
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: 	stmt 0 MEM <int> [(struct RouteRequest *)prephitmp_236] = start$row_151;
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: 	stmt 1 MEM <int> [(struct RouteRequest *)prephitmp_236 + 4B] = start$col_139;
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: 	stmt 2 MEM <int> [(struct RouteRequest *)prephitmp_236 + 8B] = SR.638_199;
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: 	stmt 3 MEM <int> [(struct RouteRequest *)prephitmp_236 + 12B] = SR.639_197;
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: 	children 0x1f0a5d00
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: node (external) 0x1f0a5d00 (max_nunits=1, refcnt=1) vector(4) int
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: 	{ start$row_151, start$col_139, SR.638_199, SR.639_197 }
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: Cost model analysis: 
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: Cost model analysis for part in loop 1:
+  Vector cost: 11
+  Scalar cost: 4
+/usr/include/c++/14/bits/new_allocator.h:191:4: missed: not vectorized: vectorization is not profitable.
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: ***** Re-trying analysis with vector mode VNx8QI
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: ***** Analysis failed with vector mode VNx8QI
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: ***** Re-trying analysis with vector mode V4HI
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: ***** Analysis succeeded with vector mode V4HI
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: SLPing BB part
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: Costing subgraph: 
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: node 0x1f0a5c78 (max_nunits=4, refcnt=1) vector(4) int
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: op template: MEM <int> [(struct RouteRequest *)prephitmp_236] = start$row_151;
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: 	stmt 0 MEM <int> [(struct RouteRequest *)prephitmp_236] = start$row_151;
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: 	stmt 1 MEM <int> [(struct RouteRequest *)prephitmp_236 + 4B] = start$col_139;
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: 	stmt 2 MEM <int> [(struct RouteRequest *)prephitmp_236 + 8B] = SR.638_199;
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: 	stmt 3 MEM <int> [(struct RouteRequest *)prephitmp_236 + 12B] = SR.639_197;
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: 	children 0x1f0a5d00
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: node (external) 0x1f0a5d00 (max_nunits=1, refcnt=1) vector(4) int
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: 	{ start$row_151, start$col_139, SR.638_199, SR.639_197 }
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: Cost model analysis: 
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: Cost model analysis for part in loop 1:
+  Vector cost: 11
+  Scalar cost: 4
+/usr/include/c++/14/bits/new_allocator.h:191:4: missed: not vectorized: vectorization is not profitable.
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: ***** Re-trying analysis with vector mode VNx4QI
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: ***** Analysis failed with vector mode VNx4QI
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: ***** Re-trying analysis with vector mode V2SI
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: ***** Analysis succeeded with vector mode V2SI
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: SLPing BB part
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: Costing subgraph: 
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: node 0x1f0a5c78 (max_nunits=2, refcnt=1) vector(2) int
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: op template: MEM <int> [(struct RouteRequest *)prephitmp_236] = start$row_151;
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: 	stmt 0 MEM <int> [(struct RouteRequest *)prephitmp_236] = start$row_151;
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: 	stmt 1 MEM <int> [(struct RouteRequest *)prephitmp_236 + 4B] = start$col_139;
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: 	stmt 2 MEM <int> [(struct RouteRequest *)prephitmp_236 + 8B] = SR.638_199;
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: 	stmt 3 MEM <int> [(struct RouteRequest *)prephitmp_236 + 12B] = SR.639_197;
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: 	children 0x1f0a5d00
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: node (external) 0x1f0a5d00 (max_nunits=1, refcnt=1) vector(2) int
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: 	{ start$row_151, start$col_139, SR.638_199, SR.639_197 }
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: Cost model analysis: 
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: Cost model analysis for part in loop 1:
+  Vector cost: 12
+  Scalar cost: 4
+/usr/include/c++/14/bits/new_allocator.h:191:4: missed: not vectorized: vectorization is not profitable.
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: ***** Re-trying analysis with vector mode VNx2QI
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: ***** Analysis failed with vector mode VNx2QI
+/usr/include/c++/14/bits/new_allocator.h:191:4: missed: splitting region at dominance boundary bb29
+/usr/include/c++/14/bits/basic_string.h:1077:16: note: ***** Analysis failed with vector mode V2DI
+/usr/include/c++/14/bits/basic_string.h:1077:16: note: ***** Skipping vector mode V16QI, which would repeat the analysis for V2DI
+/usr/include/c++/14/bits/basic_string.h:1077:16: missed: splitting region at dominance boundary bb31
+/usr/include/c++/14/bits/vector.tcc:592:24: note: ***** Analysis failed with vector mode VOID
+/usr/include/c++/14/bits/vector.tcc:592:24: missed: splitting region at dominance boundary bb24
+/usr/include/c++/14/bits/vector.tcc:592:24: note: ***** Analysis failed with vector mode VOID
+/usr/include/c++/14/bits/vector.tcc:592:24: missed: splitting region at dominance boundary bb56
+/usr/include/c++/14/bits/stl_vector.h:1909:24: missed: not vectorized: statement can throw an exception: std::__throw_length_error ("vector::_M_realloc_append");
+/usr/include/c++/14/bits/stl_vector.h:1909:24: note: ***** Analysis failed with vector mode VOID
+/usr/include/c++/14/bits/stl_vector.h:1909:24: missed: splitting region at dominance boundary bb39
+/usr/include/c++/14/bits/stl_vector.h:1909:24: note: ***** Analysis failed with vector mode VOID
+/usr/include/c++/14/bits/stl_vector.h:1909:24: missed: splitting region at dominance boundary bb3
+grid_bfs.cpp:148:12: note: ***** Analysis failed with vector mode VOID
+grid_bfs.cpp:148:12: missed: splitting region at dominance boundary bb41
+/usr/include/c++/14/bits/vector.tcc:71:22: missed: not vectorized: statement can throw an exception: std::__throw_length_error ("vector::reserve");
+/usr/include/c++/14/bits/vector.tcc:71:22: note: ***** Analysis failed with vector mode VOID
+/usr/include/c++/14/bits/new_allocator.h:172:26: missed: statement clobbers memory: operator delete (_45, _48);
+/usr/include/c++/14/bits/new_allocator.h:172:26: note: ***** Analysis failed with vector mode V2DI
+/usr/include/c++/14/bits/new_allocator.h:172:26: note: ***** Skipping vector mode V16QI, which would repeat the analysis for V2DI
+/usr/include/c++/14/bits/charconv.h:94:20: missed: couldn't vectorize loop
+/usr/include/c++/14/bits/charconv.h:94:20: missed: not vectorized: number of iterations cannot be computed.
+/usr/include/c++/14/bits/charconv.h:67:4: missed: couldn't vectorize loop
+/usr/include/c++/14/bits/charconv.h:67:4: missed: not vectorized: could not determine main exit from loop with multiple exits.
+/usr/include/c++/14/bits/charconv.h:94:20: missed: couldn't vectorize loop
+/usr/include/c++/14/bits/charconv.h:94:20: missed: not vectorized: number of iterations cannot be computed.
+/usr/include/c++/14/bits/charconv.h:67:4: missed: couldn't vectorize loop
+/usr/include/c++/14/bits/charconv.h:67:4: missed: not vectorized: could not determine main exit from loop with multiple exits.
+/usr/include/c++/14/bits/charconv.h:94:20: missed: couldn't vectorize loop
+/usr/include/c++/14/bits/charconv.h:94:20: missed: not vectorized: number of iterations cannot be computed.
+/usr/include/c++/14/bits/charconv.h:67:4: missed: couldn't vectorize loop
+/usr/include/c++/14/bits/charconv.h:67:4: missed: not vectorized: could not determine main exit from loop with multiple exits.
+/usr/include/c++/14/bits/charconv.h:94:20: missed: couldn't vectorize loop
+/usr/include/c++/14/bits/charconv.h:94:20: missed: not vectorized: number of iterations cannot be computed.
+/usr/include/c++/14/bits/charconv.h:67:4: missed: couldn't vectorize loop
+/usr/include/c++/14/bits/charconv.h:67:4: missed: not vectorized: could not determine main exit from loop with multiple exits.
+/usr/include/c++/14/bits/charconv.h:94:20: missed: couldn't vectorize loop
+/usr/include/c++/14/bits/charconv.h:94:20: missed: not vectorized: number of iterations cannot be computed.
+/usr/include/c++/14/bits/charconv.h:67:4: missed: couldn't vectorize loop
+/usr/include/c++/14/bits/charconv.h:67:4: missed: not vectorized: could not determine main exit from loop with multiple exits.
+grid_bfs.cpp:157:8: note: vectorized 0 loops in function.
+/usr/include/c++/14/bits/char_traits.h:427:49: missed: statement clobbers memory: __builtin_memcpy (_93, "route:", 6);
+/usr/include/c++/14/bits/basic_string.tcc:590:14: missed: statement clobbers memory: std::__cxx11::basic_string<char>::reserve (&D.93680, _88);
+/usr/include/c++/14/bits/basic_string.tcc:590:14: missed: statement clobbers memory: std::__cxx11::basic_string<char>::reserve (&D.93680, _277);
+/usr/include/c++/14/bits/basic_string.h:1470:18: missed: not vectorized: statement can throw an exception: std::__cxx11::basic_string<char>::_M_append (label_7(D), _28, _9);
+/usr/include/c++/14/bits/new_allocator.h:172:26: missed: statement clobbers memory: operator delete (_138, _141);
+/usr/include/c++/14/bits/basic_string.h:1485:18: missed: not vectorized: statement can throw an exception: std::__cxx11::basic_string<char>::_M_append (label_7(D), ":", 1);
+/usr/include/c++/14/bits/basic_string.tcc:590:14: missed: statement clobbers memory: std::__cxx11::basic_string<char>::reserve (&D.93705, _165);
+/usr/include/c++/14/bits/basic_string.tcc:590:14: missed: statement clobbers memory: std::__cxx11::basic_string<char>::reserve (&D.93705, _426);
+/usr/include/c++/14/bits/basic_string.h:1470:18: missed: not vectorized: statement can throw an exception: std::__cxx11::basic_string<char>::_M_append (label_7(D), _29, _30);
+/usr/include/c++/14/bits/new_allocator.h:172:26: missed: statement clobbers memory: operator delete (_203, _206);
+/usr/include/c++/14/bits/basic_string.h:1485:18: missed: not vectorized: statement can throw an exception: std::__cxx11::basic_string<char>::_M_append (label_7(D), ",", 1);
+/usr/include/c++/14/bits/basic_string.tcc:590:14: missed: statement clobbers memory: std::__cxx11::basic_string<char>::reserve (&D.93706, _230);
+/usr/include/c++/14/bits/basic_string.tcc:590:14: missed: statement clobbers memory: std::__cxx11::basic_string<char>::reserve (&D.93706, _90);
+/usr/include/c++/14/bits/basic_string.h:1470:18: missed: not vectorized: statement can throw an exception: std::__cxx11::basic_string<char>::_M_append (label_7(D), _31, _32);
+/usr/include/c++/14/bits/new_allocator.h:172:26: missed: statement clobbers memory: operator delete (_268, _271);
+/usr/include/c++/14/bits/basic_string.h:1485:18: missed: not vectorized: statement can throw an exception: std::__cxx11::basic_string<char>::_M_append (label_7(D), "->", 2);
+/usr/include/c++/14/bits/basic_string.tcc:590:14: missed: statement clobbers memory: std::__cxx11::basic_string<char>::reserve (&D.93707, _295);
+/usr/include/c++/14/bits/basic_string.tcc:590:14: missed: statement clobbers memory: std::__cxx11::basic_string<char>::reserve (&D.93707, _179);
+/usr/include/c++/14/bits/basic_string.h:1470:18: missed: not vectorized: statement can throw an exception: std::__cxx11::basic_string<char>::_M_append (label_7(D), _33, _34);
+/usr/include/c++/14/bits/new_allocator.h:172:26: missed: statement clobbers memory: operator delete (_333, _336);
+/usr/include/c++/14/bits/basic_string.h:1485:18: missed: not vectorized: statement can throw an exception: std::__cxx11::basic_string<char>::_M_append (label_7(D), ",", 1);
+/usr/include/c++/14/bits/basic_string.tcc:590:14: missed: statement clobbers memory: std::__cxx11::basic_string<char>::reserve (&D.93708, _360);
+/usr/include/c++/14/bits/basic_string.tcc:590:14: missed: statement clobbers memory: std::__cxx11::basic_string<char>::reserve (&D.93708, _417);
+/usr/include/c++/14/bits/basic_string.h:1470:18: missed: not vectorized: statement can throw an exception: std::__cxx11::basic_string<char>::_M_append (label_7(D), _35, _36);
+/usr/include/c++/14/bits/new_allocator.h:172:26: missed: statement clobbers memory: operator delete (_394, _397);
+/usr/include/c++/14/bits/basic_string.h:405:24: missed: not vectorized: statement can throw an exception: std::__throw_length_error ("basic_string::append");
+/usr/include/c++/14/bits/basic_string.h:809:19: missed: statement clobbers memory: std::__cxx11::basic_string<char>::_M_dispose (&D.93708);
+grid_bfs.cpp:157:8: missed: not vectorized: statement can throw an exception: resx 23
+/usr/include/c++/14/bits/basic_string.h:405:24: missed: not vectorized: statement can throw an exception: std::__throw_length_error ("basic_string::append");
+/usr/include/c++/14/bits/basic_string.h:405:24: missed: not vectorized: statement can throw an exception: std::__throw_length_error ("basic_string::append");
+/usr/include/c++/14/bits/basic_string.h:809:19: missed: statement clobbers memory: std::__cxx11::basic_string<char>::_M_dispose (&D.93707);
+grid_bfs.cpp:157:8: missed: not vectorized: statement can throw an exception: resx 19
+/usr/include/c++/14/bits/basic_string.h:405:24: missed: not vectorized: statement can throw an exception: std::__throw_length_error ("basic_string::append");
+/usr/include/c++/14/bits/basic_string.h:405:24: missed: not vectorized: statement can throw an exception: std::__throw_length_error ("basic_string::append");
+/usr/include/c++/14/bits/basic_string.h:809:19: missed: statement clobbers memory: std::__cxx11::basic_string<char>::_M_dispose (&D.93706);
+grid_bfs.cpp:157:8: missed: not vectorized: statement can throw an exception: resx 15
+/usr/include/c++/14/bits/basic_string.h:405:24: missed: not vectorized: statement can throw an exception: std::__throw_length_error ("basic_string::append");
+/usr/include/c++/14/bits/basic_string.h:405:24: missed: not vectorized: statement can throw an exception: std::__throw_length_error ("basic_string::append");
+/usr/include/c++/14/bits/basic_string.h:809:19: missed: statement clobbers memory: std::__cxx11::basic_string<char>::_M_dispose (&D.93705);
+grid_bfs.cpp:157:8: missed: not vectorized: statement can throw an exception: resx 11
+/usr/include/c++/14/bits/basic_string.h:405:24: missed: not vectorized: statement can throw an exception: std::__throw_length_error ("basic_string::append");
+/usr/include/c++/14/bits/basic_string.h:405:24: missed: not vectorized: statement can throw an exception: std::__throw_length_error ("basic_string::append");
+/usr/include/c++/14/bits/basic_string.h:809:19: missed: statement clobbers memory: std::__cxx11::basic_string<char>::_M_dispose (&D.93680);
+grid_bfs.cpp:157:8: missed: not vectorized: statement can throw an exception: resx 7
+/usr/include/c++/14/bits/basic_string.h:809:19: missed: statement clobbers memory: std::__cxx11::basic_string<char>::_M_dispose (label_7(D));
+/usr/include/c++/14/bits/basic_string.h:4249:40: note: ***** Analysis failed with vector mode V2DI
+/usr/include/c++/14/bits/basic_string.h:4249:40: note: ***** The result for vector mode V16QI would be the same
+/usr/include/c++/14/bits/basic_string.h:4249:40: note: ***** Re-trying analysis with vector mode VNx16QI
+/usr/include/c++/14/bits/basic_string.h:4249:40: note: ***** Analysis failed with vector mode VNx16QI
+/usr/include/c++/14/bits/basic_string.h:4249:40: note: ***** Re-trying analysis with vector mode V8QI
+/usr/include/c++/14/bits/basic_string.h:4249:40: note: ***** Analysis failed with vector mode V8QI
+/usr/include/c++/14/bits/basic_string.h:4249:40: note: ***** Re-trying analysis with vector mode VNx8QI
+/usr/include/c++/14/bits/basic_string.h:4249:40: note: ***** Analysis failed with vector mode VNx8QI
+/usr/include/c++/14/bits/basic_string.h:4249:40: note: ***** Re-trying analysis with vector mode V4HI
+/usr/include/c++/14/bits/basic_string.h:4249:40: note: ***** Analysis failed with vector mode V4HI
+/usr/include/c++/14/bits/basic_string.h:4249:40: note: ***** Re-trying analysis with vector mode VNx4QI
+/usr/include/c++/14/bits/basic_string.h:4249:40: note: ***** Analysis failed with vector mode VNx4QI
+/usr/include/c++/14/bits/basic_string.h:4249:40: note: ***** Re-trying analysis with vector mode V2SI
+/usr/include/c++/14/bits/basic_string.h:4249:40: note: ***** Analysis failed with vector mode V2SI
+/usr/include/c++/14/bits/basic_string.h:4249:40: note: ***** Re-trying analysis with vector mode VNx2QI
+/usr/include/c++/14/bits/basic_string.h:4249:40: note: ***** Analysis failed with vector mode VNx2QI
+grid_bfs.cpp:177:29: missed: couldn't vectorize loop
+grid_bfs.cpp:178:18: missed: not vectorized: unsupported use in stmt.
+grid_bfs.cpp:174:10: note: vectorized 0 loops in function.
+grid_bfs.cpp:178:18: note: ***** Analysis failed with vector mode V2DI
+grid_bfs.cpp:178:18: note: ***** The result for vector mode V16QI would be the same
+grid_bfs.cpp:178:18: note: ***** Re-trying analysis with vector mode VNx16QI
+grid_bfs.cpp:178:18: note: ***** Analysis failed with vector mode VNx16QI
+grid_bfs.cpp:178:18: note: ***** Re-trying analysis with vector mode V8QI
+grid_bfs.cpp:178:18: note: ***** Analysis failed with vector mode V8QI
+grid_bfs.cpp:178:18: note: ***** Re-trying analysis with vector mode VNx8QI
+grid_bfs.cpp:178:18: note: ***** Analysis failed with vector mode VNx8QI
+grid_bfs.cpp:178:18: note: ***** Re-trying analysis with vector mode V4HI
+grid_bfs.cpp:178:18: note: ***** Analysis failed with vector mode V4HI
+grid_bfs.cpp:178:18: note: ***** Re-trying analysis with vector mode VNx4QI
+grid_bfs.cpp:178:18: note: ***** Analysis failed with vector mode VNx4QI
+grid_bfs.cpp:178:18: note: ***** Re-trying analysis with vector mode V2SI
+grid_bfs.cpp:178:18: note: ***** Analysis failed with vector mode V2SI
+grid_bfs.cpp:178:18: note: ***** Re-trying analysis with vector mode VNx2QI
+grid_bfs.cpp:178:18: note: ***** Analysis failed with vector mode VNx2QI
+grid_bfs.cpp:213:26: missed: couldn't vectorize loop
+grid_bfs.cpp:213:26: missed: not vectorized: could not determine main exit from loop with multiple exits.
+grid_bfs.cpp:213:26: missed: couldn't vectorize loop
+grid_bfs.cpp:213:26: missed: not vectorized: could not determine main exit from loop with multiple exits.
+/usr/include/c++/14/bits/stl_algobase.h:939:22: missed: couldn't vectorize loop
+/usr/include/c++/14/bits/stl_algobase.h:940:2: missed: not vectorized: more than one data ref in stmt: *__first_108 = MEM[(const struct Point &)_205];
+grid_bfs.cpp:190:5: note: vectorized 0 loops in function.
+grid_bfs.cpp:190:5: missed: splitting region at control altering definition _189 = operator new (_1);
+grid_bfs.cpp:208:31: missed: not vectorized: volatile type: MEM[(struct value_type *)0B] ={v} request_64(D)->start;
+grid_bfs.cpp:190:5: missed: statement clobbers memory: __builtin_trap ();
+/usr/include/c++/14/bits/new_allocator.h:151:48: missed: statement clobbers memory: _184 = operator new (_183);
+/usr/include/c++/14/bits/stl_algobase.h:952:11: missed: statement clobbers memory: __builtin_memset (_184, 255, _454);
+/usr/include/c++/14/bits/new_allocator.h:151:48: missed: not vectorized: statement can throw an exception: _189 = operator new (_1);
+grid_bfs.cpp:202:9: note: ***** Analysis failed with vector mode V2DI
+grid_bfs.cpp:202:9: note: ***** The result for vector mode V16QI would be the same
+grid_bfs.cpp:202:9: note: ***** Re-trying analysis with vector mode VNx16QI
+grid_bfs.cpp:202:9: note: ***** Analysis failed with vector mode VNx16QI
+grid_bfs.cpp:202:9: note: ***** Re-trying analysis with vector mode V8QI
+grid_bfs.cpp:202:9: note: ***** Analysis failed with vector mode V8QI
+grid_bfs.cpp:202:9: note: ***** Re-trying analysis with vector mode VNx8QI
+grid_bfs.cpp:202:9: note: ***** Analysis failed with vector mode VNx8QI
+grid_bfs.cpp:202:9: note: ***** Re-trying analysis with vector mode V4HI
+grid_bfs.cpp:202:9: note: ***** Analysis failed with vector mode V4HI
+grid_bfs.cpp:202:9: note: ***** Re-trying analysis with vector mode VNx4QI
+grid_bfs.cpp:202:9: note: ***** Analysis failed with vector mode VNx4QI
+grid_bfs.cpp:202:9: note: ***** Re-trying analysis with vector mode V2SI
+grid_bfs.cpp:202:9: note: ***** Analysis failed with vector mode V2SI
+grid_bfs.cpp:202:9: note: ***** Re-trying analysis with vector mode VNx2QI
+grid_bfs.cpp:202:9: note: ***** Analysis failed with vector mode VNx2QI
+grid_bfs.cpp:202:9: missed: splitting region at dominance boundary bb9
+grid_bfs.cpp:202:9: note: ***** Analysis failed with vector mode VOID
+grid_bfs.cpp:202:9: missed: splitting region at control altering definition _205 = operator new (_204);
+/usr/include/c++/14/bits/stl_algobase.h:972:18: missed: statement clobbers memory: __builtin_memset (_189, 0, _1);
+/usr/include/c++/14/bits/new_allocator.h:151:48: missed: not vectorized: statement can throw an exception: _205 = operator new (_204);
+/usr/include/c++/14/bits/new_allocator.h:151:48: note: ***** Analysis failed with vector mode VOID
+/usr/include/c++/14/bits/new_allocator.h:151:48: missed: splitting region at dominance boundary bb45
+/usr/include/c++/14/bits/new_allocator.h:172:26: missed: statement clobbers memory: operator delete (_189, _1);
+grid_bfs.cpp:190:5: missed: not vectorized: statement can throw an exception: resx 15
+/usr/include/c++/14/bits/new_allocator.h:172:26: note: ***** Analysis failed with vector mode VOID
+/usr/include/c++/14/bits/new_allocator.h:172:26: missed: splitting region at dominance boundary bb10
+/usr/include/c++/14/bits/new_allocator.h:172:26: missed: statement clobbers memory: operator delete (_184, _183);
+/usr/include/c++/14/bits/stl_vector.h:738:7: note: ***** Analysis failed with vector mode VOID
+/usr/include/c++/14/bits/stl_vector.h:738:7: missed: splitting region at dominance boundary bb3
+/usr/include/c++/14/bits/stl_algobase.h:940:2: missed: not vectorized: more than one data ref in stmt: *__first_108 = MEM[(const struct Point &)_205];
+grid_bfs.cpp:208:31: missed: not vectorized: more than one data ref in stmt: MEM[(struct value_type *)_205] = request_64(D)->start;
+/usr/include/c++/14/bits/new_allocator.h:172:26: missed: statement clobbers memory: operator delete (_205, _114);
+/usr/include/c++/14/bits/new_allocator.h:172:26: missed: statement clobbers memory: operator delete (_189, _1);
+/usr/include/c++/14/bits/new_allocator.h:172:26: missed: statement clobbers memory: operator delete (_184, _183);
+grid_bfs.cpp:240:39: note: ***** Analysis succeeded with vector mode V4SI
+grid_bfs.cpp:240:39: note: SLPing BB part
+/usr/include/c++/14/bits/stl_construct.h:119:7: note: Costing subgraph: 
+/usr/include/c++/14/bits/stl_construct.h:119:7: note: node 0x1f3f8db8 (max_nunits=2, refcnt=1) vector(2) int
+/usr/include/c++/14/bits/stl_construct.h:119:7: note: op template: _205->row = 0;
+/usr/include/c++/14/bits/stl_construct.h:119:7: note: 	stmt 0 _205->row = 0;
+/usr/include/c++/14/bits/stl_construct.h:119:7: note: 	stmt 1 _205->col = 0;
+/usr/include/c++/14/bits/stl_construct.h:119:7: note: 	children 0x1f3f8e40
+/usr/include/c++/14/bits/stl_construct.h:119:7: note: node (constant) 0x1f3f8e40 (max_nunits=1, refcnt=1) vector(2) int
+/usr/include/c++/14/bits/stl_construct.h:119:7: note: 	{ 0, 0 }
+/usr/include/c++/14/bits/stl_construct.h:119:7: note: Cost model analysis: 
+/usr/include/c++/14/bits/stl_construct.h:119:7: note: Cost model analysis for part in loop 0:
+  Vector cost: 5
+  Scalar cost: 2
+/usr/include/c++/14/bits/stl_construct.h:119:7: missed: not vectorized: vectorization is not profitable.
+grid_bfs.cpp:240:39: note: Costing subgraph: 
+grid_bfs.cpp:240:39: note: node 0x1f3f8ec8 (max_nunits=2, refcnt=1) vector(2) int
+grid_bfs.cpp:240:39: note: op template: _283->row = next_row_230;
+grid_bfs.cpp:240:39: note: 	stmt 0 _283->row = next_row_230;
+grid_bfs.cpp:240:39: note: 	stmt 1 _283->col = current$col_91;
+grid_bfs.cpp:240:39: note: 	children 0x1f3f8fd8
+grid_bfs.cpp:240:39: note: node (external) 0x1f3f8fd8 (max_nunits=1, refcnt=1) vector(2) int
+grid_bfs.cpp:240:39: note: 	{ next_row_230, current$col_91 }
+grid_bfs.cpp:240:39: note: Cost model analysis: 
+grid_bfs.cpp:240:39: note: Cost model analysis for part in loop 1:
+  Vector cost: 6
+  Scalar cost: 2
+grid_bfs.cpp:240:39: missed: not vectorized: vectorization is not profitable.
+grid_bfs.cpp:240:39: note: Costing subgraph: 
+grid_bfs.cpp:240:39: note: node 0x1f3f9060 (max_nunits=2, refcnt=1) vector(2) int
+grid_bfs.cpp:240:39: note: op template: _331->row = _237;
+grid_bfs.cpp:240:39: note: 	stmt 0 _331->row = _237;
+grid_bfs.cpp:240:39: note: 	stmt 1 _331->col = current$col_91;
+grid_bfs.cpp:240:39: note: 	children 0x1f3f9170
+grid_bfs.cpp:240:39: note: node (external) 0x1f3f9170 (max_nunits=1, refcnt=1) vector(2) int
+grid_bfs.cpp:240:39: note: 	{ _237, current$col_91 }
+grid_bfs.cpp:240:39: note: Cost model analysis: 
+grid_bfs.cpp:240:39: note: Cost model analysis for part in loop 1:
+  Vector cost: 6
+  Scalar cost: 2
+grid_bfs.cpp:240:39: missed: not vectorized: vectorization is not profitable.
+grid_bfs.cpp:240:39: note: Costing subgraph: 
+grid_bfs.cpp:240:39: note: node 0x1f3f91f8 (max_nunits=2, refcnt=1) vector(2) int
+grid_bfs.cpp:240:39: note: op template: _379->row = current$row_92;
+grid_bfs.cpp:240:39: note: 	stmt 0 _379->row = current$row_92;
+grid_bfs.cpp:240:39: note: 	stmt 1 _379->col = next_col_343;
+grid_bfs.cpp:240:39: note: 	children 0x1f3f9308
+grid_bfs.cpp:240:39: note: node (external) 0x1f3f9308 (max_nunits=1, refcnt=1) vector(2) int
+grid_bfs.cpp:240:39: note: 	{ current$row_92, next_col_343 }
+grid_bfs.cpp:240:39: note: Cost model analysis: 
+grid_bfs.cpp:240:39: note: Cost model analysis for part in loop 1:
+  Vector cost: 6
+  Scalar cost: 2
+grid_bfs.cpp:240:39: missed: not vectorized: vectorization is not profitable.
+grid_bfs.cpp:240:39: note: Costing subgraph: 
+grid_bfs.cpp:240:39: note: node 0x1f3f9390 (max_nunits=2, refcnt=1) vector(2) int
+grid_bfs.cpp:240:39: note: op template: _427->row = current$row_92;
+grid_bfs.cpp:240:39: note: 	stmt 0 _427->row = current$row_92;
+grid_bfs.cpp:240:39: note: 	stmt 1 _427->col = _175;
+grid_bfs.cpp:240:39: note: 	children 0x1f3f94a0
+grid_bfs.cpp:240:39: note: node (external) 0x1f3f94a0 (max_nunits=1, refcnt=1) vector(2) int
+grid_bfs.cpp:240:39: note: 	{ current$row_92, _175 }
+grid_bfs.cpp:240:39: note: Cost model analysis: 
+grid_bfs.cpp:240:39: note: Cost model analysis for part in loop 1:
+  Vector cost: 6
+  Scalar cost: 2
+grid_bfs.cpp:240:39: missed: not vectorized: vectorization is not profitable.
+grid_bfs.cpp:240:39: note: Costing subgraph: 
+grid_bfs.cpp:240:39: note: node 0x1f3f9528 (max_nunits=2, refcnt=1) vector(2) int
+grid_bfs.cpp:240:39: note: op template: _169->row = next_row_263;
+grid_bfs.cpp:240:39: note: 	stmt 0 _169->row = next_row_263;
+grid_bfs.cpp:240:39: note: 	stmt 1 _169->col = current$col_292;
+grid_bfs.cpp:240:39: note: 	children 0x1f3f9638
+grid_bfs.cpp:240:39: note: node (external) 0x1f3f9638 (max_nunits=1, refcnt=1) vector(2) int
+grid_bfs.cpp:240:39: note: 	{ next_row_263, current$col_292 }
+grid_bfs.cpp:240:39: note: Cost model analysis: 
+grid_bfs.cpp:240:39: note: Cost model analysis for part in loop 5:
+  Vector cost: 6
+  Scalar cost: 2
+grid_bfs.cpp:240:39: missed: not vectorized: vectorization is not profitable.
+grid_bfs.cpp:240:39: note: Costing subgraph: 
+grid_bfs.cpp:240:39: note: node 0x1f3f96c0 (max_nunits=2, refcnt=1) vector(2) int
+grid_bfs.cpp:240:39: note: op template: _119->row = _227;
+grid_bfs.cpp:240:39: note: 	stmt 0 _119->row = _227;
+grid_bfs.cpp:240:39: note: 	stmt 1 _119->col = current$col_292;
+grid_bfs.cpp:240:39: note: 	children 0x1f3f97d0
+grid_bfs.cpp:240:39: note: node (external) 0x1f3f97d0 (max_nunits=1, refcnt=1) vector(2) int
+grid_bfs.cpp:240:39: note: 	{ _227, current$col_292 }
+grid_bfs.cpp:240:39: note: Cost model analysis: 
+grid_bfs.cpp:240:39: note: Cost model analysis for part in loop 5:
+  Vector cost: 6
+  Scalar cost: 2
+grid_bfs.cpp:240:39: missed: not vectorized: vectorization is not profitable.
+grid_bfs.cpp:240:39: note: Costing subgraph: 
+grid_bfs.cpp:240:39: note: node 0x1f3f9858 (max_nunits=2, refcnt=1) vector(2) int
+grid_bfs.cpp:240:39: note: op template: _437->row = current$row_324;
+grid_bfs.cpp:240:39: note: 	stmt 0 _437->row = current$row_324;
+grid_bfs.cpp:240:39: note: 	stmt 1 _437->col = next_col_162;
+grid_bfs.cpp:240:39: note: 	children 0x1f3f9968
+grid_bfs.cpp:240:39: note: node (external) 0x1f3f9968 (max_nunits=1, refcnt=1) vector(2) int
+grid_bfs.cpp:240:39: note: 	{ current$row_324, next_col_162 }
+grid_bfs.cpp:240:39: note: Cost model analysis: 
+grid_bfs.cpp:240:39: note: Cost model analysis for part in loop 5:
+  Vector cost: 6
+  Scalar cost: 2
+grid_bfs.cpp:240:39: missed: not vectorized: vectorization is not profitable.
+grid_bfs.cpp:240:39: note: Costing subgraph: 
+grid_bfs.cpp:240:39: note: node 0x1f3f99f0 (max_nunits=2, refcnt=1) vector(2) int
+grid_bfs.cpp:240:39: note: op template: _120->row = current$row_324;
+grid_bfs.cpp:240:39: note: 	stmt 0 _120->row = current$row_324;
+grid_bfs.cpp:240:39: note: 	stmt 1 _120->col = _391;
+grid_bfs.cpp:240:39: note: 	children 0x1f3f9b00
+grid_bfs.cpp:240:39: note: node (external) 0x1f3f9b00 (max_nunits=1, refcnt=1) vector(2) int
+grid_bfs.cpp:240:39: note: 	{ current$row_324, _391 }
+grid_bfs.cpp:240:39: note: Cost model analysis: 
+grid_bfs.cpp:240:39: note: Cost model analysis for part in loop 5:
+  Vector cost: 6
+  Scalar cost: 2
+grid_bfs.cpp:240:39: missed: not vectorized: vectorization is not profitable.
+grid_bfs.cpp:240:39: note: ***** The result for vector mode V16QI would be the same
+grid_bfs.cpp:240:39: note: ***** Re-trying analysis with vector mode VNx16QI
+grid_bfs.cpp:232:17: note: ***** Analysis failed with vector mode VNx16QI
+grid_bfs.cpp:232:17: note: ***** Re-trying analysis with vector mode V8QI
+grid_bfs.cpp:240:39: note: ***** Analysis succeeded with vector mode V8QI
+grid_bfs.cpp:240:39: note: SLPing BB part
+/usr/include/c++/14/bits/stl_construct.h:119:7: note: Costing subgraph: 
+/usr/include/c++/14/bits/stl_construct.h:119:7: note: node 0x1f3f9418 (max_nunits=2, refcnt=1) vector(2) int
+/usr/include/c++/14/bits/stl_construct.h:119:7: note: op template: _205->row = 0;
+/usr/include/c++/14/bits/stl_construct.h:119:7: note: 	stmt 0 _205->row = 0;
+/usr/include/c++/14/bits/stl_construct.h:119:7: note: 	stmt 1 _205->col = 0;
+/usr/include/c++/14/bits/stl_construct.h:119:7: note: 	children 0x1f3fa518
+/usr/include/c++/14/bits/stl_construct.h:119:7: note: node (constant) 0x1f3fa518 (max_nunits=1, refcnt=1) vector(2) int
+/usr/include/c++/14/bits/stl_construct.h:119:7: note: 	{ 0, 0 }
+/usr/include/c++/14/bits/stl_construct.h:119:7: note: Cost model analysis: 
+/usr/include/c++/14/bits/stl_construct.h:119:7: note: Cost model analysis for part in loop 0:
+  Vector cost: 5
+  Scalar cost: 2
+/usr/include/c++/14/bits/stl_construct.h:119:7: missed: not vectorized: vectorization is not profitable.
+grid_bfs.cpp:240:39: note: Costing subgraph: 
+grid_bfs.cpp:240:39: note: node 0x1f3f94a0 (max_nunits=2, refcnt=1) vector(2) int
+grid_bfs.cpp:240:39: note: op template: _283->row = next_row_230;
+grid_bfs.cpp:240:39: note: 	stmt 0 _283->row = next_row_230;
+grid_bfs.cpp:240:39: note: 	stmt 1 _283->col = current$col_91;
+grid_bfs.cpp:240:39: note: 	children 0x1f3f8db8
+grid_bfs.cpp:240:39: note: node (external) 0x1f3f8db8 (max_nunits=1, refcnt=1) vector(2) int
+grid_bfs.cpp:240:39: note: 	{ next_row_230, current$col_91 }
+grid_bfs.cpp:240:39: note: Cost model analysis: 
+grid_bfs.cpp:240:39: note: Cost model analysis for part in loop 1:
+  Vector cost: 6
+  Scalar cost: 2
+grid_bfs.cpp:240:39: missed: not vectorized: vectorization is not profitable.
+grid_bfs.cpp:240:39: note: Costing subgraph: 
+grid_bfs.cpp:240:39: note: node 0x1f3f9b88 (max_nunits=2, refcnt=1) vector(2) int
+grid_bfs.cpp:240:39: note: op template: _331->row = _237;
+grid_bfs.cpp:240:39: note: 	stmt 0 _331->row = _237;
+grid_bfs.cpp:240:39: note: 	stmt 1 _331->col = current$col_91;
+grid_bfs.cpp:240:39: note: 	children 0x1f3f9528
+grid_bfs.cpp:240:39: note: node (external) 0x1f3f9528 (max_nunits=1, refcnt=1) vector(2) int
+grid_bfs.cpp:240:39: note: 	{ _237, current$col_91 }
+grid_bfs.cpp:240:39: note: Cost model analysis: 
+grid_bfs.cpp:240:39: note: Cost model analysis for part in loop 1:
+  Vector cost: 6
+  Scalar cost: 2
+grid_bfs.cpp:240:39: missed: not vectorized: vectorization is not profitable.
+grid_bfs.cpp:240:39: note: Costing subgraph: 
+grid_bfs.cpp:240:39: note: node 0x1f3f9b00 (max_nunits=2, refcnt=1) vector(2) int
+grid_bfs.cpp:240:39: note: op template: _379->row = current$row_92;
+grid_bfs.cpp:240:39: note: 	stmt 0 _379->row = current$row_92;
+grid_bfs.cpp:240:39: note: 	stmt 1 _379->col = next_col_343;
+grid_bfs.cpp:240:39: note: 	children 0x1f3f8f50
+grid_bfs.cpp:240:39: note: node (external) 0x1f3f8f50 (max_nunits=1, refcnt=1) vector(2) int
+grid_bfs.cpp:240:39: note: 	{ current$row_92, next_col_343 }
+grid_bfs.cpp:240:39: note: Cost model analysis: 
+grid_bfs.cpp:240:39: note: Cost model analysis for part in loop 1:
+  Vector cost: 6
+  Scalar cost: 2
+grid_bfs.cpp:240:39: missed: not vectorized: vectorization is not profitable.
+grid_bfs.cpp:240:39: note: Costing subgraph: 
+grid_bfs.cpp:240:39: note: node 0x1f3f96c0 (max_nunits=2, refcnt=1) vector(2) int
+grid_bfs.cpp:240:39: note: op template: _427->row = current$row_92;
+grid_bfs.cpp:240:39: note: 	stmt 0 _427->row = current$row_92;
+grid_bfs.cpp:240:39: note: 	stmt 1 _427->col = _175;
+grid_bfs.cpp:240:39: note: 	children 0x1f3fa7c0
+grid_bfs.cpp:240:39: note: node (external) 0x1f3fa7c0 (max_nunits=1, refcnt=1) vector(2) int
+grid_bfs.cpp:240:39: note: 	{ current$row_92, _175 }
+grid_bfs.cpp:240:39: note: Cost model analysis: 
+grid_bfs.cpp:240:39: note: Cost model analysis for part in loop 1:
+  Vector cost: 6
+  Scalar cost: 2
+grid_bfs.cpp:240:39: missed: not vectorized: vectorization is not profitable.
+grid_bfs.cpp:240:39: note: Costing subgraph: 
+grid_bfs.cpp:240:39: note: node 0x1f3f9f40 (max_nunits=2, refcnt=1) vector(2) int
+grid_bfs.cpp:240:39: note: op template: _169->row = next_row_263;
+grid_bfs.cpp:240:39: note: 	stmt 0 _169->row = next_row_263;
+grid_bfs.cpp:240:39: note: 	stmt 1 _169->col = current$col_292;
+grid_bfs.cpp:240:39: note: 	children 0x1f3f8fd8
+grid_bfs.cpp:240:39: note: node (external) 0x1f3f8fd8 (max_nunits=1, refcnt=1) vector(2) int
+grid_bfs.cpp:240:39: note: 	{ next_row_263, current$col_292 }
+grid_bfs.cpp:240:39: note: Cost model analysis: 
+grid_bfs.cpp:240:39: note: Cost model analysis for part in loop 5:
+  Vector cost: 6
+  Scalar cost: 2
+grid_bfs.cpp:240:39: missed: not vectorized: vectorization is not profitable.
+grid_bfs.cpp:240:39: note: Costing subgraph: 
+grid_bfs.cpp:240:39: note: node 0x1f3fa490 (max_nunits=2, refcnt=1) vector(2) int
+grid_bfs.cpp:240:39: note: op template: _119->row = _227;
+grid_bfs.cpp:240:39: note: 	stmt 0 _119->row = _227;
+grid_bfs.cpp:240:39: note: 	stmt 1 _119->col = current$col_292;
+grid_bfs.cpp:240:39: note: 	children 0x1f3f8ec8
+grid_bfs.cpp:240:39: note: node (external) 0x1f3f8ec8 (max_nunits=1, refcnt=1) vector(2) int
+grid_bfs.cpp:240:39: note: 	{ _227, current$col_292 }
+grid_bfs.cpp:240:39: note: Cost model analysis: 
+grid_bfs.cpp:240:39: note: Cost model analysis for part in loop 5:
+  Vector cost: 6
+  Scalar cost: 2
+grid_bfs.cpp:240:39: missed: not vectorized: vectorization is not profitable.
+grid_bfs.cpp:240:39: note: Costing subgraph: 
+grid_bfs.cpp:240:39: note: node 0x1f3f97d0 (max_nunits=2, refcnt=1) vector(2) int
+grid_bfs.cpp:240:39: note: op template: _437->row = current$row_324;
+grid_bfs.cpp:240:39: note: 	stmt 0 _437->row = current$row_324;
+grid_bfs.cpp:240:39: note: 	stmt 1 _437->col = next_col_162;
+grid_bfs.cpp:240:39: note: 	children 0x1f3f91f8
+grid_bfs.cpp:240:39: note: node (external) 0x1f3f91f8 (max_nunits=1, refcnt=1) vector(2) int
+grid_bfs.cpp:240:39: note: 	{ current$row_324, next_col_162 }
+grid_bfs.cpp:240:39: note: Cost model analysis: 
+grid_bfs.cpp:240:39: note: Cost model analysis for part in loop 5:
+  Vector cost: 6
+  Scalar cost: 2
+grid_bfs.cpp:240:39: missed: not vectorized: vectorization is not profitable.
+grid_bfs.cpp:240:39: note: Costing subgraph: 
+grid_bfs.cpp:240:39: note: node 0x1f3fa1e8 (max_nunits=2, refcnt=1) vector(2) int
+grid_bfs.cpp:240:39: note: op template: _120->row = current$row_324;
+grid_bfs.cpp:240:39: note: 	stmt 0 _120->row = current$row_324;
+grid_bfs.cpp:240:39: note: 	stmt 1 _120->col = _391;
+grid_bfs.cpp:240:39: note: 	children 0x1f3f9170
+grid_bfs.cpp:240:39: note: node (external) 0x1f3f9170 (max_nunits=1, refcnt=1) vector(2) int
+grid_bfs.cpp:240:39: note: 	{ current$row_324, _391 }
+grid_bfs.cpp:240:39: note: Cost model analysis: 
+grid_bfs.cpp:240:39: note: Cost model analysis for part in loop 5:
+  Vector cost: 6
+  Scalar cost: 2
+grid_bfs.cpp:240:39: missed: not vectorized: vectorization is not profitable.
+grid_bfs.cpp:240:39: note: ***** Re-trying analysis with vector mode VNx8QI
+grid_bfs.cpp:232:17: note: ***** Analysis failed with vector mode VNx8QI
+grid_bfs.cpp:232:17: note: ***** Re-trying analysis with vector mode V4HI
+grid_bfs.cpp:240:39: note: ***** Analysis succeeded with vector mode V4HI
+grid_bfs.cpp:240:39: note: SLPing BB part
+/usr/include/c++/14/bits/stl_construct.h:119:7: note: Costing subgraph: 
+/usr/include/c++/14/bits/stl_construct.h:119:7: note: node 0x1f3f9638 (max_nunits=2, refcnt=1) vector(2) int
+/usr/include/c++/14/bits/stl_construct.h:119:7: note: op template: _205->row = 0;
+/usr/include/c++/14/bits/stl_construct.h:119:7: note: 	stmt 0 _205->row = 0;
+/usr/include/c++/14/bits/stl_construct.h:119:7: note: 	stmt 1 _205->col = 0;
+/usr/include/c++/14/bits/stl_construct.h:119:7: note: 	children 0x1f3f9c98
+/usr/include/c++/14/bits/stl_construct.h:119:7: note: node (constant) 0x1f3f9c98 (max_nunits=1, refcnt=1) vector(2) int
+/usr/include/c++/14/bits/stl_construct.h:119:7: note: 	{ 0, 0 }
+/usr/include/c++/14/bits/stl_construct.h:119:7: note: Cost model analysis: 
+/usr/include/c++/14/bits/stl_construct.h:119:7: note: Cost model analysis for part in loop 0:
+  Vector cost: 5
+  Scalar cost: 2
+/usr/include/c++/14/bits/stl_construct.h:119:7: missed: not vectorized: vectorization is not profitable.
+grid_bfs.cpp:240:39: note: Costing subgraph: 
+grid_bfs.cpp:240:39: note: node 0x1f3fa7c0 (max_nunits=2, refcnt=1) vector(2) int
+grid_bfs.cpp:240:39: note: op template: _283->row = next_row_230;
+grid_bfs.cpp:240:39: note: 	stmt 0 _283->row = next_row_230;
+grid_bfs.cpp:240:39: note: 	stmt 1 _283->col = current$col_91;
+grid_bfs.cpp:240:39: note: 	children 0x1f3f9418
+grid_bfs.cpp:240:39: note: node (external) 0x1f3f9418 (max_nunits=1, refcnt=1) vector(2) int
+grid_bfs.cpp:240:39: note: 	{ next_row_230, current$col_91 }
+grid_bfs.cpp:240:39: note: Cost model analysis: 
+grid_bfs.cpp:240:39: note: Cost model analysis for part in loop 1:
+  Vector cost: 6
+  Scalar cost: 2
+grid_bfs.cpp:240:39: missed: not vectorized: vectorization is not profitable.
+grid_bfs.cpp:240:39: note: Costing subgraph: 
+grid_bfs.cpp:240:39: note: node 0x1f3f9308 (max_nunits=2, refcnt=1) vector(2) int
+grid_bfs.cpp:240:39: note: op template: _331->row = _237;
+grid_bfs.cpp:240:39: note: 	stmt 0 _331->row = _237;
+grid_bfs.cpp:240:39: note: 	stmt 1 _331->col = current$col_91;
+grid_bfs.cpp:240:39: note: 	children 0x1f3f9f40
+grid_bfs.cpp:240:39: note: node (external) 0x1f3f9f40 (max_nunits=1, refcnt=1) vector(2) int
+grid_bfs.cpp:240:39: note: 	{ _237, current$col_91 }
+grid_bfs.cpp:240:39: note: Cost model analysis: 
+grid_bfs.cpp:240:39: note: Cost model analysis for part in loop 1:
+  Vector cost: 6
+  Scalar cost: 2
+grid_bfs.cpp:240:39: missed: not vectorized: vectorization is not profitable.
+grid_bfs.cpp:240:39: note: Costing subgraph: 
+grid_bfs.cpp:240:39: note: node 0x1f3f9170 (max_nunits=2, refcnt=1) vector(2) int
+grid_bfs.cpp:240:39: note: op template: _379->row = current$row_92;
+grid_bfs.cpp:240:39: note: 	stmt 0 _379->row = current$row_92;
+grid_bfs.cpp:240:39: note: 	stmt 1 _379->col = next_col_343;
+grid_bfs.cpp:240:39: note: 	children 0x1f3fa270
+grid_bfs.cpp:240:39: note: node (external) 0x1f3fa270 (max_nunits=1, refcnt=1) vector(2) int
+grid_bfs.cpp:240:39: note: 	{ current$row_92, next_col_343 }
+grid_bfs.cpp:240:39: note: Cost model analysis: 
+grid_bfs.cpp:240:39: note: Cost model analysis for part in loop 1:
+  Vector cost: 6
+  Scalar cost: 2
+grid_bfs.cpp:240:39: missed: not vectorized: vectorization is not profitable.
+grid_bfs.cpp:240:39: note: Costing subgraph: 
+grid_bfs.cpp:240:39: note: node 0x1f3fa490 (max_nunits=2, refcnt=1) vector(2) int
+grid_bfs.cpp:240:39: note: op template: _427->row = current$row_92;
+grid_bfs.cpp:240:39: note: 	stmt 0 _427->row = current$row_92;
+grid_bfs.cpp:240:39: note: 	stmt 1 _427->col = _175;
+grid_bfs.cpp:240:39: note: 	children 0x1f3fa050
+grid_bfs.cpp:240:39: note: node (external) 0x1f3fa050 (max_nunits=1, refcnt=1) vector(2) int
+grid_bfs.cpp:240:39: note: 	{ current$row_92, _175 }
+grid_bfs.cpp:240:39: note: Cost model analysis: 
+grid_bfs.cpp:240:39: note: Cost model analysis for part in loop 1:
+  Vector cost: 6
+  Scalar cost: 2
+grid_bfs.cpp:240:39: missed: not vectorized: vectorization is not profitable.
+grid_bfs.cpp:240:39: note: Costing subgraph: 
+grid_bfs.cpp:240:39: note: node 0x1f3f99f0 (max_nunits=2, refcnt=1) vector(2) int
+grid_bfs.cpp:240:39: note: op template: _169->row = next_row_263;
+grid_bfs.cpp:240:39: note: 	stmt 0 _169->row = next_row_263;
+grid_bfs.cpp:240:39: note: 	stmt 1 _169->col = current$col_292;
+grid_bfs.cpp:240:39: note: 	children 0x1f3f8db8
+grid_bfs.cpp:240:39: note: node (external) 0x1f3f8db8 (max_nunits=1, refcnt=1) vector(2) int
+grid_bfs.cpp:240:39: note: 	{ next_row_263, current$col_292 }
+grid_bfs.cpp:240:39: note: Cost model analysis: 
+grid_bfs.cpp:240:39: note: Cost model analysis for part in loop 5:
+  Vector cost: 6
+  Scalar cost: 2
+grid_bfs.cpp:240:39: missed: not vectorized: vectorization is not profitable.
+grid_bfs.cpp:240:39: note: Costing subgraph: 
+grid_bfs.cpp:240:39: note: node 0x1f3f9da8 (max_nunits=2, refcnt=1) vector(2) int
+grid_bfs.cpp:240:39: note: op template: _119->row = _227;
+grid_bfs.cpp:240:39: note: 	stmt 0 _119->row = _227;
+grid_bfs.cpp:240:39: note: 	stmt 1 _119->col = current$col_292;
+grid_bfs.cpp:240:39: note: 	children 0x1f3f94a0
+grid_bfs.cpp:240:39: note: node (external) 0x1f3f94a0 (max_nunits=1, refcnt=1) vector(2) int
+grid_bfs.cpp:240:39: note: 	{ _227, current$col_292 }
+grid_bfs.cpp:240:39: note: Cost model analysis: 
+grid_bfs.cpp:240:39: note: Cost model analysis for part in loop 5:
+  Vector cost: 6
+  Scalar cost: 2
+grid_bfs.cpp:240:39: missed: not vectorized: vectorization is not profitable.
+grid_bfs.cpp:240:39: note: Costing subgraph: 
+grid_bfs.cpp:240:39: note: node 0x1f3f8ec8 (max_nunits=2, refcnt=1) vector(2) int
+grid_bfs.cpp:240:39: note: op template: _437->row = current$row_324;
+grid_bfs.cpp:240:39: note: 	stmt 0 _437->row = current$row_324;
+grid_bfs.cpp:240:39: note: 	stmt 1 _437->col = next_col_162;
+grid_bfs.cpp:240:39: note: 	children 0x1f3f9b00
+grid_bfs.cpp:240:39: note: node (external) 0x1f3f9b00 (max_nunits=1, refcnt=1) vector(2) int
+grid_bfs.cpp:240:39: note: 	{ current$row_324, next_col_162 }
+grid_bfs.cpp:240:39: note: Cost model analysis: 
+grid_bfs.cpp:240:39: note: Cost model analysis for part in loop 5:
+  Vector cost: 6
+  Scalar cost: 2
+grid_bfs.cpp:240:39: missed: not vectorized: vectorization is not profitable.
+grid_bfs.cpp:240:39: note: Costing subgraph: 
+grid_bfs.cpp:240:39: note: node 0x1f3f9e30 (max_nunits=2, refcnt=1) vector(2) int
+grid_bfs.cpp:240:39: note: op template: _120->row = current$row_324;
+grid_bfs.cpp:240:39: note: 	stmt 0 _120->row = current$row_324;
+grid_bfs.cpp:240:39: note: 	stmt 1 _120->col = _391;
+grid_bfs.cpp:240:39: note: 	children 0x1f3f9528
+grid_bfs.cpp:240:39: note: node (external) 0x1f3f9528 (max_nunits=1, refcnt=1) vector(2) int
+grid_bfs.cpp:240:39: note: 	{ current$row_324, _391 }
+grid_bfs.cpp:240:39: note: Cost model analysis: 
+grid_bfs.cpp:240:39: note: Cost model analysis for part in loop 5:
+  Vector cost: 6
+  Scalar cost: 2
+grid_bfs.cpp:240:39: missed: not vectorized: vectorization is not profitable.
+grid_bfs.cpp:240:39: note: ***** Re-trying analysis with vector mode VNx4QI
+grid_bfs.cpp:232:17: note: ***** Analysis failed with vector mode VNx4QI
+grid_bfs.cpp:232:17: note: ***** Re-trying analysis with vector mode V2SI
+grid_bfs.cpp:240:39: note: ***** Analysis succeeded with vector mode V2SI
+grid_bfs.cpp:240:39: note: SLPing BB part
+/usr/include/c++/14/bits/stl_construct.h:119:7: note: Costing subgraph: 
+/usr/include/c++/14/bits/stl_construct.h:119:7: note: node 0x1f3f8fd8 (max_nunits=2, refcnt=1) vector(2) int
+/usr/include/c++/14/bits/stl_construct.h:119:7: note: op template: _205->row = 0;
+/usr/include/c++/14/bits/stl_construct.h:119:7: note: 	stmt 0 _205->row = 0;
+/usr/include/c++/14/bits/stl_construct.h:119:7: note: 	stmt 1 _205->col = 0;
+/usr/include/c++/14/bits/stl_construct.h:119:7: note: 	children 0x1f3fa0d8
+/usr/include/c++/14/bits/stl_construct.h:119:7: note: node (constant) 0x1f3fa0d8 (max_nunits=1, refcnt=1) vector(2) int
+/usr/include/c++/14/bits/stl_construct.h:119:7: note: 	{ 0, 0 }
+/usr/include/c++/14/bits/stl_construct.h:119:7: note: Cost model analysis: 
+/usr/include/c++/14/bits/stl_construct.h:119:7: note: Cost model analysis for part in loop 0:
+  Vector cost: 5
+  Scalar cost: 2
+/usr/include/c++/14/bits/stl_construct.h:119:7: missed: not vectorized: vectorization is not profitable.
+grid_bfs.cpp:240:39: note: Costing subgraph: 
+grid_bfs.cpp:240:39: note: node 0x1f3fa050 (max_nunits=2, refcnt=1) vector(2) int
+grid_bfs.cpp:240:39: note: op template: _283->row = next_row_230;
+grid_bfs.cpp:240:39: note: 	stmt 0 _283->row = next_row_230;
+grid_bfs.cpp:240:39: note: 	stmt 1 _283->col = current$col_91;
+grid_bfs.cpp:240:39: note: 	children 0x1f3f9638
+grid_bfs.cpp:240:39: note: node (external) 0x1f3f9638 (max_nunits=1, refcnt=1) vector(2) int
+grid_bfs.cpp:240:39: note: 	{ next_row_230, current$col_91 }
+grid_bfs.cpp:240:39: note: Cost model analysis: 
+grid_bfs.cpp:240:39: note: Cost model analysis for part in loop 1:
+  Vector cost: 6
+  Scalar cost: 2
+grid_bfs.cpp:240:39: missed: not vectorized: vectorization is not profitable.
+grid_bfs.cpp:240:39: note: Costing subgraph: 
+grid_bfs.cpp:240:39: note: node 0x1f3f8f50 (max_nunits=2, refcnt=1) vector(2) int
+grid_bfs.cpp:240:39: note: op template: _331->row = _237;
+grid_bfs.cpp:240:39: note: 	stmt 0 _331->row = _237;
+grid_bfs.cpp:240:39: note: 	stmt 1 _331->col = current$col_91;
+grid_bfs.cpp:240:39: note: 	children 0x1f3f99f0
+grid_bfs.cpp:240:39: note: node (external) 0x1f3f99f0 (max_nunits=1, refcnt=1) vector(2) int
+grid_bfs.cpp:240:39: note: 	{ _237, current$col_91 }
+grid_bfs.cpp:240:39: note: Cost model analysis: 
+grid_bfs.cpp:240:39: note: Cost model analysis for part in loop 1:
+  Vector cost: 6
+  Scalar cost: 2
+grid_bfs.cpp:240:39: missed: not vectorized: vectorization is not profitable.
+grid_bfs.cpp:240:39: note: Costing subgraph: 
+grid_bfs.cpp:240:39: note: node 0x1f3f9528 (max_nunits=2, refcnt=1) vector(2) int
+grid_bfs.cpp:240:39: note: op template: _379->row = current$row_92;
+grid_bfs.cpp:240:39: note: 	stmt 0 _379->row = current$row_92;
+grid_bfs.cpp:240:39: note: 	stmt 1 _379->col = next_col_343;
+grid_bfs.cpp:240:39: note: 	children 0x1f3fa380
+grid_bfs.cpp:240:39: note: node (external) 0x1f3fa380 (max_nunits=1, refcnt=1) vector(2) int
+grid_bfs.cpp:240:39: note: 	{ current$row_92, next_col_343 }
+grid_bfs.cpp:240:39: note: Cost model analysis: 
+grid_bfs.cpp:240:39: note: Cost model analysis for part in loop 1:
+  Vector cost: 6
+  Scalar cost: 2
+grid_bfs.cpp:240:39: missed: not vectorized: vectorization is not profitable.
+grid_bfs.cpp:240:39: note: Costing subgraph: 
+grid_bfs.cpp:240:39: note: node 0x1f3f9da8 (max_nunits=2, refcnt=1) vector(2) int
+grid_bfs.cpp:240:39: note: op template: _427->row = current$row_92;
+grid_bfs.cpp:240:39: note: 	stmt 0 _427->row = current$row_92;
+grid_bfs.cpp:240:39: note: 	stmt 1 _427->col = _175;
+grid_bfs.cpp:240:39: note: 	children 0x1f3f95b0
+grid_bfs.cpp:240:39: note: node (external) 0x1f3f95b0 (max_nunits=1, refcnt=1) vector(2) int
+grid_bfs.cpp:240:39: note: 	{ current$row_92, _175 }
+grid_bfs.cpp:240:39: note: Cost model analysis: 
+grid_bfs.cpp:240:39: note: Cost model analysis for part in loop 1:
+  Vector cost: 6
+  Scalar cost: 2
+grid_bfs.cpp:240:39: missed: not vectorized: vectorization is not profitable.
+grid_bfs.cpp:240:39: note: Costing subgraph: 
+grid_bfs.cpp:240:39: note: node 0x1f3fa1e8 (max_nunits=2, refcnt=1) vector(2) int
+grid_bfs.cpp:240:39: note: op template: _169->row = next_row_263;
+grid_bfs.cpp:240:39: note: 	stmt 0 _169->row = next_row_263;
+grid_bfs.cpp:240:39: note: 	stmt 1 _169->col = current$col_292;
+grid_bfs.cpp:240:39: note: 	children 0x1f3f9418
+grid_bfs.cpp:240:39: note: node (external) 0x1f3f9418 (max_nunits=1, refcnt=1) vector(2) int
+grid_bfs.cpp:240:39: note: 	{ next_row_263, current$col_292 }
+grid_bfs.cpp:240:39: note: Cost model analysis: 
+grid_bfs.cpp:240:39: note: Cost model analysis for part in loop 5:
+  Vector cost: 6
+  Scalar cost: 2
+grid_bfs.cpp:240:39: missed: not vectorized: vectorization is not profitable.
+grid_bfs.cpp:240:39: note: Costing subgraph: 
+grid_bfs.cpp:240:39: note: node 0x1f3f90e8 (max_nunits=2, refcnt=1) vector(2) int
+grid_bfs.cpp:240:39: note: op template: _119->row = _227;
+grid_bfs.cpp:240:39: note: 	stmt 0 _119->row = _227;
+grid_bfs.cpp:240:39: note: 	stmt 1 _119->col = current$col_292;
+grid_bfs.cpp:240:39: note: 	children 0x1f3fa7c0
+grid_bfs.cpp:240:39: note: node (external) 0x1f3fa7c0 (max_nunits=1, refcnt=1) vector(2) int
+grid_bfs.cpp:240:39: note: 	{ _227, current$col_292 }
+grid_bfs.cpp:240:39: note: Cost model analysis: 
+grid_bfs.cpp:240:39: note: Cost model analysis for part in loop 5:
+  Vector cost: 6
+  Scalar cost: 2
+grid_bfs.cpp:240:39: missed: not vectorized: vectorization is not profitable.
+grid_bfs.cpp:240:39: note: Costing subgraph: 
+grid_bfs.cpp:240:39: note: node 0x1f3f94a0 (max_nunits=2, refcnt=1) vector(2) int
+grid_bfs.cpp:240:39: note: op template: _437->row = current$row_324;
+grid_bfs.cpp:240:39: note: 	stmt 0 _437->row = current$row_324;
+grid_bfs.cpp:240:39: note: 	stmt 1 _437->col = next_col_162;
+grid_bfs.cpp:240:39: note: 	children 0x1f3f9170
+grid_bfs.cpp:240:39: note: node (external) 0x1f3f9170 (max_nunits=1, refcnt=1) vector(2) int
+grid_bfs.cpp:240:39: note: 	{ current$row_324, next_col_162 }
+grid_bfs.cpp:240:39: note: Cost model analysis: 
+grid_bfs.cpp:240:39: note: Cost model analysis for part in loop 5:
+  Vector cost: 6
+  Scalar cost: 2
+grid_bfs.cpp:240:39: missed: not vectorized: vectorization is not profitable.
+grid_bfs.cpp:240:39: note: Costing subgraph: 
+grid_bfs.cpp:240:39: note: node 0x1f3f9968 (max_nunits=2, refcnt=1) vector(2) int
+grid_bfs.cpp:240:39: note: op template: _120->row = current$row_324;
+grid_bfs.cpp:240:39: note: 	stmt 0 _120->row = current$row_324;
+grid_bfs.cpp:240:39: note: 	stmt 1 _120->col = _391;
+grid_bfs.cpp:240:39: note: 	children 0x1f3f9f40
+grid_bfs.cpp:240:39: note: node (external) 0x1f3f9f40 (max_nunits=1, refcnt=1) vector(2) int
+grid_bfs.cpp:240:39: note: 	{ current$row_324, _391 }
+grid_bfs.cpp:240:39: note: Cost model analysis: 
+grid_bfs.cpp:240:39: note: Cost model analysis for part in loop 5:
+  Vector cost: 6
+  Scalar cost: 2
+grid_bfs.cpp:240:39: missed: not vectorized: vectorization is not profitable.
+grid_bfs.cpp:240:39: note: ***** Re-trying analysis with vector mode VNx2QI
+grid_bfs.cpp:232:17: note: ***** Analysis failed with vector mode VNx2QI
+/usr/include/c++/14/bits/stl_vector.h:1920:24: missed: statement clobbers memory: std::__throw_length_error ("cannot create std::vector larger than max_size()");
+/usr/include/c++/14/bits/stl_vector.h:1920:24: note: ***** Analysis failed with vector mode VOID
+grid_bfs.cpp:256:23: missed: couldn't vectorize loop
+grid_bfs.cpp:256:23: missed: not vectorized: unsupported outerloop form.
+grid_bfs.cpp:177:29: missed: couldn't vectorize loop
+grid_bfs.cpp:178:18: missed: not vectorized: unsupported use in stmt.
+grid_bfs.cpp:250:12: note: vectorized 0 loops in function.
+grid_bfs.cpp:250:12: missed: splitting region at control altering definition _27 = shortest_path_bfs (grid_24(D), _36, heatmap_25(D));
+grid_bfs.cpp:258:59: missed: statement clobbers memory: route_label = format_route_label (_36, i_60); [return slot optimization]
+grid_bfs.cpp:261:41: missed: not vectorized: statement can throw an exception: _27 = shortest_path_bfs (grid_24(D), _36, heatmap_25(D));
+grid_bfs.cpp:259:38: note: ***** Analysis failed with vector mode V2DI
+grid_bfs.cpp:259:38: note: ***** The result for vector mode V16QI would be the same
+grid_bfs.cpp:259:38: note: ***** Re-trying analysis with vector mode VNx16QI
+grid_bfs.cpp:259:38: note: ***** Analysis failed with vector mode VNx16QI
+grid_bfs.cpp:259:38: note: ***** Re-trying analysis with vector mode V8QI
+grid_bfs.cpp:259:38: note: ***** Analysis failed with vector mode V8QI
+grid_bfs.cpp:259:38: note: ***** Re-trying analysis with vector mode VNx8QI
+grid_bfs.cpp:259:38: note: ***** Analysis failed with vector mode VNx8QI
+grid_bfs.cpp:259:38: note: ***** Re-trying analysis with vector mode V4HI
+grid_bfs.cpp:259:38: note: ***** Analysis failed with vector mode V4HI
+grid_bfs.cpp:259:38: note: ***** Re-trying analysis with vector mode VNx4QI
+grid_bfs.cpp:259:38: note: ***** Analysis failed with vector mode VNx4QI
+grid_bfs.cpp:259:38: note: ***** Re-trying analysis with vector mode V2SI
+grid_bfs.cpp:259:38: note: ***** Analysis failed with vector mode V2SI
+grid_bfs.cpp:259:38: note: ***** Re-trying analysis with vector mode VNx2QI
+grid_bfs.cpp:259:38: note: ***** Analysis failed with vector mode VNx2QI
+grid_bfs.cpp:259:38: missed: splitting region at loop 1 exit at bb24
+/usr/include/c++/14/bits/new_allocator.h:172:26: missed: statement clobbers memory: operator delete (_51, _54);
+grid_bfs.cpp:265:36: note: ***** Analysis failed with vector mode V4SI
+grid_bfs.cpp:265:36: note: ***** The result for vector mode V16QI would be the same
+grid_bfs.cpp:265:36: note: ***** Re-trying analysis with vector mode VNx16QI
+grid_bfs.cpp:265:36: note: ***** Analysis failed with vector mode VNx16QI
+grid_bfs.cpp:265:36: note: ***** Re-trying analysis with vector mode V8QI
+grid_bfs.cpp:265:36: note: ***** Analysis failed with vector mode V8QI
+grid_bfs.cpp:265:36: note: ***** Re-trying analysis with vector mode VNx8QI
+grid_bfs.cpp:265:36: note: ***** Analysis failed with vector mode VNx8QI
+grid_bfs.cpp:265:36: note: ***** Re-trying analysis with vector mode V4HI
+grid_bfs.cpp:265:36: note: ***** Analysis failed with vector mode V4HI
+grid_bfs.cpp:265:36: note: ***** Re-trying analysis with vector mode VNx4QI
+grid_bfs.cpp:265:36: note: ***** Analysis failed with vector mode VNx4QI
+grid_bfs.cpp:265:36: note: ***** Re-trying analysis with vector mode V2SI
+grid_bfs.cpp:265:36: note: ***** Analysis failed with vector mode V2SI
+grid_bfs.cpp:265:36: note: ***** Re-trying analysis with vector mode VNx2QI
+grid_bfs.cpp:265:36: note: ***** Analysis failed with vector mode VNx2QI
+grid_bfs.cpp:265:36: missed: splitting region at dominance boundary bb15
+grid_bfs.cpp:265:36: note: ***** Analysis failed with vector mode VOID
+grid_bfs.cpp:265:36: missed: splitting region at dominance boundary bb11
+grid_bfs.cpp:271:12: note: ***** Analysis failed with vector mode VOID
+grid_bfs.cpp:271:12: missed: splitting region at dominance boundary bb16
+/usr/include/c++/14/bits/basic_string.h:272:29: note: ***** Analysis failed with vector mode VOID
+/usr/include/c++/14/bits/basic_string.h:809:19: missed: statement clobbers memory: std::__cxx11::basic_string<char>::_M_dispose (&route_label);
+/usr/include/c++/14/bits/basic_string.h:809:23: note: ***** Analysis failed with vector mode VOID
+grid_bfs.cpp:302:39: missed: couldn't vectorize loop
+grid_bfs.cpp:310:40: missed: not vectorized: unsupported use in stmt.
+grid_bfs.cpp:302:39: missed: couldn't vectorize loop
+grid_bfs.cpp:302:39: missed: not vectorized: inner-loop count not invariant.
+grid_bfs.cpp:305:45: optimized: loop vectorized using 16 byte vectors
+grid_bfs.cpp:305:45: optimized: loop vectorized using variable length vectors
+grid_bfs.cpp:284:27: missed: couldn't vectorize loop
+grid_bfs.cpp:284:27: missed: not vectorized: loop nest containing two or more consecutive inner loops cannot be vectorized
+grid_bfs.cpp:286:31: missed: couldn't vectorize loop
+grid_bfs.cpp:293:13: missed: not vectorized: unsupported use in stmt.
+grid_bfs.cpp:280:16: note: vectorized 1 loops in function.
+grid_bfs.cpp:280:16: missed: splitting region at dont-vectorize loop 7 entry at bb45
+grid_bfs.cpp:281:20: note: ***** Analysis succeeded with vector mode V2DI
+grid_bfs.cpp:281:20: note: SLPing BB part
+grid_bfs.cpp:281:20: note: Costing subgraph: 
+grid_bfs.cpp:281:20: note: node 0x1f2df528 (max_nunits=2, refcnt=1) vector(2) int
+grid_bfs.cpp:281:20: note: op template: <retval>.active_cells = 0;
+grid_bfs.cpp:281:20: note: 	stmt 0 <retval>.active_cells = 0;
+grid_bfs.cpp:281:20: note: 	stmt 1 <retval>.max_visits = 0;
+grid_bfs.cpp:281:20: note: 	children 0x1f2df5b0
+grid_bfs.cpp:281:20: note: node (constant) 0x1f2df5b0 (max_nunits=1, refcnt=1) vector(2) int
+grid_bfs.cpp:281:20: note: 	{ 0, 0 }
+grid_bfs.cpp:281:20: note: Cost model analysis: 
+grid_bfs.cpp:281:20: note: Cost model analysis for part in loop 0:
+  Vector cost: 5
+  Scalar cost: 2
+grid_bfs.cpp:281:20: missed: not vectorized: vectorization is not profitable.
+grid_bfs.cpp:281:20: note: ***** The result for vector mode V16QI would be the same
+grid_bfs.cpp:281:20: note: ***** Re-trying analysis with vector mode VNx16QI
+grid_bfs.cpp:281:20: note: ***** Analysis failed with vector mode VNx16QI
+grid_bfs.cpp:281:20: note: ***** Re-trying analysis with vector mode V8QI
+grid_bfs.cpp:281:20: note: ***** Analysis succeeded with vector mode V8QI
+grid_bfs.cpp:281:20: note: SLPing BB part
+grid_bfs.cpp:281:20: note: Costing subgraph: 
+grid_bfs.cpp:281:20: note: node 0x1f2df528 (max_nunits=2, refcnt=1) vector(2) int
+grid_bfs.cpp:281:20: note: op template: <retval>.active_cells = 0;
+grid_bfs.cpp:281:20: note: 	stmt 0 <retval>.active_cells = 0;
+grid_bfs.cpp:281:20: note: 	stmt 1 <retval>.max_visits = 0;
+grid_bfs.cpp:281:20: note: 	children 0x1f2df5b0
+grid_bfs.cpp:281:20: note: node (constant) 0x1f2df5b0 (max_nunits=1, refcnt=1) vector(2) int
+grid_bfs.cpp:281:20: note: 	{ 0, 0 }
+grid_bfs.cpp:281:20: note: Cost model analysis: 
+grid_bfs.cpp:281:20: note: Cost model analysis for part in loop 0:
+  Vector cost: 5
+  Scalar cost: 2
+grid_bfs.cpp:281:20: missed: not vectorized: vectorization is not profitable.
+grid_bfs.cpp:281:20: note: ***** Re-trying analysis with vector mode VNx8QI
+grid_bfs.cpp:281:20: note: ***** Analysis failed with vector mode VNx8QI
+grid_bfs.cpp:281:20: note: ***** Re-trying analysis with vector mode V4HI
+grid_bfs.cpp:281:20: note: ***** Analysis succeeded with vector mode V4HI
+grid_bfs.cpp:281:20: note: SLPing BB part
+grid_bfs.cpp:281:20: note: Costing subgraph: 
+grid_bfs.cpp:281:20: note: node 0x1f2df528 (max_nunits=2, refcnt=1) vector(2) int
+grid_bfs.cpp:281:20: note: op template: <retval>.active_cells = 0;
+grid_bfs.cpp:281:20: note: 	stmt 0 <retval>.active_cells = 0;
+grid_bfs.cpp:281:20: note: 	stmt 1 <retval>.max_visits = 0;
+grid_bfs.cpp:281:20: note: 	children 0x1f2df5b0
+grid_bfs.cpp:281:20: note: node (constant) 0x1f2df5b0 (max_nunits=1, refcnt=1) vector(2) int
+grid_bfs.cpp:281:20: note: 	{ 0, 0 }
+grid_bfs.cpp:281:20: note: Cost model analysis: 
+grid_bfs.cpp:281:20: note: Cost model analysis for part in loop 0:
+  Vector cost: 5
+  Scalar cost: 2
+grid_bfs.cpp:281:20: missed: not vectorized: vectorization is not profitable.
+grid_bfs.cpp:281:20: note: ***** Re-trying analysis with vector mode VNx4QI
+grid_bfs.cpp:281:20: note: ***** Analysis failed with vector mode VNx4QI
+grid_bfs.cpp:281:20: note: ***** Re-trying analysis with vector mode V2SI
+grid_bfs.cpp:281:20: note: ***** Analysis succeeded with vector mode V2SI
+grid_bfs.cpp:281:20: note: SLPing BB part
+grid_bfs.cpp:281:20: note: Costing subgraph: 
+grid_bfs.cpp:281:20: note: node 0x1f2df528 (max_nunits=2, refcnt=1) vector(2) int
+grid_bfs.cpp:281:20: note: op template: <retval>.active_cells = 0;
+grid_bfs.cpp:281:20: note: 	stmt 0 <retval>.active_cells = 0;
+grid_bfs.cpp:281:20: note: 	stmt 1 <retval>.max_visits = 0;
+grid_bfs.cpp:281:20: note: 	children 0x1f2df5b0
+grid_bfs.cpp:281:20: note: node (constant) 0x1f2df5b0 (max_nunits=1, refcnt=1) vector(2) int
+grid_bfs.cpp:281:20: note: 	{ 0, 0 }
+grid_bfs.cpp:281:20: note: Cost model analysis: 
+grid_bfs.cpp:281:20: note: Cost model analysis for part in loop 0:
+  Vector cost: 5
+  Scalar cost: 2
+grid_bfs.cpp:281:20: missed: not vectorized: vectorization is not profitable.
+grid_bfs.cpp:281:20: note: ***** Re-trying analysis with vector mode VNx2QI
+grid_bfs.cpp:281:20: note: ***** Analysis failed with vector mode VNx2QI
+grid_bfs.cpp:281:20: missed: splitting region at dominance boundary bb13
+grid_bfs.cpp:281:20: note: ***** Analysis failed with vector mode VOID
+grid_bfs.cpp:281:20: missed: splitting region at loop 1 exit at bb14
+grid_bfs.cpp:284:27: note: ***** Analysis failed with vector mode VOID
+grid_bfs.cpp:284:27: missed: splitting region at dominance boundary bb3
+grid_bfs.cpp:284:27: note: ***** Analysis failed with vector mode V4SI
+grid_bfs.cpp:284:27: note: ***** Skipping vector mode V16QI, which would repeat the analysis for V4SI
+grid_bfs.cpp:284:27: missed: splitting region at dominance boundary bb20
+grid_bfs.cpp:284:27: note: ***** Analysis failed with vector mode VOID
+grid_bfs.cpp:310:56: note: ***** Analysis failed with vector mode V2DI
+grid_bfs.cpp:310:56: note: ***** The result for vector mode V16QI would be the same
+grid_bfs.cpp:310:56: note: ***** Re-trying analysis with vector mode VNx16QI
+grid_bfs.cpp:310:56: note: ***** Analysis failed with vector mode VNx16QI
+grid_bfs.cpp:310:56: note: ***** Re-trying analysis with vector mode V8QI
+grid_bfs.cpp:310:56: note: ***** Analysis failed with vector mode V8QI
+grid_bfs.cpp:310:56: note: ***** Re-trying analysis with vector mode VNx8QI
+grid_bfs.cpp:310:56: note: ***** Analysis failed with vector mode VNx8QI
+grid_bfs.cpp:310:56: note: ***** Re-trying analysis with vector mode V4HI
+grid_bfs.cpp:310:56: note: ***** Analysis failed with vector mode V4HI
+grid_bfs.cpp:310:56: note: ***** Re-trying analysis with vector mode VNx4QI
+grid_bfs.cpp:310:56: note: ***** Analysis failed with vector mode VNx4QI
+grid_bfs.cpp:310:56: note: ***** Re-trying analysis with vector mode V2SI
+grid_bfs.cpp:310:56: note: ***** Analysis failed with vector mode V2SI
+grid_bfs.cpp:310:56: note: ***** Re-trying analysis with vector mode VNx2QI
+grid_bfs.cpp:310:56: note: ***** Analysis failed with vector mode VNx2QI
+grid_bfs.cpp:326:38: note: ***** Analysis succeeded with vector mode V4SI
+grid_bfs.cpp:326:38: note: SLPing BB part
+grid_bfs.cpp:326:38: note: Costing subgraph: 
+grid_bfs.cpp:326:38: note: node 0x1f2df528 (max_nunits=2, refcnt=1) vector(2) int
+grid_bfs.cpp:326:38: note: op template: _4 = pass_24(D) * 13;
+grid_bfs.cpp:326:38: note: 	stmt 0 _4 = pass_24(D) * 13;
+grid_bfs.cpp:326:38: note: 	stmt 1 _1 = row_22(D) * 17;
+grid_bfs.cpp:326:38: note: 	children 0x1f2df5b0 0x1f2df638
+grid_bfs.cpp:326:38: note: node (external) 0x1f2df5b0 (max_nunits=1, refcnt=1) vector(2) int
+grid_bfs.cpp:326:38: note: 	{ pass_24(D), row_22(D) }
+grid_bfs.cpp:326:38: note: node (constant) 0x1f2df638 (max_nunits=1, refcnt=1) vector(2) int
+grid_bfs.cpp:326:38: note: 	{ 13, 17 }
+grid_bfs.cpp:326:38: note: Cost model analysis: 
+grid_bfs.cpp:326:38: note: Cost model analysis for part in loop 0:
+  Vector cost: 20
+  Scalar cost: 4
+grid_bfs.cpp:326:38: missed: not vectorized: vectorization is not profitable.
+grid_bfs.cpp:326:38: note: ***** The result for vector mode V16QI would be the same
+grid_bfs.cpp:326:38: note: ***** Re-trying analysis with vector mode VNx16QI
+grid_bfs.cpp:332:18: note: ***** Analysis failed with vector mode VNx16QI
+grid_bfs.cpp:332:18: note: ***** Re-trying analysis with vector mode V8QI
+grid_bfs.cpp:326:38: note: ***** Analysis succeeded with vector mode V8QI
+grid_bfs.cpp:326:38: note: SLPing BB part
+grid_bfs.cpp:326:38: note: Costing subgraph: 
+grid_bfs.cpp:326:38: note: node 0x1f2df5b0 (max_nunits=2, refcnt=1) vector(2) int
+grid_bfs.cpp:326:38: note: op template: _4 = pass_24(D) * 13;
+grid_bfs.cpp:326:38: note: 	stmt 0 _4 = pass_24(D) * 13;
+grid_bfs.cpp:326:38: note: 	stmt 1 _1 = row_22(D) * 17;
+grid_bfs.cpp:326:38: note: 	children 0x1f2df638 0x1f2df528
+grid_bfs.cpp:326:38: note: node (external) 0x1f2df638 (max_nunits=1, refcnt=1) vector(2) int
+grid_bfs.cpp:326:38: note: 	{ pass_24(D), row_22(D) }
+grid_bfs.cpp:326:38: note: node (constant) 0x1f2df528 (max_nunits=1, refcnt=1) vector(2) int
+grid_bfs.cpp:326:38: note: 	{ 13, 17 }
+grid_bfs.cpp:326:38: note: Cost model analysis: 
+grid_bfs.cpp:326:38: note: Cost model analysis for part in loop 0:
+  Vector cost: 20
+  Scalar cost: 4
+grid_bfs.cpp:326:38: missed: not vectorized: vectorization is not profitable.
+grid_bfs.cpp:326:38: note: ***** Re-trying analysis with vector mode VNx8QI
+grid_bfs.cpp:332:18: note: ***** Analysis failed with vector mode VNx8QI
+grid_bfs.cpp:332:18: note: ***** Re-trying analysis with vector mode V4HI
+grid_bfs.cpp:326:38: note: ***** Analysis succeeded with vector mode V4HI
+grid_bfs.cpp:326:38: note: SLPing BB part
+grid_bfs.cpp:326:38: note: Costing subgraph: 
+grid_bfs.cpp:326:38: note: node 0x1f2df638 (max_nunits=2, refcnt=1) vector(2) int
+grid_bfs.cpp:326:38: note: op template: _4 = pass_24(D) * 13;
+grid_bfs.cpp:326:38: note: 	stmt 0 _4 = pass_24(D) * 13;
+grid_bfs.cpp:326:38: note: 	stmt 1 _1 = row_22(D) * 17;
+grid_bfs.cpp:326:38: note: 	children 0x1f2df528 0x1f2df5b0
+grid_bfs.cpp:326:38: note: node (external) 0x1f2df528 (max_nunits=1, refcnt=1) vector(2) int
+grid_bfs.cpp:326:38: note: 	{ pass_24(D), row_22(D) }
+grid_bfs.cpp:326:38: note: node (constant) 0x1f2df5b0 (max_nunits=1, refcnt=1) vector(2) int
+grid_bfs.cpp:326:38: note: 	{ 13, 17 }
+grid_bfs.cpp:326:38: note: Cost model analysis: 
+grid_bfs.cpp:326:38: note: Cost model analysis for part in loop 0:
+  Vector cost: 20
+  Scalar cost: 4
+grid_bfs.cpp:326:38: missed: not vectorized: vectorization is not profitable.
+grid_bfs.cpp:326:38: note: ***** Re-trying analysis with vector mode VNx4QI
+grid_bfs.cpp:332:18: note: ***** Analysis failed with vector mode VNx4QI
+grid_bfs.cpp:332:18: note: ***** Re-trying analysis with vector mode V2SI
+grid_bfs.cpp:326:38: note: ***** Analysis succeeded with vector mode V2SI
+grid_bfs.cpp:326:38: note: SLPing BB part
+grid_bfs.cpp:326:38: note: Costing subgraph: 
+grid_bfs.cpp:326:38: note: node 0x1f2df528 (max_nunits=2, refcnt=1) vector(2) int
+grid_bfs.cpp:326:38: note: op template: _4 = pass_24(D) * 13;
+grid_bfs.cpp:326:38: note: 	stmt 0 _4 = pass_24(D) * 13;
+grid_bfs.cpp:326:38: note: 	stmt 1 _1 = row_22(D) * 17;
+grid_bfs.cpp:326:38: note: 	children 0x1f2df5b0 0x1f2df638
+grid_bfs.cpp:326:38: note: node (external) 0x1f2df5b0 (max_nunits=1, refcnt=1) vector(2) int
+grid_bfs.cpp:326:38: note: 	{ pass_24(D), row_22(D) }
+grid_bfs.cpp:326:38: note: node (constant) 0x1f2df638 (max_nunits=1, refcnt=1) vector(2) int
+grid_bfs.cpp:326:38: note: 	{ 13, 17 }
+grid_bfs.cpp:326:38: note: Cost model analysis: 
+grid_bfs.cpp:326:38: note: Cost model analysis for part in loop 0:
+  Vector cost: 20
+  Scalar cost: 4
+grid_bfs.cpp:326:38: missed: not vectorized: vectorization is not profitable.
+grid_bfs.cpp:326:38: note: ***** Re-trying analysis with vector mode VNx2QI
+grid_bfs.cpp:332:18: note: ***** Analysis failed with vector mode VNx2QI
+grid_bfs.cpp:376:22: missed: couldn't vectorize loop
+grid_bfs.cpp:382:39: missed: not vectorized: unsupported use in stmt.
+grid_bfs.cpp:382:53: note: ***** Analysis failed with vector mode V4SI
+grid_bfs.cpp:382:53: note: ***** The result for vector mode V16QI would be the same
+grid_bfs.cpp:382:53: note: ***** Re-trying analysis with vector mode VNx16QI
+grid_bfs.cpp:382:53: note: ***** Analysis failed with vector mode VNx16QI
+grid_bfs.cpp:382:53: note: ***** Re-trying analysis with vector mode V8QI
+grid_bfs.cpp:382:53: note: ***** Analysis failed with vector mode V8QI
+grid_bfs.cpp:382:53: note: ***** Re-trying analysis with vector mode VNx8QI
+grid_bfs.cpp:382:53: note: ***** Analysis failed with vector mode VNx8QI
+grid_bfs.cpp:382:53: note: ***** Re-trying analysis with vector mode V4HI
+grid_bfs.cpp:382:53: note: ***** Analysis failed with vector mode V4HI
+grid_bfs.cpp:382:53: note: ***** Re-trying analysis with vector mode VNx4QI
+grid_bfs.cpp:382:53: note: ***** Analysis failed with vector mode VNx4QI
+grid_bfs.cpp:382:53: note: ***** Re-trying analysis with vector mode V2SI
+grid_bfs.cpp:382:53: note: ***** Analysis failed with vector mode V2SI
+grid_bfs.cpp:382:53: note: ***** Re-trying analysis with vector mode VNx2QI
+grid_bfs.cpp:382:53: note: ***** Analysis failed with vector mode VNx2QI
+grid_bfs.cpp:356:29: missed: couldn't vectorize loop
+grid_bfs.cpp:356:29: missed: not vectorized: loop nest containing two or more consecutive inner loops cannot be vectorized
+grid_bfs.cpp:357:31: missed: couldn't vectorize loop
+grid_bfs.cpp:363:49: missed: not vectorized: complicated access pattern.
+grid_bfs.cpp:358:35: optimized: loop vectorized using variable length vectors
+grid_bfs.cpp:358:35: optimized:  loop versioned for vectorization because of possible aliasing
+grid_bfs.cpp:352:26: optimized: loop vectorized using variable length vectors
+grid_bfs.cpp:352:26: optimized:  loop versioned for vectorization because of possible aliasing
+grid_bfs.cpp:352:26: optimized: loop vectorized using variable length vectors
+grid_bfs.cpp:345:19: note: vectorized 2 loops in function.
+grid_bfs.cpp:345:19: missed: splitting region at control altering definition _202 = operator new (_72);
+/usr/include/c++/14/bits/new_allocator.h:151:48: missed: statement clobbers memory: _192 = operator new (_459);
+/usr/include/c++/14/bits/stl_algobase.h:452:23: missed: statement clobbers memory: __builtin_memmove (iftmp.49_185, prephitmp_370, _179);
+/usr/include/c++/14/bits/new_allocator.h:151:48: missed: not vectorized: statement can throw an exception: _202 = operator new (_72);
+/usr/include/c++/14/bits/new_allocator.h:151:48: note: ***** Analysis failed with vector mode V2DI
+/usr/include/c++/14/bits/new_allocator.h:151:48: note: ***** Skipping vector mode V16QI, which would repeat the analysis for V2DI
+/usr/include/c++/14/bits/new_allocator.h:151:48: missed: splitting region at dominance boundary bb15
+/usr/include/c++/14/bits/new_allocator.h:151:48: note: ***** Analysis failed with vector mode VOID
+/usr/include/c++/14/bits/new_allocator.h:151:48: missed: splitting region at dominance boundary bb20
+/usr/include/c++/14/bits/stl_algobase.h:452:23: note: ***** Analysis failed with vector mode V2DI
+/usr/include/c++/14/bits/stl_algobase.h:452:23: note: ***** Skipping vector mode V16QI, which would repeat the analysis for V2DI
+/usr/include/c++/14/bits/stl_algobase.h:452:23: missed: splitting region at dominance boundary bb18
+/usr/include/c++/14/bits/stl_vector.h:380:18: note: ***** Analysis failed with vector mode VOID
+/usr/include/c++/14/bits/stl_vector.h:380:18: missed: splitting region at dominance boundary bb16
+/usr/include/c++/14/bits/stl_vector.h:98:2: note: ***** Analysis failed with vector mode V4SI
+/usr/include/c++/14/bits/stl_vector.h:98:2: note: ***** Skipping vector mode V16QI, which would repeat the analysis for V4SI
+/usr/include/c++/14/bits/stl_vector.h:98:2: missed: splitting region at dominance boundary bb23
+/usr/include/c++/14/bits/stl_algobase.h:452:23: missed: statement clobbers memory: __builtin_memmove (_202, _155, _162);
+/usr/include/c++/14/bits/stl_vector.h:98:2: note: ***** Analysis failed with vector mode VOID
+/usr/include/c++/14/bits/stl_vector.h:98:2: missed: splitting region at control altering definition _216 = operator new (_273);
+/usr/include/c++/14/bits/new_allocator.h:151:48: missed: not vectorized: statement can throw an exception: _216 = operator new (_273);
+/usr/include/c++/14/bits/new_allocator.h:151:48: note: ***** Analysis failed with vector mode VOID
+/usr/include/c++/14/bits/new_allocator.h:151:48: missed: splitting region at dominance boundary bb25
+/usr/include/c++/14/bits/new_allocator.h:151:48: note: ***** Analysis failed with vector mode VOID
+/usr/include/c++/14/bits/new_allocator.h:151:48: missed: splitting region at dominance boundary bb29
+/usr/include/c++/14/bits/stl_algobase.h:952:11: missed: statement clobbers memory: __builtin_memset (__first_217, 0, _432);
+/usr/include/c++/14/bits/stl_algobase.h:952:11: note: ***** Analysis failed with vector mode V4SI
+/usr/include/c++/14/bits/stl_algobase.h:952:11: note: ***** Skipping vector mode V16QI, which would repeat the analysis for V4SI
+/usr/include/c++/14/bits/stl_algobase.h:952:11: missed: splitting region at dont-vectorize loop 9 entry at bb87
+grid_bfs.cpp:358:42: note: ***** Analysis failed with vector mode V4SI
+grid_bfs.cpp:358:42: note: ***** Skipping vector mode V16QI, which would repeat the analysis for V4SI
+grid_bfs.cpp:358:42: missed: splitting region at loop 8 exit at bb106
+grid_bfs.cpp:358:35: note: ***** Analysis failed with vector mode VOID
+grid_bfs.cpp:358:35: missed: splitting region at dominance boundary bb40
+grid_bfs.cpp:358:35: note: ***** Analysis failed with vector mode VOID
+grid_bfs.cpp:358:35: missed: splitting region at loop 2 exit at bb41
+grid_bfs.cpp:356:29: note: ***** Analysis failed with vector mode VOID
+grid_bfs.cpp:356:29: missed: splitting region at dominance boundary bb44
+/usr/include/c++/14/bits/stl_vector.h:369:35: note: ***** Analysis failed with vector mode VOID
+/usr/include/c++/14/bits/stl_vector.h:369:35: missed: splitting region at dont-vectorize loop 7 entry at bb80
+grid_bfs.cpp:376:22: note: ***** Analysis failed with vector mode V2DI
+grid_bfs.cpp:376:22: note: ***** Skipping vector mode V16QI, which would repeat the analysis for V2DI
+grid_bfs.cpp:376:22: missed: splitting region at dominance boundary bb45
+grid_bfs.cpp:376:22: note: ***** Analysis failed with vector mode V2DI
+grid_bfs.cpp:376:22: note: ***** Skipping vector mode V16QI, which would repeat the analysis for V2DI
+grid_bfs.cpp:376:22: missed: splitting region at dominance boundary bb51
+grid_bfs.cpp:376:22: note: ***** Analysis failed with vector mode VOID
+grid_bfs.cpp:376:22: missed: splitting region at dominance boundary bb21
+/usr/include/c++/14/bits/new_allocator.h:172:26: missed: statement clobbers memory: operator delete (iftmp.49_161, _272);
+/usr/include/c++/14/bits/new_allocator.h:172:26: missed: statement clobbers memory: operator delete (next$_M_start_27, _114);
+/usr/include/c++/14/bits/new_allocator.h:172:26: missed: statement clobbers memory: operator delete (current$_M_impl$D94227$_M_start_210, _110);
+grid_bfs.cpp:385:12: note: ***** Analysis failed with vector mode VOID
+grid_bfs.cpp:385:12: missed: splitting region at dominance boundary bb59
+/usr/include/c++/14/bits/stl_vector.h:1920:24: missed: not vectorized: statement can throw an exception: std::__throw_length_error ("cannot create std::vector larger than max_size()");
+/usr/include/c++/14/bits/stl_vector.h:1920:24: note: ***** Analysis failed with vector mode VOID
+/usr/include/c++/14/bits/stl_vector.h:1920:24: missed: splitting region at dominance boundary bb12
+/usr/include/c++/14/bits/new_allocator.h:172:26: missed: statement clobbers memory: operator delete (iftmp.49_317, _324);
+grid_bfs.cpp:345:19: missed: not vectorized: statement can throw an exception: resx 3
+/usr/include/c++/14/bits/stl_vector.h:738:7: note: ***** Analysis failed with vector mode VOID
+/usr/include/c++/14/bits/stl_vector.h:738:7: missed: splitting region at dominance boundary bb64
+/usr/include/c++/14/bits/new_allocator.h:139:41: missed: not vectorized: statement can throw an exception: std::__throw_bad_array_new_length ();
+/usr/include/c++/14/bits/new_allocator.h:139:41: note: ***** Analysis failed with vector mode VOID
+/usr/include/c++/14/bits/new_allocator.h:139:41: missed: splitting region at dominance boundary bb4
+/usr/include/c++/14/bits/new_allocator.h:172:26: missed: statement clobbers memory: operator delete (iftmp.49_185, _459);
+/usr/include/c++/14/bits/stl_vector.h:738:7: note: ***** Analysis failed with vector mode VOID
+/usr/include/c++/14/bits/new_allocator.h:139:41: missed: statement clobbers memory: std::__throw_bad_array_new_length ();
+/usr/include/c++/14/bits/new_allocator.h:139:41: note: ***** Analysis failed with vector mode VOID
+grid_bfs.cpp:394:30: missed: couldn't vectorize loop
+grid_bfs.cpp:394:30: missed: not vectorized: loop nest containing two or more consecutive inner loops cannot be vectorized
+/usr/include/c++/14/bits/stl_algobase.h:2152:22: optimized: loop vectorized using variable length vectors
+/usr/include/c++/14/bits/stl_algobase.h:2152:22: optimized: loop vectorized using variable length vectors
+grid_bfs.cpp:391:5: note: vectorized 1 loops in function.
+grid_bfs.cpp:391:5: missed: splitting region at dont-vectorize loop 5 entry at bb39
+/usr/include/c++/14/bits/stl_algobase.h:2152:22: note: ***** Analysis failed with vector mode V2DI
+/usr/include/c++/14/bits/stl_algobase.h:2152:22: note: ***** Skipping vector mode V16QI, which would repeat the analysis for V2DI
+/usr/include/c++/14/bits/stl_algobase.h:2152:22: missed: splitting region at dominance boundary bb26
+/usr/include/c++/14/bits/stl_algobase.h:2152:22: note: ***** Analysis failed with vector mode VOID
+/usr/include/c++/14/bits/stl_algobase.h:2152:22: missed: splitting region at dominance boundary bb8
+grid_bfs.cpp:395:20: note: ***** Analysis failed with vector mode VOID
+grid_bfs.cpp:395:20: missed: splitting region at loop 1 exit at bb17
+grid_bfs.cpp:394:30: note: ***** Analysis failed with vector mode VOID
+grid_bfs.cpp:394:30: missed: splitting region at dominance boundary bb9
+grid_bfs.cpp:394:30: note: ***** Analysis failed with vector mode VOID
+grid_bfs.cpp:398:12: note: ***** Analysis failed with vector mode VOID
+grid_bfs.cpp:394:30: missed: couldn't vectorize loop
+grid_bfs.cpp:394:30: missed: not vectorized: loop nest containing two or more consecutive inner loops cannot be vectorized
+/usr/include/c++/14/bits/stl_algobase.h:2152:22: optimized: loop vectorized using variable length vectors
+/usr/include/c++/14/bits/stl_algobase.h:2152:22: optimized: loop vectorized using variable length vectors
+grid_bfs.cpp:404:6: note: vectorized 1 loops in function.
+grid_bfs.cpp:404:6: missed: splitting region at dont-vectorize loop 5 entry at bb90
+/usr/include/c++/14/bits/stl_algobase.h:2152:22: note: ***** Analysis failed with vector mode V2DI
+/usr/include/c++/14/bits/stl_algobase.h:2152:22: note: ***** Skipping vector mode V16QI, which would repeat the analysis for V2DI
+/usr/include/c++/14/bits/stl_algobase.h:2152:22: missed: splitting region at dominance boundary bb77
+/usr/include/c++/14/bits/stl_algobase.h:2152:22: note: ***** Analysis failed with vector mode VOID
+/usr/include/c++/14/bits/stl_algobase.h:2152:22: missed: splitting region at dominance boundary bb8
+grid_bfs.cpp:395:20: note: ***** Analysis failed with vector mode VOID
+grid_bfs.cpp:395:20: missed: splitting region at loop 1 exit at bb67
+grid_bfs.cpp:394:30: note: ***** Analysis failed with vector mode VOID
+grid_bfs.cpp:394:30: missed: splitting region at dominance boundary bb9
+grid_bfs.cpp:394:30: note: ***** Analysis failed with vector mode VOID
+/usr/include/c++/14/ostream:673:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (&cout, "grid = ", 7);
+grid_bfs.cpp:419:34: missed: statement clobbers memory: _26 = std::basic_ostream<char>::operator<< (&cout, rows_20);
+/usr/include/c++/14/ostream:673:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_26, " x ", 3);
+grid_bfs.cpp:419:51: missed: statement clobbers memory: _28 = std::basic_ostream<char>::operator<< (_26, cols_22);
+/usr/include/c++/14/ostream:580:16: missed: statement clobbers memory: std::basic_ostream<char>::put (_28, 10);
+/usr/include/c++/14/ostream:579:25: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_28, &__c, 1);
+/usr/include/c++/14/ostream:673:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (&cout, "open_cells = ", 13);
+grid_bfs.cpp:420:46: missed: statement clobbers memory: _31 = std::basic_ostream<char>::operator<< (&cout, open_cells_182);
+/usr/include/c++/14/ostream:580:16: missed: statement clobbers memory: std::basic_ostream<char>::put (_31, 10);
+/usr/include/c++/14/ostream:579:25: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_31, &__c, 1);
+/usr/include/c++/14/ostream:673:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (&cout, "requests = ", 11);
+grid_bfs.cpp:421:50: missed: statement clobbers memory: _34 = std::basic_ostream<char>::operator<< (&cout, _5);
+/usr/include/c++/14/ostream:580:16: missed: statement clobbers memory: std::basic_ostream<char>::put (_34, 10);
+/usr/include/c++/14/ostream:579:25: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_34, &__c, 1);
+/usr/include/c++/14/ostream:673:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (&cout, "reachable = ", 12);
+grid_bfs.cpp:422:52: missed: statement clobbers memory: _37 = std::basic_ostream<char>::operator<< (&cout, _6);
+/usr/include/c++/14/ostream:580:16: missed: statement clobbers memory: std::basic_ostream<char>::put (_37, 10);
+/usr/include/c++/14/ostream:579:25: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_37, &__c, 1);
+/usr/include/c++/14/ostream:673:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (&cout, "unreachable = ", 14);
+grid_bfs.cpp:423:56: missed: statement clobbers memory: _40 = std::basic_ostream<char>::operator<< (&cout, _7);
+/usr/include/c++/14/ostream:580:16: missed: statement clobbers memory: std::basic_ostream<char>::put (_40, 10);
+/usr/include/c++/14/ostream:579:25: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_40, &__c, 1);
+/usr/include/c++/14/ostream:673:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (&cout, "average_distance = ", 19);
+/usr/include/c++/14/ostream:229:25: missed: statement clobbers memory: _88 = std::basic_ostream<char>::_M_insert<double> (&cout, average_distance_16);
+/usr/include/c++/14/ostream:580:16: missed: statement clobbers memory: std::basic_ostream<char>::put (_88, 10);
+/usr/include/c++/14/ostream:579:25: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_88, &__c, 1);
+/usr/include/c++/14/ostream:673:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (&cout, "route_label_checksum = ", 23);
+/usr/include/c++/14/ostream:179:25: missed: statement clobbers memory: _87 = std::basic_ostream<char>::_M_insert<long unsigned int> (&cout, _8);
+/usr/include/c++/14/ostream:580:16: missed: statement clobbers memory: std::basic_ostream<char>::put (_87, 10);
+/usr/include/c++/14/ostream:579:25: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_87, &__c, 1);
+/usr/include/c++/14/ostream:673:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (&cout, "heatmap_total_visits = ", 23);
+/usr/include/c++/14/ostream:210:25: missed: statement clobbers memory: _86 = std::basic_ostream<char>::_M_insert<long long int> (&cout, _9);
+/usr/include/c++/14/ostream:580:16: missed: statement clobbers memory: std::basic_ostream<char>::put (_86, 10);
+/usr/include/c++/14/ostream:579:25: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_86, &__c, 1);
+/usr/include/c++/14/ostream:673:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (&cout, "heatmap_active_cells = ", 23);
+grid_bfs.cpp:427:74: missed: statement clobbers memory: _47 = std::basic_ostream<char>::operator<< (&cout, _10);
+/usr/include/c++/14/ostream:580:16: missed: statement clobbers memory: std::basic_ostream<char>::put (_47, 10);
+/usr/include/c++/14/ostream:579:25: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_47, &__c, 1);
+/usr/include/c++/14/ostream:673:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (&cout, "heatmap_max_visits = ", 21);
+grid_bfs.cpp:428:70: missed: statement clobbers memory: _50 = std::basic_ostream<char>::operator<< (&cout, _11);
+/usr/include/c++/14/ostream:580:16: missed: statement clobbers memory: std::basic_ostream<char>::put (_50, 10);
+/usr/include/c++/14/ostream:579:25: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_50, &__c, 1);
+/usr/include/c++/14/ostream:673:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (&cout, "heatmap_threshold_checksum = ", 29);
+/usr/include/c++/14/ostream:179:25: missed: statement clobbers memory: _85 = std::basic_ostream<char>::_M_insert<long unsigned int> (&cout, _12);
+/usr/include/c++/14/ostream:580:16: missed: statement clobbers memory: std::basic_ostream<char>::put (_85, 10);
+/usr/include/c++/14/ostream:579:25: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_85, &__c, 1);
+/usr/include/c++/14/ostream:673:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (&cout, "congestion_passes = ", 20);
+grid_bfs.cpp:430:60: missed: statement clobbers memory: _55 = std::basic_ostream<char>::operator<< (&cout, congestion_passes_53(D));
+/usr/include/c++/14/ostream:580:16: missed: statement clobbers memory: std::basic_ostream<char>::put (_55, 10);
+/usr/include/c++/14/ostream:579:25: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_55, &__c, 1);
+/usr/include/c++/14/ostream:673:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (&cout, "congestion_total_pressure = ", 28);
+/usr/include/c++/14/ostream:210:25: missed: statement clobbers memory: _84 = std::basic_ostream<char>::_M_insert<long long int> (&cout, _13);
+/usr/include/c++/14/ostream:580:16: missed: statement clobbers memory: std::basic_ostream<char>::put (_84, 10);
+/usr/include/c++/14/ostream:579:25: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_84, &__c, 1);
+/usr/include/c++/14/ostream:673:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (&cout, "congestion_max_pressure = ", 26);
+grid_bfs.cpp:432:80: missed: statement clobbers memory: _60 = std::basic_ostream<char>::operator<< (&cout, _14);
+/usr/include/c++/14/ostream:580:16: missed: statement clobbers memory: std::basic_ostream<char>::put (_60, 10);
+/usr/include/c++/14/ostream:579:25: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_60, &__c, 1);
+/usr/include/c++/14/ostream:673:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (&cout, "congestion_pressure_checksum = ", 31);
+/usr/include/c++/14/ostream:179:25: missed: statement clobbers memory: _83 = std::basic_ostream<char>::_M_insert<long unsigned int> (&cout, _15);
+/usr/include/c++/14/ostream:580:16: missed: statement clobbers memory: std::basic_ostream<char>::put (_83, 10);
+/usr/include/c++/14/ostream:579:25: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_83, &__c, 1);
+/usr/include/c++/14/ostream:673:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (&cout, "time_sec = ", 11);
+/usr/include/c++/14/ostream:229:25: missed: statement clobbers memory: _82 = std::basic_ostream<char>::_M_insert<double> (&cout, seconds_63(D));
+/usr/include/c++/14/ostream:580:16: missed: statement clobbers memory: std::basic_ostream<char>::put (_82, 10);
+/usr/include/c++/14/ostream:579:25: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_82, &__c, 1);
+grid_bfs.cpp:435:1: note: ***** Analysis failed with vector mode V4SI
+grid_bfs.cpp:435:1: note: ***** Skipping vector mode V16QI, which would repeat the analysis for V4SI
+/usr/include/c++/14/bits/stl_construct.h:162:19: missed: couldn't vectorize loop
+/usr/include/c++/14/bits/stl_construct.h:162:19: missed: not vectorized: unsupported control flow in loop.
+/usr/include/c++/14/bits/stl_vector.h:733:7: note: vectorized 0 loops in function.
+/usr/include/c++/14/bits/new_allocator.h:172:26: missed: statement clobbers memory: operator delete (_17, _20);
+/usr/include/c++/14/bits/new_allocator.h:172:26: missed: statement clobbers memory: operator delete (prephitmp_29, _11);
+/usr/include/c++/14/bits/basic_string.h:272:29: note: ***** Analysis failed with vector mode V2DI
+/usr/include/c++/14/bits/basic_string.h:272:29: note: ***** Skipping vector mode V16QI, which would repeat the analysis for V2DI
+/usr/include/c++/14/bits/stl_construct.h:162:19: missed: couldn't vectorize loop
+/usr/include/c++/14/bits/stl_construct.h:162:19: missed: not vectorized: unsupported control flow in loop.
+/usr/include/c++/14/bits/stl_uninitialized.h:119:19: missed: couldn't vectorize loop
+/usr/include/c++/14/bits/stl_uninitialized.h:119:19: missed: not vectorized: unsupported control flow in loop.
+grid_bfs.cpp:440:6: note: vectorized 0 loops in function.
+grid_bfs.cpp:440:6: missed: splitting region at control altering definition _83 = operator new (160);
+/usr/include/c++/14/bits/new_allocator.h:151:48: missed: not vectorized: statement can throw an exception: _83 = operator new (160);
+/usr/include/c++/14/bits/new_allocator.h:151:48: note: ***** Analysis failed with vector mode VOID
+/usr/include/c++/14/bits/new_allocator.h:151:48: missed: splitting region at dominance boundary bb3
+/usr/include/c++/14/bits/stl_vector.h:370:7: note: ***** Analysis failed with vector mode VOID
+/usr/include/c++/14/bits/stl_vector.h:370:7: missed: splitting region at control altering definition _113 = operator new (_112);
+/usr/include/c++/14/bits/char_traits.h:427:49: missed: statement clobbers memory: __builtin_memcpy (_49, ".....", 5);
+/usr/include/c++/14/bits/char_traits.h:427:49: missed: statement clobbers memory: __builtin_memcpy (_167, ".###.", 5);
+/usr/include/c++/14/bits/char_traits.h:427:49: missed: statement clobbers memory: __builtin_memcpy (_222, "...#.", 5);
+/usr/include/c++/14/bits/char_traits.h:427:49: missed: statement clobbers memory: __builtin_memcpy (_256, ".#...", 5);
+/usr/include/c++/14/bits/char_traits.h:427:49: missed: statement clobbers memory: __builtin_memcpy (_92, ".....", 5);
+/usr/include/c++/14/bits/new_allocator.h:151:48: missed: not vectorized: statement can throw an exception: _113 = operator new (_112);
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: ***** Analysis succeeded with vector mode V2DI
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: SLPing BB part
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: Costing subgraph: 
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: node 0x1f2bbcb8 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: op template: MEM[(struct _Vector_impl_data *)&heatmap]._M_finish = 0B;
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: 	stmt 0 MEM[(struct _Vector_impl_data *)&heatmap]._M_finish = 0B;
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: 	stmt 1 MEM[(struct _Vector_impl_data *)&heatmap]._M_end_of_storage = 0B;
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: 	children 0x1f2bbd40
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: node (constant) 0x1f2bbd40 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: 	{ 0B, 0B }
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: Cost model analysis: 
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: Cost model analysis for part in loop 0:
+  Vector cost: 5
+  Scalar cost: 2
+/usr/include/c++/14/bits/stl_vector.h:99:16: missed: not vectorized: vectorization is not profitable.
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: ***** The result for vector mode V16QI would be the same
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: ***** Re-trying analysis with vector mode VNx16QI
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: ***** Analysis failed with vector mode VNx16QI
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: ***** Re-trying analysis with vector mode V8QI
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: ***** Analysis succeeded with vector mode V8QI
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: SLPing BB part
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: Costing subgraph: 
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: node 0x1f2bbcb8 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: op template: MEM[(struct _Vector_impl_data *)&heatmap]._M_finish = 0B;
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: 	stmt 0 MEM[(struct _Vector_impl_data *)&heatmap]._M_finish = 0B;
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: 	stmt 1 MEM[(struct _Vector_impl_data *)&heatmap]._M_end_of_storage = 0B;
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: 	children 0x1f2bbd40
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: node (constant) 0x1f2bbd40 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: 	{ 0B, 0B }
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: Cost model analysis: 
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: Cost model analysis for part in loop 0:
+  Vector cost: 5
+  Scalar cost: 2
+/usr/include/c++/14/bits/stl_vector.h:99:16: missed: not vectorized: vectorization is not profitable.
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: ***** Re-trying analysis with vector mode VNx8QI
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: ***** Analysis failed with vector mode VNx8QI
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: ***** Re-trying analysis with vector mode V4HI
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: ***** Analysis succeeded with vector mode V4HI
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: SLPing BB part
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: Costing subgraph: 
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: node 0x1f2bbcb8 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: op template: MEM[(struct _Vector_impl_data *)&heatmap]._M_finish = 0B;
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: 	stmt 0 MEM[(struct _Vector_impl_data *)&heatmap]._M_finish = 0B;
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: 	stmt 1 MEM[(struct _Vector_impl_data *)&heatmap]._M_end_of_storage = 0B;
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: 	children 0x1f2bbd40
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: node (constant) 0x1f2bbd40 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: 	{ 0B, 0B }
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: Cost model analysis: 
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: Cost model analysis for part in loop 0:
+  Vector cost: 5
+  Scalar cost: 2
+/usr/include/c++/14/bits/stl_vector.h:99:16: missed: not vectorized: vectorization is not profitable.
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: ***** Re-trying analysis with vector mode VNx4QI
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: ***** Analysis failed with vector mode VNx4QI
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: ***** Re-trying analysis with vector mode V2SI
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: ***** Analysis succeeded with vector mode V2SI
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: SLPing BB part
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: Costing subgraph: 
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: node 0x1f2bbcb8 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: op template: MEM[(struct _Vector_impl_data *)&heatmap]._M_finish = 0B;
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: 	stmt 0 MEM[(struct _Vector_impl_data *)&heatmap]._M_finish = 0B;
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: 	stmt 1 MEM[(struct _Vector_impl_data *)&heatmap]._M_end_of_storage = 0B;
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: 	children 0x1f2bbd40
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: node (constant) 0x1f2bbd40 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: 	{ 0B, 0B }
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: Cost model analysis: 
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: Cost model analysis for part in loop 0:
+  Vector cost: 5
+  Scalar cost: 2
+/usr/include/c++/14/bits/stl_vector.h:99:16: missed: not vectorized: vectorization is not profitable.
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: ***** Re-trying analysis with vector mode VNx2QI
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: ***** Analysis failed with vector mode VNx2QI
+/usr/include/c++/14/bits/stl_vector.h:99:16: missed: splitting region at dominance boundary bb32
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: ***** Analysis failed with vector mode VOID
+/usr/include/c++/14/bits/stl_vector.h:99:16: missed: splitting region at dominance boundary bb34
+/usr/include/c++/14/bits/stl_algobase.h:952:11: missed: statement clobbers memory: __builtin_memset (_113, 0, _112);
+/usr/include/c++/14/bits/stl_algobase.h:952:11: note: ***** Analysis failed with vector mode V2DI
+/usr/include/c++/14/bits/stl_algobase.h:952:11: note: ***** Skipping vector mode V16QI, which would repeat the analysis for V2DI
+/usr/include/c++/14/bits/stl_algobase.h:952:11: missed: splitting region at control altering definition _31 = shortest_path_bfs (&grid, &reachable, &heatmap);
+grid_bfs.cpp:453:29: missed: not vectorized: statement can throw an exception: _31 = shortest_path_bfs (&grid, &reachable, &heatmap);
+grid_bfs.cpp:451:18: note: ***** Analysis succeeded with vector mode V2DI
+grid_bfs.cpp:451:18: note: SLPing BB part
+grid_bfs.cpp:450:18: note: Costing subgraph: 
+grid_bfs.cpp:450:18: note: node 0x1f2bbcb8 (max_nunits=4, refcnt=1) vector(4) int
+grid_bfs.cpp:450:18: note: op template: reachable.start.row = 0;
+grid_bfs.cpp:450:18: note: 	stmt 0 reachable.start.row = 0;
+grid_bfs.cpp:450:18: note: 	stmt 1 reachable.start.col = 0;
+grid_bfs.cpp:450:18: note: 	stmt 2 reachable.goal.row = 4;
+grid_bfs.cpp:450:18: note: 	stmt 3 reachable.goal.col = 4;
+grid_bfs.cpp:450:18: note: 	children 0x1f2bbd40
+grid_bfs.cpp:450:18: note: node (constant) 0x1f2bbd40 (max_nunits=1, refcnt=1) vector(4) int
+grid_bfs.cpp:450:18: note: 	{ 0, 0, 4, 4 }
+grid_bfs.cpp:450:18: note: Cost model analysis: 
+grid_bfs.cpp:450:18: note: Cost model analysis for part in loop 0:
+  Vector cost: 5
+  Scalar cost: 4
+grid_bfs.cpp:450:18: missed: not vectorized: vectorization is not profitable.
+grid_bfs.cpp:451:18: note: Costing subgraph: 
+grid_bfs.cpp:451:18: note: node 0x1f2bbdc8 (max_nunits=4, refcnt=1) vector(4) int
+grid_bfs.cpp:451:18: note: op template: unreachable.start.row = 0;
+grid_bfs.cpp:451:18: note: 	stmt 0 unreachable.start.row = 0;
+grid_bfs.cpp:451:18: note: 	stmt 1 unreachable.start.col = 0;
+grid_bfs.cpp:451:18: note: 	stmt 2 unreachable.goal.row = 1;
+grid_bfs.cpp:451:18: note: 	stmt 3 unreachable.goal.col = 1;
+grid_bfs.cpp:451:18: note: 	children 0x1f2bbe50
+grid_bfs.cpp:451:18: note: node (constant) 0x1f2bbe50 (max_nunits=1, refcnt=1) vector(4) int
+grid_bfs.cpp:451:18: note: 	{ 0, 0, 1, 1 }
+grid_bfs.cpp:451:18: note: Cost model analysis: 
+grid_bfs.cpp:451:18: note: Cost model analysis for part in loop 0:
+  Vector cost: 5
+  Scalar cost: 4
+grid_bfs.cpp:451:18: missed: not vectorized: vectorization is not profitable.
+grid_bfs.cpp:451:18: note: ***** The result for vector mode V16QI would be the same
+grid_bfs.cpp:451:18: note: ***** Re-trying analysis with vector mode VNx16QI
+grid_bfs.cpp:451:18: note: ***** Analysis failed with vector mode VNx16QI
+grid_bfs.cpp:451:18: note: ***** Re-trying analysis with vector mode V8QI
+grid_bfs.cpp:451:18: note: ***** Analysis succeeded with vector mode V8QI
+grid_bfs.cpp:451:18: note: SLPing BB part
+grid_bfs.cpp:450:18: note: Costing subgraph: 
+grid_bfs.cpp:450:18: note: node 0x1f2bbdc8 (max_nunits=4, refcnt=1) vector(4) int
+grid_bfs.cpp:450:18: note: op template: reachable.start.row = 0;
+grid_bfs.cpp:450:18: note: 	stmt 0 reachable.start.row = 0;
+grid_bfs.cpp:450:18: note: 	stmt 1 reachable.start.col = 0;
+grid_bfs.cpp:450:18: note: 	stmt 2 reachable.goal.row = 4;
+grid_bfs.cpp:450:18: note: 	stmt 3 reachable.goal.col = 4;
+grid_bfs.cpp:450:18: note: 	children 0x1f2bbe50
+grid_bfs.cpp:450:18: note: node (constant) 0x1f2bbe50 (max_nunits=1, refcnt=1) vector(4) int
+grid_bfs.cpp:450:18: note: 	{ 0, 0, 4, 4 }
+grid_bfs.cpp:450:18: note: Cost model analysis: 
+grid_bfs.cpp:450:18: note: Cost model analysis for part in loop 0:
+  Vector cost: 5
+  Scalar cost: 4
+grid_bfs.cpp:450:18: missed: not vectorized: vectorization is not profitable.
+grid_bfs.cpp:451:18: note: Costing subgraph: 
+grid_bfs.cpp:451:18: note: node 0x1f2bbcb8 (max_nunits=4, refcnt=1) vector(4) int
+grid_bfs.cpp:451:18: note: op template: unreachable.start.row = 0;
+grid_bfs.cpp:451:18: note: 	stmt 0 unreachable.start.row = 0;
+grid_bfs.cpp:451:18: note: 	stmt 1 unreachable.start.col = 0;
+grid_bfs.cpp:451:18: note: 	stmt 2 unreachable.goal.row = 1;
+grid_bfs.cpp:451:18: note: 	stmt 3 unreachable.goal.col = 1;
+grid_bfs.cpp:451:18: note: 	children 0x1f2bbd40
+grid_bfs.cpp:451:18: note: node (constant) 0x1f2bbd40 (max_nunits=1, refcnt=1) vector(4) int
+grid_bfs.cpp:451:18: note: 	{ 0, 0, 1, 1 }
+grid_bfs.cpp:451:18: note: Cost model analysis: 
+grid_bfs.cpp:451:18: note: Cost model analysis for part in loop 0:
+  Vector cost: 5
+  Scalar cost: 4
+grid_bfs.cpp:451:18: missed: not vectorized: vectorization is not profitable.
+grid_bfs.cpp:451:18: note: ***** Re-trying analysis with vector mode VNx8QI
+grid_bfs.cpp:451:18: note: ***** Analysis failed with vector mode VNx8QI
+grid_bfs.cpp:451:18: note: ***** Re-trying analysis with vector mode V4HI
+grid_bfs.cpp:451:18: note: ***** Analysis succeeded with vector mode V4HI
+grid_bfs.cpp:451:18: note: SLPing BB part
+grid_bfs.cpp:450:18: note: Costing subgraph: 
+grid_bfs.cpp:450:18: note: node 0x1f2bbcb8 (max_nunits=4, refcnt=1) vector(4) int
+grid_bfs.cpp:450:18: note: op template: reachable.start.row = 0;
+grid_bfs.cpp:450:18: note: 	stmt 0 reachable.start.row = 0;
+grid_bfs.cpp:450:18: note: 	stmt 1 reachable.start.col = 0;
+grid_bfs.cpp:450:18: note: 	stmt 2 reachable.goal.row = 4;
+grid_bfs.cpp:450:18: note: 	stmt 3 reachable.goal.col = 4;
+grid_bfs.cpp:450:18: note: 	children 0x1f2bbd40
+grid_bfs.cpp:450:18: note: node (constant) 0x1f2bbd40 (max_nunits=1, refcnt=1) vector(4) int
+grid_bfs.cpp:450:18: note: 	{ 0, 0, 4, 4 }
+grid_bfs.cpp:450:18: note: Cost model analysis: 
+grid_bfs.cpp:450:18: note: Cost model analysis for part in loop 0:
+  Vector cost: 5
+  Scalar cost: 4
+grid_bfs.cpp:450:18: missed: not vectorized: vectorization is not profitable.
+grid_bfs.cpp:451:18: note: Costing subgraph: 
+grid_bfs.cpp:451:18: note: node 0x1f2bbdc8 (max_nunits=4, refcnt=1) vector(4) int
+grid_bfs.cpp:451:18: note: op template: unreachable.start.row = 0;
+grid_bfs.cpp:451:18: note: 	stmt 0 unreachable.start.row = 0;
+grid_bfs.cpp:451:18: note: 	stmt 1 unreachable.start.col = 0;
+grid_bfs.cpp:451:18: note: 	stmt 2 unreachable.goal.row = 1;
+grid_bfs.cpp:451:18: note: 	stmt 3 unreachable.goal.col = 1;
+grid_bfs.cpp:451:18: note: 	children 0x1f2bbe50
+grid_bfs.cpp:451:18: note: node (constant) 0x1f2bbe50 (max_nunits=1, refcnt=1) vector(4) int
+grid_bfs.cpp:451:18: note: 	{ 0, 0, 1, 1 }
+grid_bfs.cpp:451:18: note: Cost model analysis: 
+grid_bfs.cpp:451:18: note: Cost model analysis for part in loop 0:
+  Vector cost: 5
+  Scalar cost: 4
+grid_bfs.cpp:451:18: missed: not vectorized: vectorization is not profitable.
+grid_bfs.cpp:451:18: note: ***** Re-trying analysis with vector mode VNx4QI
+grid_bfs.cpp:451:18: note: ***** Analysis failed with vector mode VNx4QI
+grid_bfs.cpp:451:18: note: ***** Re-trying analysis with vector mode V2SI
+grid_bfs.cpp:451:18: note: ***** Analysis succeeded with vector mode V2SI
+grid_bfs.cpp:451:18: note: SLPing BB part
+grid_bfs.cpp:450:18: note: Costing subgraph: 
+grid_bfs.cpp:450:18: note: node 0x1f2bbdc8 (max_nunits=2, refcnt=1) vector(2) int
+grid_bfs.cpp:450:18: note: op template: reachable.start.row = 0;
+grid_bfs.cpp:450:18: note: 	stmt 0 reachable.start.row = 0;
+grid_bfs.cpp:450:18: note: 	stmt 1 reachable.start.col = 0;
+grid_bfs.cpp:450:18: note: 	stmt 2 reachable.goal.row = 4;
+grid_bfs.cpp:450:18: note: 	stmt 3 reachable.goal.col = 4;
+grid_bfs.cpp:450:18: note: 	children 0x1f2bbe50
+grid_bfs.cpp:450:18: note: node (constant) 0x1f2bbe50 (max_nunits=1, refcnt=1) vector(2) int
+grid_bfs.cpp:450:18: note: 	{ 0, 0, 4, 4 }
+grid_bfs.cpp:450:18: note: Cost model analysis: 
+grid_bfs.cpp:450:18: note: Cost model analysis for part in loop 0:
+  Vector cost: 10
+  Scalar cost: 4
+grid_bfs.cpp:450:18: missed: not vectorized: vectorization is not profitable.
+grid_bfs.cpp:451:18: note: Costing subgraph: 
+grid_bfs.cpp:451:18: note: node 0x1f2bbcb8 (max_nunits=2, refcnt=1) vector(2) int
+grid_bfs.cpp:451:18: note: op template: unreachable.start.row = 0;
+grid_bfs.cpp:451:18: note: 	stmt 0 unreachable.start.row = 0;
+grid_bfs.cpp:451:18: note: 	stmt 1 unreachable.start.col = 0;
+grid_bfs.cpp:451:18: note: 	stmt 2 unreachable.goal.row = 1;
+grid_bfs.cpp:451:18: note: 	stmt 3 unreachable.goal.col = 1;
+grid_bfs.cpp:451:18: note: 	children 0x1f2bbd40
+grid_bfs.cpp:451:18: note: node (constant) 0x1f2bbd40 (max_nunits=1, refcnt=1) vector(2) int
+grid_bfs.cpp:451:18: note: 	{ 0, 0, 1, 1 }
+grid_bfs.cpp:451:18: note: Cost model analysis: 
+grid_bfs.cpp:451:18: note: Cost model analysis for part in loop 0:
+  Vector cost: 10
+  Scalar cost: 4
+grid_bfs.cpp:451:18: missed: not vectorized: vectorization is not profitable.
+grid_bfs.cpp:451:18: note: ***** Re-trying analysis with vector mode VNx2QI
+grid_bfs.cpp:451:18: note: ***** Analysis failed with vector mode VNx2QI
+grid_bfs.cpp:451:18: missed: splitting region at control altering definition _33 = shortest_path_bfs (&grid, &unreachable, &heatmap);
+grid_bfs.cpp:454:29: missed: not vectorized: statement can throw an exception: _33 = shortest_path_bfs (&grid, &unreachable, &heatmap);
+grid_bfs.cpp:454:29: note: ***** Analysis failed with vector mode VOID
+grid_bfs.cpp:454:29: missed: splitting region at dominance boundary bb39
+grid_bfs.cpp:453:61: note: ***** Analysis failed with vector mode VOID
+grid_bfs.cpp:453:61: missed: splitting region at dominance boundary bb37
+/usr/include/c++/14/bits/new_allocator.h:172:26: missed: statement clobbers memory: operator delete (iftmp.49_47, _48);
+/usr/include/c++/14/bits/new_allocator.h:172:26: missed: statement clobbers memory: operator delete (_122, _125);
+/usr/include/c++/14/bits/new_allocator.h:172:26: missed: statement clobbers memory: operator delete (_83, 160);
+/usr/include/c++/14/bits/basic_string.h:272:29: note: ***** Analysis failed with vector mode V2DI
+/usr/include/c++/14/bits/basic_string.h:272:29: note: ***** Skipping vector mode V16QI, which would repeat the analysis for V2DI
+/usr/include/c++/14/bits/basic_string.h:272:29: missed: splitting region at dominance boundary bb48
+/usr/include/c++/14/bits/basic_string.h:272:29: note: ***** Analysis failed with vector mode VOID
+/usr/include/c++/14/bits/basic_string.h:272:29: missed: splitting region at dominance boundary bb49
+/usr/include/c++/14/bits/basic_string.h:272:29: note: ***** Analysis failed with vector mode VOID
+/usr/include/c++/14/bits/basic_string.h:272:29: missed: splitting region at dominance boundary bb27
+/usr/include/c++/14/bits/new_allocator.h:172:26: missed: statement clobbers memory: operator delete (iftmp.49_47, _48);
+grid_bfs.cpp:440:6: missed: not vectorized: statement can throw an exception: resx 13
+/usr/include/c++/14/bits/stl_vector.h:738:7: note: ***** Analysis failed with vector mode VOID
+/usr/include/c++/14/bits/stl_vector.h:738:7: missed: splitting region at dominance boundary bb54
+/usr/include/c++/14/bits/stl_vector.h:1920:24: missed: not vectorized: statement can throw an exception: std::__throw_length_error ("cannot create std::vector larger than max_size()");
+/usr/include/c++/14/bits/stl_vector.h:1920:24: note: ***** Analysis failed with vector mode VOID
+grid_bfs.cpp:455:1: missed: statement clobbers memory: std::vector<std::__cxx11::basic_string<char> >::~vector (&grid);
+grid_bfs.cpp:455:1: note: ***** Analysis failed with vector mode V2DI
+grid_bfs.cpp:455:1: note: ***** Skipping vector mode V16QI, which would repeat the analysis for V2DI
+/usr/include/c++/14/bits/char_traits.h:391:25: missed: statement clobbers memory: _7 = __builtin_strlen (__rhs_4(D));
+/usr/include/c++/14/bits/char_traits.h:381:25: missed: statement clobbers memory: _5 = __builtin_memcmp (_8, __rhs_4(D), _6);
+/usr/include/c++/14/bits/basic_string.h:3776:63: note: ***** Analysis failed with vector mode V2DI
+/usr/include/c++/14/bits/basic_string.h:3776:63: note: ***** Skipping vector mode V16QI, which would repeat the analysis for V2DI
+/usr/include/c++/14/bits/random.tcc:412:42: optimized: loop vectorized using 16 byte vectors
+/usr/include/c++/14/bits/random.tcc:404:32: optimized: loop vectorized using 16 byte vectors
+/usr/include/c++/14/bits/random.tcc:397:5: note: vectorized 2 loops in function.
+/usr/include/c++/14/bits/random.tcc:420:17: note: ***** Analysis failed with vector mode V2DI
+/usr/include/c++/14/bits/random.tcc:420:17: note: ***** The result for vector mode V16QI would be the same
+/usr/include/c++/14/bits/random.tcc:420:17: note: ***** Re-trying analysis with vector mode VNx16QI
+/usr/include/c++/14/bits/random.tcc:422:38: note: ***** Analysis failed with vector mode VNx16QI
+/usr/include/c++/14/bits/random.tcc:422:38: note: ***** Re-trying analysis with vector mode V8QI
+/usr/include/c++/14/bits/random.tcc:420:17: note: ***** Analysis failed with vector mode V8QI
+/usr/include/c++/14/bits/random.tcc:420:17: note: ***** Re-trying analysis with vector mode VNx8QI
+/usr/include/c++/14/bits/random.tcc:422:38: note: ***** Analysis failed with vector mode VNx8QI
+/usr/include/c++/14/bits/random.tcc:422:38: note: ***** Re-trying analysis with vector mode V4HI
+/usr/include/c++/14/bits/random.tcc:420:17: note: ***** Analysis failed with vector mode V4HI
+/usr/include/c++/14/bits/random.tcc:420:17: note: ***** Re-trying analysis with vector mode VNx4QI
+/usr/include/c++/14/bits/random.tcc:422:38: note: ***** Analysis failed with vector mode VNx4QI
+/usr/include/c++/14/bits/random.tcc:422:38: note: ***** Re-trying analysis with vector mode V2SI
+/usr/include/c++/14/bits/random.tcc:420:17: note: ***** Analysis failed with vector mode V2SI
+/usr/include/c++/14/bits/random.tcc:420:17: note: ***** Re-trying analysis with vector mode VNx2QI
+/usr/include/c++/14/bits/random.tcc:422:38: note: ***** Analysis failed with vector mode VNx2QI
+/usr/include/c++/14/bits/uniform_int_dist.h:274:21: missed: couldn't vectorize loop
+/usr/include/c++/14/bits/uniform_int_dist.h:274:21: missed: not vectorized: unsupported control flow in loop.
+/usr/include/c++/14/bits/uniform_int_dist.h:367:30: missed: couldn't vectorize loop
+/usr/include/c++/14/bits/uniform_int_dist.h:367:30: missed: not vectorized: unsupported control flow in loop.
+/usr/include/c++/14/bits/uniform_int_dist.h:287:7: note: vectorized 0 loops in function.
+/usr/include/c++/14/bits/random.tcc:459:13: missed: statement clobbers memory: std::mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>::_M_gen_rand (__urng_8(D));
+/usr/include/c++/14/bits/uniform_int_dist.h:364:5: missed: statement clobbers memory: _11 = std::uniform_int_distribution<int>::operator().isra (__urng_8(D), 0, -1);
+/usr/include/c++/14/bits/random.tcc:459:13: missed: statement clobbers memory: std::mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>::_M_gen_rand (__urng_8(D));
+/usr/include/c++/14/bits/random.tcc:459:13: missed: statement clobbers memory: std::mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>::_M_gen_rand (__urng_8(D));
+/usr/include/c++/14/bits/random.tcc:459:13: missed: statement clobbers memory: std::mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>::_M_gen_rand (__urng_8(D));
+/usr/include/c++/14/bits/uniform_int_dist.h:372:15: note: ***** Analysis failed with vector mode V2DI
+/usr/include/c++/14/bits/uniform_int_dist.h:372:15: note: ***** The result for vector mode V16QI would be the same
+/usr/include/c++/14/bits/uniform_int_dist.h:372:15: note: ***** Re-trying analysis with vector mode VNx16QI
+/usr/include/c++/14/bits/uniform_int_dist.h:372:15: note: ***** Analysis failed with vector mode VNx16QI
+/usr/include/c++/14/bits/uniform_int_dist.h:372:15: note: ***** Re-trying analysis with vector mode V8QI
+/usr/include/c++/14/bits/uniform_int_dist.h:372:15: note: ***** Analysis failed with vector mode V8QI
+/usr/include/c++/14/bits/uniform_int_dist.h:372:15: note: ***** Re-trying analysis with vector mode VNx8QI
+/usr/include/c++/14/bits/uniform_int_dist.h:372:15: note: ***** Analysis failed with vector mode VNx8QI
+/usr/include/c++/14/bits/uniform_int_dist.h:372:15: note: ***** Re-trying analysis with vector mode V4HI
+/usr/include/c++/14/bits/uniform_int_dist.h:372:15: note: ***** Analysis failed with vector mode V4HI
+/usr/include/c++/14/bits/uniform_int_dist.h:372:15: note: ***** Re-trying analysis with vector mode VNx4QI
+/usr/include/c++/14/bits/uniform_int_dist.h:372:15: note: ***** Analysis failed with vector mode VNx4QI
+/usr/include/c++/14/bits/uniform_int_dist.h:372:15: note: ***** Re-trying analysis with vector mode V2SI
+/usr/include/c++/14/bits/uniform_int_dist.h:372:15: note: ***** Analysis failed with vector mode V2SI
+/usr/include/c++/14/bits/uniform_int_dist.h:372:15: note: ***** Re-trying analysis with vector mode VNx2QI
+/usr/include/c++/14/bits/uniform_int_dist.h:372:15: note: ***** Analysis failed with vector mode VNx2QI
+/usr/include/c++/14/bits/stl_uninitialized.h:266:15: missed: couldn't vectorize loop
+/usr/include/c++/14/bits/stl_uninitialized.h:266:15: missed: not vectorized: unsupported control flow in loop.
+/usr/include/c++/14/bits/stl_uninitialized.h:261:5: note: vectorized 0 loops in function.
+/usr/include/c++/14/bits/stl_uninitialized.h:261:5: missed: splitting region at control altering definition _30 = std::__cxx11::basic_string<char>::_M_create (__cur_50, &__dnew, 0);
+/usr/include/c++/14/bits/basic_string.tcc:229:13: missed: not vectorized: statement can throw an exception: _30 = std::__cxx11::basic_string<char>::_M_create (__cur_50, &__dnew, 0);
+/usr/include/c++/14/bits/basic_string.tcc:229:13: note: ***** Analysis failed with vector mode V2DI
+/usr/include/c++/14/bits/basic_string.tcc:229:13: note: ***** Skipping vector mode V16QI, which would repeat the analysis for V2DI
+/usr/include/c++/14/bits/basic_string.tcc:229:13: missed: splitting region at dominance boundary bb9
+/usr/include/c++/14/bits/basic_string.h:255:31: note: ***** Analysis failed with vector mode V2DI
+/usr/include/c++/14/bits/basic_string.h:255:31: note: ***** Skipping vector mode V16QI, which would repeat the analysis for V2DI
+/usr/include/c++/14/bits/basic_string.h:255:31: missed: splitting region at dominance boundary bb10
+/usr/include/c++/14/bits/char_traits.h:427:49: missed: statement clobbers memory: __builtin_memcpy (_2, _15, _16);
+/usr/include/c++/14/bits/basic_string.h:228:28: note: ***** Analysis failed with vector mode V2DI
+/usr/include/c++/14/bits/basic_string.h:228:28: note: ***** Skipping vector mode V16QI, which would repeat the analysis for V2DI
+/usr/include/c++/14/bits/basic_string.h:228:28: missed: splitting region at dominance boundary bb12
+/usr/include/c++/14/bits/stl_uninitialized.h:266:15: note: ***** Analysis failed with vector mode V2DI
+/usr/include/c++/14/bits/stl_uninitialized.h:266:15: note: ***** Skipping vector mode V16QI, which would repeat the analysis for V2DI
+/usr/include/c++/14/bits/stl_uninitialized.h:266:15: missed: splitting region at dominance boundary bb22
+/usr/include/c++/14/bits/stl_uninitialized.h:270:7: missed: statement clobbers memory: _1 = __builtin_eh_pointer (1);
+/usr/include/c++/14/bits/stl_uninitialized.h:270:7: missed: statement clobbers memory: __cxa_begin_catch (_1);
+/usr/include/c++/14/bits/basic_string.h:809:19: missed: statement clobbers memory: std::__cxx11::basic_string<char>::_M_dispose (__first_18);
+/usr/include/c++/14/bits/stl_uninitialized.h:273:4: missed: not vectorized: statement can throw an exception: __cxa_rethrow ();
+/usr/include/c++/14/bits/stl_uninitialized.h:270:7: missed: statement clobbers memory: __cxa_end_catch ();
+/usr/include/c++/14/bits/stl_uninitialized.h:270:7: note: ***** Analysis failed with vector mode VOID
+/usr/include/c++/14/bits/stl_uninitialized.h:270:7: missed: splitting region at dominance boundary bb11
+/usr/include/c++/14/bits/stl_uninitialized.h:270:7: note: ***** Analysis failed with vector mode VOID
+/usr/include/c++/14/bits/stl_uninitialized.h:268:11: note: ***** Analysis failed with vector mode VOID
+grid_bfs.cpp:88:27: missed: couldn't vectorize loop
+grid_bfs.cpp:88:27: missed: not vectorized: loop nest containing two or more consecutive inner loops cannot be vectorized
+grid_bfs.cpp:89:31: missed: couldn't vectorize loop
+grid_bfs.cpp:89:31: missed: not vectorized: loop nest containing two or more consecutive inner loops cannot be vectorized
+/usr/include/c++/14/bits/uniform_int_dist.h:274:21: missed: couldn't vectorize loop
+/usr/include/c++/14/bits/uniform_int_dist.h:274:21: missed: not vectorized: loop nest containing two or more consecutive inner loops cannot be vectorized
+/usr/include/c++/14/bits/random.tcc:412:42: optimized: loop vectorized using 16 byte vectors
+/usr/include/c++/14/bits/random.tcc:404:32: optimized: loop vectorized using 16 byte vectors
+/usr/include/c++/14/bits/random.tcc:333:32: missed: couldn't vectorize loop
+/usr/include/c++/14/bits/random.tcc:335:14: missed: not vectorized, possible dependence between data-refs MEM[(struct mersenne_twister_engine *)&rng]._M_x[_38] and MEM[(struct mersenne_twister_engine *)&rng]._M_x[__i_241]
+grid_bfs.cpp:83:16: note: vectorized 2 loops in function.
+grid_bfs.cpp:83:16: missed: splitting region at control altering definition _99 = operator new (_471);
+/usr/include/c++/14/bits/basic_string.h:671:21: missed: statement clobbers memory: std::__cxx11::basic_string<char>::_M_construct (&D.92091, _2, 46);
+/usr/include/c++/14/bits/new_allocator.h:151:48: missed: not vectorized: statement can throw an exception: _99 = operator new (_471);
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: ***** Analysis succeeded with vector mode V2DI
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: SLPing BB part
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: Costing subgraph: 
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: node 0x1f468eb0 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: op template: MEM[(struct _Vector_impl_data *)grid_28(D)]._M_start = 0B;
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: 	stmt 0 MEM[(struct _Vector_impl_data *)grid_28(D)]._M_start = 0B;
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: 	stmt 1 MEM[(struct _Vector_impl_data *)grid_28(D)]._M_finish = 0B;
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: 	children 0x1f468f38
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: node (constant) 0x1f468f38 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: 	{ 0B, 0B }
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: Cost model analysis: 
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: Cost model analysis for part in loop 0:
+  Vector cost: 5
+  Scalar cost: 2
+/usr/include/c++/14/bits/stl_vector.h:99:4: missed: not vectorized: vectorization is not profitable.
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: ***** The result for vector mode V16QI would be the same
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: ***** Re-trying analysis with vector mode VNx16QI
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: ***** Analysis failed with vector mode VNx16QI
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: ***** Re-trying analysis with vector mode V8QI
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: ***** Analysis succeeded with vector mode V8QI
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: SLPing BB part
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: Costing subgraph: 
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: node 0x1f468f38 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: op template: MEM[(struct _Vector_impl_data *)grid_28(D)]._M_start = 0B;
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: 	stmt 0 MEM[(struct _Vector_impl_data *)grid_28(D)]._M_start = 0B;
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: 	stmt 1 MEM[(struct _Vector_impl_data *)grid_28(D)]._M_finish = 0B;
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: 	children 0x1f468e28
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: node (constant) 0x1f468e28 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: 	{ 0B, 0B }
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: Cost model analysis: 
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: Cost model analysis for part in loop 0:
+  Vector cost: 5
+  Scalar cost: 2
+/usr/include/c++/14/bits/stl_vector.h:99:4: missed: not vectorized: vectorization is not profitable.
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: ***** Re-trying analysis with vector mode VNx8QI
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: ***** Analysis failed with vector mode VNx8QI
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: ***** Re-trying analysis with vector mode V4HI
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: ***** Analysis succeeded with vector mode V4HI
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: SLPing BB part
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: Costing subgraph: 
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: node 0x1f468e28 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: op template: MEM[(struct _Vector_impl_data *)grid_28(D)]._M_start = 0B;
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: 	stmt 0 MEM[(struct _Vector_impl_data *)grid_28(D)]._M_start = 0B;
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: 	stmt 1 MEM[(struct _Vector_impl_data *)grid_28(D)]._M_finish = 0B;
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: 	children 0x1f468eb0
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: node (constant) 0x1f468eb0 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: 	{ 0B, 0B }
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: Cost model analysis: 
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: Cost model analysis for part in loop 0:
+  Vector cost: 5
+  Scalar cost: 2
+/usr/include/c++/14/bits/stl_vector.h:99:4: missed: not vectorized: vectorization is not profitable.
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: ***** Re-trying analysis with vector mode VNx4QI
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: ***** Analysis failed with vector mode VNx4QI
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: ***** Re-trying analysis with vector mode V2SI
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: ***** Analysis succeeded with vector mode V2SI
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: SLPing BB part
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: Costing subgraph: 
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: node 0x1f468eb0 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: op template: MEM[(struct _Vector_impl_data *)grid_28(D)]._M_start = 0B;
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: 	stmt 0 MEM[(struct _Vector_impl_data *)grid_28(D)]._M_start = 0B;
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: 	stmt 1 MEM[(struct _Vector_impl_data *)grid_28(D)]._M_finish = 0B;
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: 	children 0x1f468f38
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: node (constant) 0x1f468f38 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: 	{ 0B, 0B }
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: Cost model analysis: 
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: Cost model analysis for part in loop 0:
+  Vector cost: 5
+  Scalar cost: 2
+/usr/include/c++/14/bits/stl_vector.h:99:4: missed: not vectorized: vectorization is not profitable.
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: ***** Re-trying analysis with vector mode VNx2QI
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: ***** Analysis failed with vector mode VNx2QI
+/usr/include/c++/14/bits/stl_vector.h:99:4: missed: splitting region at dominance boundary bb7
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: ***** Analysis failed with vector mode VOID
+/usr/include/c++/14/bits/stl_vector.h:99:4: missed: splitting region at control altering definition _85 = std::__do_uninit_fill_n<std::__cxx11::basic_string<char>*, long unsigned int, std::__cxx11::basic_string<char> > (iftmp.7_92, _1, &D.92091);
+/usr/include/c++/14/bits/stl_uninitialized.h:284:34: missed: not vectorized: statement can throw an exception: _85 = std::__do_uninit_fill_n<std::__cxx11::basic_string<char>*, long unsigned int, std::__cxx11::basic_string<char> > (iftmp.7_92, _1, &D.92091);
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: ***** Analysis succeeded with vector mode V2DI
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: SLPing BB part
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: Costing subgraph: 
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: node 0x1f468f38 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: op template: MEM[(struct _Vector_base *)grid_28(D)]._M_impl.D.91401._M_start = iftmp.7_92;
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: 	stmt 0 MEM[(struct _Vector_base *)grid_28(D)]._M_impl.D.91401._M_start = iftmp.7_92;
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: 	stmt 1 MEM[(struct _Vector_base *)grid_28(D)]._M_impl.D.91401._M_finish = iftmp.7_92;
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: 	children 0x1f468e28
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: node (external) 0x1f468e28 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: 	{ iftmp.7_92, iftmp.7_92 }
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: Cost model analysis: 
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: Cost model analysis for part in loop 0:
+  Vector cost: 8
+  Scalar cost: 2
+/usr/include/c++/14/bits/stl_vector.h:398:25: missed: not vectorized: vectorization is not profitable.
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: ***** The result for vector mode V16QI would be the same
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: ***** Re-trying analysis with vector mode VNx16QI
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: ***** Analysis failed with vector mode VNx16QI
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: ***** Re-trying analysis with vector mode V8QI
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: ***** Analysis succeeded with vector mode V8QI
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: SLPing BB part
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: Costing subgraph: 
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: node 0x1f468e28 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: op template: MEM[(struct _Vector_base *)grid_28(D)]._M_impl.D.91401._M_start = iftmp.7_92;
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: 	stmt 0 MEM[(struct _Vector_base *)grid_28(D)]._M_impl.D.91401._M_start = iftmp.7_92;
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: 	stmt 1 MEM[(struct _Vector_base *)grid_28(D)]._M_impl.D.91401._M_finish = iftmp.7_92;
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: 	children 0x1f468eb0
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: node (external) 0x1f468eb0 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: 	{ iftmp.7_92, iftmp.7_92 }
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: Cost model analysis: 
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: Cost model analysis for part in loop 0:
+  Vector cost: 8
+  Scalar cost: 2
+/usr/include/c++/14/bits/stl_vector.h:398:25: missed: not vectorized: vectorization is not profitable.
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: ***** Re-trying analysis with vector mode VNx8QI
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: ***** Analysis failed with vector mode VNx8QI
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: ***** Re-trying analysis with vector mode V4HI
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: ***** Analysis succeeded with vector mode V4HI
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: SLPing BB part
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: Costing subgraph: 
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: node 0x1f468eb0 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: op template: MEM[(struct _Vector_base *)grid_28(D)]._M_impl.D.91401._M_start = iftmp.7_92;
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: 	stmt 0 MEM[(struct _Vector_base *)grid_28(D)]._M_impl.D.91401._M_start = iftmp.7_92;
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: 	stmt 1 MEM[(struct _Vector_base *)grid_28(D)]._M_impl.D.91401._M_finish = iftmp.7_92;
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: 	children 0x1f468f38
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: node (external) 0x1f468f38 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: 	{ iftmp.7_92, iftmp.7_92 }
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: Cost model analysis: 
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: Cost model analysis for part in loop 0:
+  Vector cost: 8
+  Scalar cost: 2
+/usr/include/c++/14/bits/stl_vector.h:398:25: missed: not vectorized: vectorization is not profitable.
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: ***** Re-trying analysis with vector mode VNx4QI
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: ***** Analysis failed with vector mode VNx4QI
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: ***** Re-trying analysis with vector mode V2SI
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: ***** Analysis succeeded with vector mode V2SI
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: SLPing BB part
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: Costing subgraph: 
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: node 0x1f468f38 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: op template: MEM[(struct _Vector_base *)grid_28(D)]._M_impl.D.91401._M_start = iftmp.7_92;
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: 	stmt 0 MEM[(struct _Vector_base *)grid_28(D)]._M_impl.D.91401._M_start = iftmp.7_92;
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: 	stmt 1 MEM[(struct _Vector_base *)grid_28(D)]._M_impl.D.91401._M_finish = iftmp.7_92;
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: 	children 0x1f468e28
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: node (external) 0x1f468e28 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: 	{ iftmp.7_92, iftmp.7_92 }
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: Cost model analysis: 
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: Cost model analysis for part in loop 0:
+  Vector cost: 8
+  Scalar cost: 2
+/usr/include/c++/14/bits/stl_vector.h:398:25: missed: not vectorized: vectorization is not profitable.
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: ***** Re-trying analysis with vector mode VNx2QI
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: ***** Analysis failed with vector mode VNx2QI
+/usr/include/c++/14/bits/stl_vector.h:398:25: missed: splitting region at dominance boundary bb8
+/usr/include/c++/14/bits/new_allocator.h:172:26: missed: statement clobbers memory: operator delete (_86, _89);
+grid_bfs.cpp:83:16: missed: not vectorized: statement can throw an exception: resx 19
+/usr/include/c++/14/bits/new_allocator.h:172:26: note: ***** Analysis failed with vector mode V2DI
+/usr/include/c++/14/bits/new_allocator.h:172:26: note: ***** Skipping vector mode V16QI, which would repeat the analysis for V2DI
+/usr/include/c++/14/bits/new_allocator.h:172:26: missed: splitting region at dominance boundary bb3
+/usr/include/c++/14/bits/new_allocator.h:172:26: missed: statement clobbers memory: operator delete (_100, _103);
+/usr/include/c++/14/bits/random.tcc:459:13: missed: statement clobbers memory: std::mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>::_M_gen_rand (&rng);
+/usr/include/c++/14/bits/random.tcc:420:17: note: ***** Analysis failed with vector mode V2DI
+/usr/include/c++/14/bits/random.tcc:420:17: note: ***** The result for vector mode V16QI would be the same
+/usr/include/c++/14/bits/random.tcc:420:17: note: ***** Re-trying analysis with vector mode VNx16QI
+/usr/include/c++/14/bits/random.tcc:466:11: note: ***** Analysis failed with vector mode VNx16QI
+/usr/include/c++/14/bits/random.tcc:466:11: note: ***** Re-trying analysis with vector mode V8QI
+/usr/include/c++/14/bits/random.tcc:420:17: note: ***** Analysis failed with vector mode V8QI
+/usr/include/c++/14/bits/random.tcc:420:17: note: ***** Re-trying analysis with vector mode VNx8QI
+/usr/include/c++/14/bits/random.tcc:466:11: note: ***** Analysis failed with vector mode VNx8QI
+/usr/include/c++/14/bits/random.tcc:466:11: note: ***** Re-trying analysis with vector mode V4HI
+/usr/include/c++/14/bits/random.tcc:420:17: note: ***** Analysis failed with vector mode V4HI
+/usr/include/c++/14/bits/random.tcc:420:17: note: ***** Re-trying analysis with vector mode VNx4QI
+/usr/include/c++/14/bits/random.tcc:466:11: note: ***** Analysis failed with vector mode VNx4QI
+/usr/include/c++/14/bits/random.tcc:466:11: note: ***** Re-trying analysis with vector mode V2SI
+/usr/include/c++/14/bits/random.tcc:420:17: note: ***** Analysis failed with vector mode V2SI
+/usr/include/c++/14/bits/random.tcc:420:17: note: ***** Re-trying analysis with vector mode VNx2QI
+/usr/include/c++/14/bits/random.tcc:466:11: note: ***** Analysis failed with vector mode VNx2QI
+/usr/include/c++/14/bits/random.tcc:466:11: missed: splitting region at dominance boundary bb53
+/usr/include/c++/14/bits/stl_vector.h:1920:24: missed: not vectorized: statement can throw an exception: std::__throw_length_error ("cannot create std::vector larger than max_size()");
+/usr/include/c++/14/bits/stl_vector.h:1920:24: note: ***** Analysis failed with vector mode VOID
+/usr/include/c++/14/bits/basic_string.h:809:19: missed: statement clobbers memory: std::__cxx11::basic_string<char>::_M_dispose (&D.92091);
+/usr/include/c++/14/bits/basic_string.h:809:23: note: ***** Analysis failed with vector mode VOID
+grid_bfs.cpp:460:5: note: vectorized 0 loops in function.
+grid_bfs.cpp:460:5: missed: splitting region at control altering definition requests = generate_requests (&grid, iftmp.87_2); [return slot optimization]
+grid_bfs.cpp:461:36: missed: statement clobbers memory: std::__cxx11::basic_string<char>::__ct_base .constprop (&D.98021, _1);
+grid_bfs.cpp:461:38: missed: statement clobbers memory: _25 = std::operator==<char, std::char_traits<char>, std::allocator<char> > (&D.98021, "--test");
+/usr/include/c++/14/bits/basic_string.h:809:19: missed: statement clobbers memory: std::__cxx11::basic_string<char>::_M_dispose (&D.98021);
+grid_bfs.cpp:471:54: missed: statement clobbers memory: std::__cxx11::basic_string<char>::__ct_base .constprop (&D.98037, _4);
+grid_bfs.cpp:471:56: missed: statement clobbers memory: _32 = std::operator==<char, std::char_traits<char>, std::allocator<char> > (&D.98037, "--small");
+/usr/include/c++/14/bits/basic_string.h:809:19: missed: statement clobbers memory: std::__cxx11::basic_string<char>::_M_dispose (&D.98037);
+grid_bfs.cpp:481:43: missed: statement clobbers memory: start = std::chrono::_V2::steady_clock::now ();
+grid_bfs.cpp:483:53: missed: statement clobbers memory: grid = generate_grid (260, 260); [return slot optimization]
+grid_bfs.cpp:484:74: missed: not vectorized: statement can throw an exception: requests = generate_requests (&grid, iftmp.87_2); [return slot optimization]
+grid_bfs.cpp:484:74: note: ***** Analysis failed with vector mode V2DI
+grid_bfs.cpp:484:74: note: ***** Skipping vector mode V16QI, which would repeat the analysis for V2DI
+grid_bfs.cpp:484:74: missed: splitting region at control altering definition _117 = operator new (270400);
+/usr/include/c++/14/bits/new_allocator.h:151:48: missed: not vectorized: statement can throw an exception: _117 = operator new (270400);
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: ***** Analysis succeeded with vector mode V2DI
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: SLPing BB part
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: Costing subgraph: 
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: node 0x1f5c9a78 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: op template: MEM[(struct _Vector_impl_data *)&heatmap]._M_finish = 0B;
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: 	stmt 0 MEM[(struct _Vector_impl_data *)&heatmap]._M_finish = 0B;
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: 	stmt 1 MEM[(struct _Vector_impl_data *)&heatmap]._M_end_of_storage = 0B;
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: 	children 0x1f5c9b00
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: node (constant) 0x1f5c9b00 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: 	{ 0B, 0B }
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: Cost model analysis: 
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: Cost model analysis for part in loop 0:
+  Vector cost: 5
+  Scalar cost: 2
+/usr/include/c++/14/bits/stl_vector.h:99:16: missed: not vectorized: vectorization is not profitable.
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: ***** The result for vector mode V16QI would be the same
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: ***** Re-trying analysis with vector mode VNx16QI
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: ***** Analysis failed with vector mode VNx16QI
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: ***** Re-trying analysis with vector mode V8QI
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: ***** Analysis succeeded with vector mode V8QI
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: SLPing BB part
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: Costing subgraph: 
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: node 0x1f5c9a78 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: op template: MEM[(struct _Vector_impl_data *)&heatmap]._M_finish = 0B;
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: 	stmt 0 MEM[(struct _Vector_impl_data *)&heatmap]._M_finish = 0B;
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: 	stmt 1 MEM[(struct _Vector_impl_data *)&heatmap]._M_end_of_storage = 0B;
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: 	children 0x1f5c9b00
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: node (constant) 0x1f5c9b00 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: 	{ 0B, 0B }
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: Cost model analysis: 
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: Cost model analysis for part in loop 0:
+  Vector cost: 5
+  Scalar cost: 2
+/usr/include/c++/14/bits/stl_vector.h:99:16: missed: not vectorized: vectorization is not profitable.
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: ***** Re-trying analysis with vector mode VNx8QI
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: ***** Analysis failed with vector mode VNx8QI
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: ***** Re-trying analysis with vector mode V4HI
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: ***** Analysis succeeded with vector mode V4HI
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: SLPing BB part
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: Costing subgraph: 
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: node 0x1f5c9a78 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: op template: MEM[(struct _Vector_impl_data *)&heatmap]._M_finish = 0B;
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: 	stmt 0 MEM[(struct _Vector_impl_data *)&heatmap]._M_finish = 0B;
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: 	stmt 1 MEM[(struct _Vector_impl_data *)&heatmap]._M_end_of_storage = 0B;
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: 	children 0x1f5c9b00
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: node (constant) 0x1f5c9b00 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: 	{ 0B, 0B }
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: Cost model analysis: 
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: Cost model analysis for part in loop 0:
+  Vector cost: 5
+  Scalar cost: 2
+/usr/include/c++/14/bits/stl_vector.h:99:16: missed: not vectorized: vectorization is not profitable.
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: ***** Re-trying analysis with vector mode VNx4QI
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: ***** Analysis failed with vector mode VNx4QI
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: ***** Re-trying analysis with vector mode V2SI
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: ***** Analysis succeeded with vector mode V2SI
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: SLPing BB part
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: Costing subgraph: 
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: node 0x1f5c9a78 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: op template: MEM[(struct _Vector_impl_data *)&heatmap]._M_finish = 0B;
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: 	stmt 0 MEM[(struct _Vector_impl_data *)&heatmap]._M_finish = 0B;
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: 	stmt 1 MEM[(struct _Vector_impl_data *)&heatmap]._M_end_of_storage = 0B;
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: 	children 0x1f5c9b00
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: node (constant) 0x1f5c9b00 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: 	{ 0B, 0B }
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: Cost model analysis: 
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: Cost model analysis for part in loop 0:
+  Vector cost: 5
+  Scalar cost: 2
+/usr/include/c++/14/bits/stl_vector.h:99:16: missed: not vectorized: vectorization is not profitable.
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: ***** Re-trying analysis with vector mode VNx2QI
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: ***** Analysis failed with vector mode VNx2QI
+/usr/include/c++/14/bits/stl_vector.h:99:16: missed: splitting region at dominance boundary bb12
+/usr/include/c++/14/bits/stl_vector.h:99:16: note: ***** Analysis failed with vector mode VOID
+/usr/include/c++/14/bits/stl_vector.h:99:16: missed: splitting region at control altering definition summary = run_all_requests (&grid, &requests, &heatmap); [return slot optimization]
+/usr/include/c++/14/bits/stl_algobase.h:952:11: missed: statement clobbers memory: __builtin_memset (_117, 0, 270400);
+grid_bfs.cpp:486:42: missed: not vectorized: statement can throw an exception: summary = run_all_requests (&grid, &requests, &heatmap); [return slot optimization]
+grid_bfs.cpp:486:42: note: ***** Analysis failed with vector mode V2DI
+grid_bfs.cpp:486:42: note: ***** Skipping vector mode V16QI, which would repeat the analysis for V2DI
+grid_bfs.cpp:486:42: missed: splitting region at control altering definition congestion_summary = compute_congestion_pressure (&heatmap, 260, 260, iftmp.88_12); [return slot optimization]
+grid_bfs.cpp:487:55: missed: statement clobbers memory: heatmap_summary = summarize_heatmap (&heatmap, 260, 260); [return slot optimization]
+grid_bfs.cpp:489:36: missed: not vectorized: statement can throw an exception: congestion_summary = compute_congestion_pressure (&heatmap, 260, 260, iftmp.88_12); [return slot optimization]
+grid_bfs.cpp:489:36: note: ***** Analysis failed with vector mode VOID
+grid_bfs.cpp:489:36: missed: splitting region at dominance boundary bb16
+grid_bfs.cpp:491:41: missed: statement clobbers memory: end = std::chrono::_V2::steady_clock::now ();
+grid_bfs.cpp:494:18: missed: not vectorized: statement can throw an exception: print_summary (&grid, &summary, &heatmap_summary, &congestion_summary, iftmp.88_12, _41);
+/usr/include/c++/14/bits/new_allocator.h:172:26: missed: statement clobbers memory: operator delete (_117, 270400);
+/usr/include/c++/14/bits/new_allocator.h:172:26: missed: statement clobbers memory: operator delete (requests$_M_impl$D92830$_M_start_118, _70);
+grid_bfs.cpp:497:1: missed: statement clobbers memory: std::vector<std::__cxx11::basic_string<char> >::~vector (&grid);
+grid_bfs.cpp:497:1: note: ***** Analysis failed with vector mode V2DI
+grid_bfs.cpp:497:1: note: ***** Skipping vector mode V16QI, which would repeat the analysis for V2DI
+grid_bfs.cpp:497:1: missed: splitting region at dominance boundary bb23
+grid_bfs.cpp:497:1: note: ***** Analysis failed with vector mode VOID
+grid_bfs.cpp:497:1: missed: splitting region at dominance boundary bb24
+grid_bfs.cpp:497:1: note: ***** Analysis failed with vector mode VOID
+grid_bfs.cpp:497:1: missed: splitting region at dominance boundary bb27
+/usr/include/c++/14/bits/new_allocator.h:172:26: missed: statement clobbers memory: operator delete (_117, 270400);
+grid_bfs.cpp:460:5: missed: not vectorized: statement can throw an exception: resx 26
+/usr/include/c++/14/bits/stl_vector.h:738:7: note: ***** Analysis failed with vector mode VOID
+/usr/include/c++/14/bits/stl_vector.h:738:7: missed: splitting region at dominance boundary bb31
+/usr/include/c++/14/bits/new_allocator.h:172:26: missed: statement clobbers memory: operator delete (requests$_M_impl$D92830$_M_start_118, _82);
+grid_bfs.cpp:460:5: missed: not vectorized: statement can throw an exception: resx 19
+/usr/include/c++/14/bits/stl_vector.h:738:7: note: ***** Analysis failed with vector mode VOID
+/usr/include/c++/14/bits/stl_vector.h:738:7: missed: splitting region at dominance boundary bb32
+/usr/include/c++/14/bits/stl_vector.h:738:7: note: ***** Analysis failed with vector mode VOID
+/usr/include/c++/14/bits/stl_vector.h:738:7: missed: splitting region at dominance boundary bb4
+grid_bfs.cpp:497:1: missed: statement clobbers memory: std::vector<std::__cxx11::basic_string<char> >::~vector (&grid);
+grid_bfs.cpp:497:1: note: ***** Analysis failed with vector mode VOID
+grid_bfs.cpp:497:1: missed: splitting region at dominance boundary bb6
+/usr/include/c++/14/ostream:673:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (&cerr, "usage: ", 7);
+grid_bfs.cpp:473:41: missed: statement clobbers memory: _56 = std::operator<< <std::char_traits<char> > (&cerr, _9);
+grid_bfs.cpp:473:41: missed: statement clobbers memory: std::operator<< <std::char_traits<char> > (_56, " [--test|--small]\n");
+grid_bfs.cpp:473:41: note: ***** Analysis failed with vector mode V2DI
+grid_bfs.cpp:473:41: note: ***** Skipping vector mode V16QI, which would repeat the analysis for V2DI
+grid_bfs.cpp:473:41: missed: splitting region at dominance boundary bb34
+grid_bfs.cpp:462:30: missed: statement clobbers memory: _59 = run_sanity_check ();
+grid_bfs.cpp:467:17: missed: statement clobbers memory: std::operator<< <std::char_traits<char> > (&cout, "sanity check passed\n");
+grid_bfs.cpp:467:17: note: ***** Analysis failed with vector mode VOID
+grid_bfs.cpp:467:17: missed: splitting region at dominance boundary bb7
+grid_bfs.cpp:467:17: note: ***** Analysis failed with vector mode VOID
+grid_bfs.cpp:467:17: missed: splitting region at dominance boundary bb35
+grid_bfs.cpp:463:21: missed: statement clobbers memory: std::operator<< <std::char_traits<char> > (&cerr, "sanity check failed\n");
+grid_bfs.cpp:463:21: note: ***** Analysis failed with vector mode VOID
+grid_bfs.cpp:463:21: missed: splitting region at dominance boundary bb22
+grid_bfs.cpp:463:21: note: ***** Analysis failed with vector mode VOID
+grid_bfs.cpp:460:5: note: ***** Analysis failed with vector mode VOID
