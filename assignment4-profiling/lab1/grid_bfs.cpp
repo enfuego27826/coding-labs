@@ -242,24 +242,42 @@ RunSummary run_all_requests(string &grid, int rows, int cols,
     RunSummary summary;
     summary.requests = static_cast<int>(requests.size());
 
-    int total = rows*cols;
-    vector<int> distance(total,-1);
-    vector<int> frontier(total);
+    #pragma omp parallel
+    {   
+        int loc_reach = 0, loc_unreach = 0;
+        int loc_dist = 0;
+        uint64_t loc_checksum = 0;
+        int total = rows*cols;
+        vector<int> distance(total,-1);
+        vector<int> frontier(total);
+        vector<int> loc_heatmap(total,0);
+        
+        #pragma omp for nowait
+        for (int i = 0; i < summary.requests; ++i) {
+            const RouteRequest &request = requests[i];
+            string route_label = format_route_label(request, i);
+            loc_checksum ^= checksum_label(route_label);
 
-    for (int i = 0; i < summary.requests; ++i) {
-        const RouteRequest &request = requests[i];
-        string route_label = format_route_label(request, i);
-        summary.route_label_checksum ^= checksum_label(route_label);
+            int dist = shortest_path_bfs(grid, rows, cols, request, loc_heatmap, distance, frontier);
 
-        int dist = shortest_path_bfs(grid, rows, cols, request, heatmap, distance, frontier);
-
-        if (dist >= 0) {
-            summary.reachable += 1;
-            summary.total_distance += dist;
-        } else {
-            summary.unreachable += 1;
+            if (dist >= 0) {
+                loc_reach++;
+                loc_dist += dist;
+            } else {
+                loc_unreach++;
+            }
         }
-    }
+
+        #pragma omp critical
+        {
+            summary.unreachable += loc_unreach;
+            summary.reachable += loc_reach;
+            summary.total_distance += loc_dist;
+            summary.route_label_checksum ^= loc_checksum;
+
+            for(int j = 0; j < total; ++j) heatmap[j] += loc_heatmap[j];
+        }
+    }   
 
     return summary;
 }
