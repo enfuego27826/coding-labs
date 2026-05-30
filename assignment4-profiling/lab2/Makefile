@@ -1,5 +1,5 @@
 CXX := g++
-CXXFLAGS := -std=c++20 -Wall -Wextra -pedantic -O2 -g
+CXXFLAGS := -std=c++20 -O3 -march=native
 TARGET := main
 SOURCE := main.cpp
 
