@@ -1,0 +1,1629 @@
+perf-exec 1691705 389920.047021:          1 cycles:P: 
+	ffffa52136d56934 perf_event_enable_on_exec+0x54 ([kernel.kallsyms])
+	ffffa52136d59b50 perf_event_exec+0x78 ([kernel.kallsyms])
+	ffffa52136f039e8 begin_new_exec+0x240 ([kernel.kallsyms])
+	ffffa52136fbac70 load_elf_binary+0x3f0 ([kernel.kallsyms])
+	ffffa52136f01e64 exec_binprm+0x144 ([kernel.kallsyms])
+	ffffa52136f022d8 bprm_execve.part.0+0x1d8 ([kernel.kallsyms])
+	ffffa52136f023f8 bprm_execve+0x48 ([kernel.kallsyms])
+	ffffa52136f025a4 do_execveat_common.isra.0+0x164 ([kernel.kallsyms])
+	ffffa52136f02890 __arm64_sys_execve+0x50 ([kernel.kallsyms])
+	ffffa52136935234 invoke_syscall+0x74 ([kernel.kallsyms])
+	ffffa52136935334 el0_svc_common.constprop.0+0x4c ([kernel.kallsyms])
+	ffffa52136935450 do_el0_svc+0x28 ([kernel.kallsyms])
+	ffffa52138146060 el0_svc+0x40 ([kernel.kallsyms])
+	ffffa52138146680 el0t_64_sync_handler+0xc0 ([kernel.kallsyms])
+	ffffa52136911e98 el0t_64_sync+0x1b8 ([kernel.kallsyms])
+	    e73e42d5de0c [unknown] ([unknown])
+
+perf-exec 1691705 389920.047040:          1 cycles:P: 
+	ffffa52136d56934 perf_event_enable_on_exec+0x54 ([kernel.kallsyms])
+	ffffa52136d59b50 perf_event_exec+0x78 ([kernel.kallsyms])
+	ffffa52136f039e8 begin_new_exec+0x240 ([kernel.kallsyms])
+	ffffa52136fbac70 load_elf_binary+0x3f0 ([kernel.kallsyms])
+	ffffa52136f01e64 exec_binprm+0x144 ([kernel.kallsyms])
+	ffffa52136f022d8 bprm_execve.part.0+0x1d8 ([kernel.kallsyms])
+	ffffa52136f023f8 bprm_execve+0x48 ([kernel.kallsyms])
+	ffffa52136f025a4 do_execveat_common.isra.0+0x164 ([kernel.kallsyms])
+	ffffa52136f02890 __arm64_sys_execve+0x50 ([kernel.kallsyms])
+	ffffa52136935234 invoke_syscall+0x74 ([kernel.kallsyms])
+	ffffa52136935334 el0_svc_common.constprop.0+0x4c ([kernel.kallsyms])
+	ffffa52136935450 do_el0_svc+0x28 ([kernel.kallsyms])
+	ffffa52138146060 el0_svc+0x40 ([kernel.kallsyms])
+	ffffa52138146680 el0t_64_sync_handler+0xc0 ([kernel.kallsyms])
+	ffffa52136911e98 el0t_64_sync+0x1b8 ([kernel.kallsyms])
+	    e73e42d5de0c [unknown] ([unknown])
+
+perf-exec 1691705 389920.047055:          1 cycles:P: 
+	ffffa52136d56934 perf_event_enable_on_exec+0x54 ([kernel.kallsyms])
+	ffffa52136d59b50 perf_event_exec+0x78 ([kernel.kallsyms])
+	ffffa52136f039e8 begin_new_exec+0x240 ([kernel.kallsyms])
+	ffffa52136fbac70 load_elf_binary+0x3f0 ([kernel.kallsyms])
+	ffffa52136f01e64 exec_binprm+0x144 ([kernel.kallsyms])
+	ffffa52136f022d8 bprm_execve.part.0+0x1d8 ([kernel.kallsyms])
+	ffffa52136f023f8 bprm_execve+0x48 ([kernel.kallsyms])
+	ffffa52136f025a4 do_execveat_common.isra.0+0x164 ([kernel.kallsyms])
+	ffffa52136f02890 __arm64_sys_execve+0x50 ([kernel.kallsyms])
+	ffffa52136935234 invoke_syscall+0x74 ([kernel.kallsyms])
+	ffffa52136935334 el0_svc_common.constprop.0+0x4c ([kernel.kallsyms])
+	ffffa52136935450 do_el0_svc+0x28 ([kernel.kallsyms])
+	ffffa52138146060 el0_svc+0x40 ([kernel.kallsyms])
+	ffffa52138146680 el0t_64_sync_handler+0xc0 ([kernel.kallsyms])
+	ffffa52136911e98 el0t_64_sync+0x1b8 ([kernel.kallsyms])
+	    e73e42d5de0c [unknown] ([unknown])
+
+perf-exec 1691705 389920.047068:          3 cycles:P: 
+	ffffa52136d56934 perf_event_enable_on_exec+0x54 ([kernel.kallsyms])
+	ffffa52136d59b50 perf_event_exec+0x78 ([kernel.kallsyms])
+	ffffa52136f039e8 begin_new_exec+0x240 ([kernel.kallsyms])
+	ffffa52136fbac70 load_elf_binary+0x3f0 ([kernel.kallsyms])
+	ffffa52136f01e64 exec_binprm+0x144 ([kernel.kallsyms])
+	ffffa52136f022d8 bprm_execve.part.0+0x1d8 ([kernel.kallsyms])
+	ffffa52136f023f8 bprm_execve+0x48 ([kernel.kallsyms])
+	ffffa52136f025a4 do_execveat_common.isra.0+0x164 ([kernel.kallsyms])
+	ffffa52136f02890 __arm64_sys_execve+0x50 ([kernel.kallsyms])
+	ffffa52136935234 invoke_syscall+0x74 ([kernel.kallsyms])
+	ffffa52136935334 el0_svc_common.constprop.0+0x4c ([kernel.kallsyms])
+	ffffa52136935450 do_el0_svc+0x28 ([kernel.kallsyms])
+	ffffa52138146060 el0_svc+0x40 ([kernel.kallsyms])
+	ffffa52138146680 el0t_64_sync_handler+0xc0 ([kernel.kallsyms])
+	ffffa52136911e98 el0t_64_sync+0x1b8 ([kernel.kallsyms])
+	    e73e42d5de0c [unknown] ([unknown])
+
+perf-exec 1691705 389920.047082:         10 cycles:P: 
+	ffffa52136d56934 perf_event_enable_on_exec+0x54 ([kernel.kallsyms])
+	ffffa52136d59b50 perf_event_exec+0x78 ([kernel.kallsyms])
+	ffffa52136f039e8 begin_new_exec+0x240 ([kernel.kallsyms])
+	ffffa52136fbac70 load_elf_binary+0x3f0 ([kernel.kallsyms])
+	ffffa52136f01e64 exec_binprm+0x144 ([kernel.kallsyms])
+	ffffa52136f022d8 bprm_execve.part.0+0x1d8 ([kernel.kallsyms])
+	ffffa52136f023f8 bprm_execve+0x48 ([kernel.kallsyms])
+	ffffa52136f025a4 do_execveat_common.isra.0+0x164 ([kernel.kallsyms])
+	ffffa52136f02890 __arm64_sys_execve+0x50 ([kernel.kallsyms])
+	ffffa52136935234 invoke_syscall+0x74 ([kernel.kallsyms])
+	ffffa52136935334 el0_svc_common.constprop.0+0x4c ([kernel.kallsyms])
+	ffffa52136935450 do_el0_svc+0x28 ([kernel.kallsyms])
+	ffffa52138146060 el0_svc+0x40 ([kernel.kallsyms])
+	ffffa52138146680 el0t_64_sync_handler+0xc0 ([kernel.kallsyms])
+	ffffa52136911e98 el0t_64_sync+0x1b8 ([kernel.kallsyms])
+	    e73e42d5de0c [unknown] ([unknown])
+
+perf-exec 1691705 389920.047095:         32 cycles:P: 
+	ffffa52136d56934 perf_event_enable_on_exec+0x54 ([kernel.kallsyms])
+	ffffa52136d59b50 perf_event_exec+0x78 ([kernel.kallsyms])
+	ffffa52136f039e8 begin_new_exec+0x240 ([kernel.kallsyms])
+	ffffa52136fbac70 load_elf_binary+0x3f0 ([kernel.kallsyms])
+	ffffa52136f01e64 exec_binprm+0x144 ([kernel.kallsyms])
+	ffffa52136f022d8 bprm_execve.part.0+0x1d8 ([kernel.kallsyms])
+	ffffa52136f023f8 bprm_execve+0x48 ([kernel.kallsyms])
+	ffffa52136f025a4 do_execveat_common.isra.0+0x164 ([kernel.kallsyms])
+	ffffa52136f02890 __arm64_sys_execve+0x50 ([kernel.kallsyms])
+	ffffa52136935234 invoke_syscall+0x74 ([kernel.kallsyms])
+	ffffa52136935334 el0_svc_common.constprop.0+0x4c ([kernel.kallsyms])
+	ffffa52136935450 do_el0_svc+0x28 ([kernel.kallsyms])
+	ffffa52138146060 el0_svc+0x40 ([kernel.kallsyms])
+	ffffa52138146680 el0t_64_sync_handler+0xc0 ([kernel.kallsyms])
+	ffffa52136911e98 el0t_64_sync+0x1b8 ([kernel.kallsyms])
+	    e73e42d5de0c [unknown] ([unknown])
+
+perf-exec 1691705 389920.047112:        102 cycles:P: 
+	ffffa52136d56934 perf_event_enable_on_exec+0x54 ([kernel.kallsyms])
+	ffffa52136d59b50 perf_event_exec+0x78 ([kernel.kallsyms])
+	ffffa52136f039e8 begin_new_exec+0x240 ([kernel.kallsyms])
+	ffffa52136fbac70 load_elf_binary+0x3f0 ([kernel.kallsyms])
+	ffffa52136f01e64 exec_binprm+0x144 ([kernel.kallsyms])
+	ffffa52136f022d8 bprm_execve.part.0+0x1d8 ([kernel.kallsyms])
+	ffffa52136f023f8 bprm_execve+0x48 ([kernel.kallsyms])
+	ffffa52136f025a4 do_execveat_common.isra.0+0x164 ([kernel.kallsyms])
+	ffffa52136f02890 __arm64_sys_execve+0x50 ([kernel.kallsyms])
+	ffffa52136935234 invoke_syscall+0x74 ([kernel.kallsyms])
+	ffffa52136935334 el0_svc_common.constprop.0+0x4c ([kernel.kallsyms])
+	ffffa52136935450 do_el0_svc+0x28 ([kernel.kallsyms])
+	ffffa52138146060 el0_svc+0x40 ([kernel.kallsyms])
+	ffffa52138146680 el0t_64_sync_handler+0xc0 ([kernel.kallsyms])
+	ffffa52136911e98 el0t_64_sync+0x1b8 ([kernel.kallsyms])
+	    e73e42d5de0c [unknown] ([unknown])
+
+main 1691705 389920.047949:        330 cycles:P: 
+	ffffa52138105134 __pi_clear_page+0x34 ([kernel.kallsyms])
+	ffffa52136e37d9c get_page_from_freelist+0x24c ([kernel.kallsyms])
+	ffffa52136e39390 __alloc_frozen_pages_noprof+0x170 ([kernel.kallsyms])
+	ffffa52136e836bc alloc_pages_mpol+0xc4 ([kernel.kallsyms])
+	ffffa52136e83d30 folio_alloc_mpol_noprof+0x20 ([kernel.kallsyms])
+	ffffa52136e8403c vma_alloc_folio_noprof+0x8c ([kernel.kallsyms])
+	ffffa52136948e68 vma_alloc_zeroed_movable_folio+0x40 ([kernel.kallsyms])
+	ffffa52136dfa660 alloc_anon_folio+0x1b0 ([kernel.kallsyms])
+	ffffa52136dfab74 do_anonymous_page+0x104 ([kernel.kallsyms])
+	ffffa52136dfc1fc handle_pte_fault+0x264 ([kernel.kallsyms])
+	ffffa52136dfc478 __handle_mm_fault+0x258 ([kernel.kallsyms])
+	ffffa52136dfc750 handle_mm_fault+0x100 ([kernel.kallsyms])
+	ffffa5213815bd4c do_page_fault+0x13c ([kernel.kallsyms])
+	ffffa5213815c37c do_translation_fault+0x7c ([kernel.kallsyms])
+	ffffa521369486a0 do_mem_abort+0x50 ([kernel.kallsyms])
+	ffffa5213814538c el0_da+0x4c ([kernel.kallsyms])
+	ffffa521381466b0 el0t_64_sync_handler+0xf0 ([kernel.kallsyms])
+	ffffa52136911e98 el0t_64_sync+0x1b8 ([kernel.kallsyms])
+	    c06bcada0c90 main+0x90 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.047965:       1114 cycles:P: 
+	ffffa52136ebce70 memcg1_commit_charge+0x68 ([kernel.kallsyms])
+	ffffa52136ec878c charge_memcg+0x6c ([kernel.kallsyms])
+	ffffa52136eca17c __mem_cgroup_charge+0x44 ([kernel.kallsyms])
+	ffffa52136dfa678 alloc_anon_folio+0x1c8 ([kernel.kallsyms])
+	ffffa52136dfab74 do_anonymous_page+0x104 ([kernel.kallsyms])
+	ffffa52136dfc1fc handle_pte_fault+0x264 ([kernel.kallsyms])
+	ffffa52136dfc478 __handle_mm_fault+0x258 ([kernel.kallsyms])
+	ffffa52136dfc750 handle_mm_fault+0x100 ([kernel.kallsyms])
+	ffffa5213815bd4c do_page_fault+0x13c ([kernel.kallsyms])
+	ffffa5213815c37c do_translation_fault+0x7c ([kernel.kallsyms])
+	ffffa521369486a0 do_mem_abort+0x50 ([kernel.kallsyms])
+	ffffa5213814538c el0_da+0x4c ([kernel.kallsyms])
+	ffffa521381466b0 el0t_64_sync_handler+0xf0 ([kernel.kallsyms])
+	ffffa52136911e98 el0t_64_sync+0x1b8 ([kernel.kallsyms])
+	    c06bcada0c90 main+0x90 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.047978:       1016 cycles:P: 
+	ffffa52136ebce70 memcg1_commit_charge+0x68 ([kernel.kallsyms])
+	ffffa52136ec878c charge_memcg+0x6c ([kernel.kallsyms])
+	ffffa52136eca17c __mem_cgroup_charge+0x44 ([kernel.kallsyms])
+	ffffa52136dfa678 alloc_anon_folio+0x1c8 ([kernel.kallsyms])
+	ffffa52136dfab74 do_anonymous_page+0x104 ([kernel.kallsyms])
+	ffffa52136dfc1fc handle_pte_fault+0x264 ([kernel.kallsyms])
+	ffffa52136dfc478 __handle_mm_fault+0x258 ([kernel.kallsyms])
+	ffffa52136dfc750 handle_mm_fault+0x100 ([kernel.kallsyms])
+	ffffa5213815bd4c do_page_fault+0x13c ([kernel.kallsyms])
+	ffffa5213815c37c do_translation_fault+0x7c ([kernel.kallsyms])
+	ffffa521369486a0 do_mem_abort+0x50 ([kernel.kallsyms])
+	ffffa5213814538c el0_da+0x4c ([kernel.kallsyms])
+	ffffa521381466b0 el0t_64_sync_handler+0xf0 ([kernel.kallsyms])
+	ffffa52136911e98 el0t_64_sync+0x1b8 ([kernel.kallsyms])
+	    c06bcada0c90 main+0x90 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.047993:       2932 cycles:P: 
+	    c06bcada0c90 main+0x90 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.048008:       9263 cycles:P: 
+	ffffa52138105134 __pi_clear_page+0x34 ([kernel.kallsyms])
+	ffffa52136e37d9c get_page_from_freelist+0x24c ([kernel.kallsyms])
+	ffffa52136e39390 __alloc_frozen_pages_noprof+0x170 ([kernel.kallsyms])
+	ffffa52136e836bc alloc_pages_mpol+0xc4 ([kernel.kallsyms])
+	ffffa52136e83d30 folio_alloc_mpol_noprof+0x20 ([kernel.kallsyms])
+	ffffa52136e8403c vma_alloc_folio_noprof+0x8c ([kernel.kallsyms])
+	ffffa52136948e68 vma_alloc_zeroed_movable_folio+0x40 ([kernel.kallsyms])
+	ffffa52136dfa660 alloc_anon_folio+0x1b0 ([kernel.kallsyms])
+	ffffa52136dfab74 do_anonymous_page+0x104 ([kernel.kallsyms])
+	ffffa52136dfc1fc handle_pte_fault+0x264 ([kernel.kallsyms])
+	ffffa52136dfc478 __handle_mm_fault+0x258 ([kernel.kallsyms])
+	ffffa52136dfc750 handle_mm_fault+0x100 ([kernel.kallsyms])
+	ffffa5213815bd4c do_page_fault+0x13c ([kernel.kallsyms])
+	ffffa5213815c37c do_translation_fault+0x7c ([kernel.kallsyms])
+	ffffa521369486a0 do_mem_abort+0x50 ([kernel.kallsyms])
+	ffffa5213814538c el0_da+0x4c ([kernel.kallsyms])
+	ffffa521381466b0 el0t_64_sync_handler+0xf0 ([kernel.kallsyms])
+	ffffa52136911e98 el0t_64_sync+0x1b8 ([kernel.kallsyms])
+	    c06bcada0c90 main+0x90 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.048031:      28445 cycles:P: 
+	ffffa52136e106dc __pte_offset_map_lock+0x94 ([kernel.kallsyms])
+	ffffa52136dfabfc do_anonymous_page+0x18c ([kernel.kallsyms])
+	ffffa52136dfc1fc handle_pte_fault+0x264 ([kernel.kallsyms])
+	ffffa52136dfc478 __handle_mm_fault+0x258 ([kernel.kallsyms])
+	ffffa52136dfc750 handle_mm_fault+0x100 ([kernel.kallsyms])
+	ffffa5213815bd4c do_page_fault+0x13c ([kernel.kallsyms])
+	ffffa5213815c37c do_translation_fault+0x7c ([kernel.kallsyms])
+	ffffa521369486a0 do_mem_abort+0x50 ([kernel.kallsyms])
+	ffffa5213814538c el0_da+0x4c ([kernel.kallsyms])
+	ffffa521381466b0 el0t_64_sync_handler+0xf0 ([kernel.kallsyms])
+	ffffa52136911e98 el0t_64_sync+0x1b8 ([kernel.kallsyms])
+	    c06bcada0c8c main+0x8c (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.048076:      81196 cycles:P: 
+	    c06bcada0c88 main+0x88 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.049009:     181656 cycles:P: 
+	ffffa52138105134 __pi_clear_page+0x34 ([kernel.kallsyms])
+	ffffa52136e37d9c get_page_from_freelist+0x24c ([kernel.kallsyms])
+	ffffa52136e39390 __alloc_frozen_pages_noprof+0x170 ([kernel.kallsyms])
+	ffffa52136e836bc alloc_pages_mpol+0xc4 ([kernel.kallsyms])
+	ffffa52136e83d30 folio_alloc_mpol_noprof+0x20 ([kernel.kallsyms])
+	ffffa52136e8403c vma_alloc_folio_noprof+0x8c ([kernel.kallsyms])
+	ffffa52136948e68 vma_alloc_zeroed_movable_folio+0x40 ([kernel.kallsyms])
+	ffffa52136dfa660 alloc_anon_folio+0x1b0 ([kernel.kallsyms])
+	ffffa52136dfab74 do_anonymous_page+0x104 ([kernel.kallsyms])
+	ffffa52136dfc1fc handle_pte_fault+0x264 ([kernel.kallsyms])
+	ffffa52136dfc478 __handle_mm_fault+0x258 ([kernel.kallsyms])
+	ffffa52136dfc750 handle_mm_fault+0x100 ([kernel.kallsyms])
+	ffffa5213815bd4c do_page_fault+0x13c ([kernel.kallsyms])
+	ffffa5213815c37c do_translation_fault+0x7c ([kernel.kallsyms])
+	ffffa521369486a0 do_mem_abort+0x50 ([kernel.kallsyms])
+	ffffa5213814538c el0_da+0x4c ([kernel.kallsyms])
+	ffffa521381466b0 el0t_64_sync_handler+0xf0 ([kernel.kallsyms])
+	ffffa52136911e98 el0t_64_sync+0x1b8 ([kernel.kallsyms])
+	    c06bcada0c8c main+0x8c (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.049115:     253951 cycles:P: 
+	    c06bcada0c84 main+0x84 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.049211:     230715 cycles:P: 
+	ffffa52136e34a34 __rmqueue_pcplist+0x7c ([kernel.kallsyms])
+	ffffa52136e35db8 rmqueue.isra.0+0xfb0 ([kernel.kallsyms])
+	ffffa52136e37d2c get_page_from_freelist+0x1dc ([kernel.kallsyms])
+	ffffa52136e39390 __alloc_frozen_pages_noprof+0x170 ([kernel.kallsyms])
+	ffffa52136e836bc alloc_pages_mpol+0xc4 ([kernel.kallsyms])
+	ffffa52136e83d30 folio_alloc_mpol_noprof+0x20 ([kernel.kallsyms])
+	ffffa52136e8403c vma_alloc_folio_noprof+0x8c ([kernel.kallsyms])
+	ffffa52136948e68 vma_alloc_zeroed_movable_folio+0x40 ([kernel.kallsyms])
+	ffffa52136dfa660 alloc_anon_folio+0x1b0 ([kernel.kallsyms])
+	ffffa52136dfab74 do_anonymous_page+0x104 ([kernel.kallsyms])
+	ffffa52136dfc1fc handle_pte_fault+0x264 ([kernel.kallsyms])
+	ffffa52136dfc478 __handle_mm_fault+0x258 ([kernel.kallsyms])
+	ffffa52136dfc750 handle_mm_fault+0x100 ([kernel.kallsyms])
+	ffffa5213815bd4c do_page_fault+0x13c ([kernel.kallsyms])
+	ffffa5213815c37c do_translation_fault+0x7c ([kernel.kallsyms])
+	ffffa521369486a0 do_mem_abort+0x50 ([kernel.kallsyms])
+	ffffa5213814538c el0_da+0x4c ([kernel.kallsyms])
+	ffffa521381466b0 el0t_64_sync_handler+0xf0 ([kernel.kallsyms])
+	ffffa52136911e98 el0t_64_sync+0x1b8 ([kernel.kallsyms])
+	    c06bcada0c8c main+0x8c (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.049321:     269632 cycles:P: 
+	    c06bcada0d28 main+0x128 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.049450:     323772 cycles:P: 
+	    c06bcada0ce8 main+0xe8 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.049597:     375307 cycles:P: 
+	    c06bcada0d10 main+0x110 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.049763:     419223 cycles:P: 
+	    c06bcada0d2c main+0x12c (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.050100:     456064 cycles:P: 
+	ffffa52136e836f4 alloc_pages_mpol+0xfc ([kernel.kallsyms])
+	ffffa52136e8403c vma_alloc_folio_noprof+0x8c ([kernel.kallsyms])
+	ffffa52136948e68 vma_alloc_zeroed_movable_folio+0x40 ([kernel.kallsyms])
+	ffffa52136dfa660 alloc_anon_folio+0x1b0 ([kernel.kallsyms])
+	ffffa52136dfab74 do_anonymous_page+0x104 ([kernel.kallsyms])
+	ffffa52136dfc1fc handle_pte_fault+0x264 ([kernel.kallsyms])
+	ffffa52136dfc478 __handle_mm_fault+0x258 ([kernel.kallsyms])
+	ffffa52136dfc750 handle_mm_fault+0x100 ([kernel.kallsyms])
+	ffffa5213815bd4c do_page_fault+0x13c ([kernel.kallsyms])
+	ffffa5213815c37c do_translation_fault+0x7c ([kernel.kallsyms])
+	ffffa521369486a0 do_mem_abort+0x50 ([kernel.kallsyms])
+	ffffa5213814538c el0_da+0x4c ([kernel.kallsyms])
+	ffffa521381466b0 el0t_64_sync_handler+0xf0 ([kernel.kallsyms])
+	ffffa52136911e98 el0t_64_sync+0x1b8 ([kernel.kallsyms])
+	    e67ccfb12fc0 __memset_zva64+0x100 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada148f std::vector<int, std::allocator<int> >::vector(unsigned long, std::allocator<int> const&)+0x6f (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    c06bcada0dd0 main+0x1d0 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.050287:     488321 cycles:P: 
+	ffffa5213815bca0 do_page_fault+0x90 ([kernel.kallsyms])
+	ffffa5213815c37c do_translation_fault+0x7c ([kernel.kallsyms])
+	ffffa521369486a0 do_mem_abort+0x50 ([kernel.kallsyms])
+	ffffa5213814538c el0_da+0x4c ([kernel.kallsyms])
+	ffffa521381466b0 el0t_64_sync_handler+0xf0 ([kernel.kallsyms])
+	ffffa52136911e98 el0t_64_sync+0x1b8 ([kernel.kallsyms])
+	    e67ccfb12fc0 __memset_zva64+0x100 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada148f std::vector<int, std::allocator<int> >::vector(unsigned long, std::allocator<int> const&)+0x6f (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    c06bcada0df0 main+0x1f0 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.050470:     472665 cycles:P: 
+	ffffa52136e37d10 get_page_from_freelist+0x1c0 ([kernel.kallsyms])
+	ffffa52136e39390 __alloc_frozen_pages_noprof+0x170 ([kernel.kallsyms])
+	ffffa52136e836bc alloc_pages_mpol+0xc4 ([kernel.kallsyms])
+	ffffa52136e83d30 folio_alloc_mpol_noprof+0x20 ([kernel.kallsyms])
+	ffffa52136e8403c vma_alloc_folio_noprof+0x8c ([kernel.kallsyms])
+	ffffa52136948e68 vma_alloc_zeroed_movable_folio+0x40 ([kernel.kallsyms])
+	ffffa52136dfa660 alloc_anon_folio+0x1b0 ([kernel.kallsyms])
+	ffffa52136dfab74 do_anonymous_page+0x104 ([kernel.kallsyms])
+	ffffa52136dfc1fc handle_pte_fault+0x264 ([kernel.kallsyms])
+	ffffa52136dfc478 __handle_mm_fault+0x258 ([kernel.kallsyms])
+	ffffa52136dfc750 handle_mm_fault+0x100 ([kernel.kallsyms])
+	ffffa5213815bd4c do_page_fault+0x13c ([kernel.kallsyms])
+	ffffa5213815c37c do_translation_fault+0x7c ([kernel.kallsyms])
+	ffffa521369486a0 do_mem_abort+0x50 ([kernel.kallsyms])
+	ffffa5213814538c el0_da+0x4c ([kernel.kallsyms])
+	ffffa521381466b0 el0t_64_sync_handler+0xf0 ([kernel.kallsyms])
+	ffffa52136911e98 el0t_64_sync+0x1b8 ([kernel.kallsyms])
+	    e67ccfb12fc0 __memset_zva64+0x100 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada148f std::vector<int, std::allocator<int> >::vector(unsigned long, std::allocator<int> const&)+0x6f (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    c06bcada0df0 main+0x1f0 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.050660:     492231 cycles:P: 
+	    c06bcada0e78 main+0x278 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.050858:     515010 cycles:P: 
+	    c06bcada0e68 main+0x268 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.051078:     535399 cycles:P: 
+	    c06bcada0e78 main+0x278 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.051292:     563821 cycles:P: 
+	    c06bcada0e78 main+0x278 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.051510:     573366 cycles:P: 
+	    c06bcada0e78 main+0x278 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.051734:     585286 cycles:P: 
+	    c06bcada0eb4 main+0x2b4 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.051979:     596149 cycles:P: 
+	ffffa52136d8c804 folios_put_refs+0x14c ([kernel.kallsyms])
+	ffffa52136e5ecb8 free_pages_and_swap_cache+0x100 ([kernel.kallsyms])
+	ffffa52136e05c14 __tlb_batch_free_encoded_pages+0x64 ([kernel.kallsyms])
+	ffffa52136e06dac tlb_finish_mmu+0x9c ([kernel.kallsyms])
+	ffffa52136e25580 vms_clear_ptes+0x168 ([kernel.kallsyms])
+	ffffa52136e26b40 vms_complete_munmap_vmas+0x88 ([kernel.kallsyms])
+	ffffa52136e27500 do_vmi_align_munmap+0x188 ([kernel.kallsyms])
+	ffffa52136e275e8 do_vmi_munmap+0xb8 ([kernel.kallsyms])
+	ffffa52136e2a378 __vm_munmap+0x148 ([kernel.kallsyms])
+	ffffa52136e01c6c __arm64_sys_munmap+0x2c ([kernel.kallsyms])
+	ffffa52136935234 invoke_syscall+0x74 ([kernel.kallsyms])
+	ffffa52136935334 el0_svc_common.constprop.0+0x4c ([kernel.kallsyms])
+	ffffa52136935450 do_el0_svc+0x28 ([kernel.kallsyms])
+	ffffa52138146060 el0_svc+0x40 ([kernel.kallsyms])
+	ffffa52138146680 el0t_64_sync_handler+0xc0 ([kernel.kallsyms])
+	ffffa52136911e98 el0t_64_sync+0x1b8 ([kernel.kallsyms])
+	    e67ccfb57d8c __munmap+0xc (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfb06f2f cfree@GLIBC_2.17+0x6f (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada0ec4 main+0x2c4 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.052218:     610494 cycles:P: 
+	    c06bcada0f44 main+0x344 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.052456:     612042 cycles:P: 
+	ffffa52136e33ee0 rmqueue_bulk+0x4e0 ([kernel.kallsyms])
+	ffffa52136e34c6c __rmqueue_pcplist+0x2b4 ([kernel.kallsyms])
+	ffffa52136e35db8 rmqueue.isra.0+0xfb0 ([kernel.kallsyms])
+	ffffa52136e37d2c get_page_from_freelist+0x1dc ([kernel.kallsyms])
+	ffffa52136e39390 __alloc_frozen_pages_noprof+0x170 ([kernel.kallsyms])
+	ffffa52136e836bc alloc_pages_mpol+0xc4 ([kernel.kallsyms])
+	ffffa52136e83d30 folio_alloc_mpol_noprof+0x20 ([kernel.kallsyms])
+	ffffa52136e8403c vma_alloc_folio_noprof+0x8c ([kernel.kallsyms])
+	ffffa52136948e68 vma_alloc_zeroed_movable_folio+0x40 ([kernel.kallsyms])
+	ffffa52136dfa660 alloc_anon_folio+0x1b0 ([kernel.kallsyms])
+	ffffa52136dfab74 do_anonymous_page+0x104 ([kernel.kallsyms])
+	ffffa52136dfc1fc handle_pte_fault+0x264 ([kernel.kallsyms])
+	ffffa52136dfc478 __handle_mm_fault+0x258 ([kernel.kallsyms])
+	ffffa52136dfc750 handle_mm_fault+0x100 ([kernel.kallsyms])
+	ffffa5213815bd4c do_page_fault+0x13c ([kernel.kallsyms])
+	ffffa5213815c37c do_translation_fault+0x7c ([kernel.kallsyms])
+	ffffa521369486a0 do_mem_abort+0x50 ([kernel.kallsyms])
+	ffffa5213814538c el0_da+0x4c ([kernel.kallsyms])
+	ffffa521381466b0 el0t_64_sync_handler+0xf0 ([kernel.kallsyms])
+	ffffa52136911e98 el0t_64_sync+0x1b8 ([kernel.kallsyms])
+	    e67ccfb12fc0 __memset_zva64+0x100 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada0f73 main+0x373 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.052685:     615564 cycles:P: 
+	ffffa52136ebce70 memcg1_commit_charge+0x68 ([kernel.kallsyms])
+	ffffa52136ec878c charge_memcg+0x6c ([kernel.kallsyms])
+	ffffa52136eca17c __mem_cgroup_charge+0x44 ([kernel.kallsyms])
+	ffffa52136dfa678 alloc_anon_folio+0x1c8 ([kernel.kallsyms])
+	ffffa52136dfab74 do_anonymous_page+0x104 ([kernel.kallsyms])
+	ffffa52136dfc1fc handle_pte_fault+0x264 ([kernel.kallsyms])
+	ffffa52136dfc478 __handle_mm_fault+0x258 ([kernel.kallsyms])
+	ffffa52136dfc750 handle_mm_fault+0x100 ([kernel.kallsyms])
+	ffffa5213815bd4c do_page_fault+0x13c ([kernel.kallsyms])
+	ffffa5213815c37c do_translation_fault+0x7c ([kernel.kallsyms])
+	ffffa521369486a0 do_mem_abort+0x50 ([kernel.kallsyms])
+	ffffa5213814538c el0_da+0x4c ([kernel.kallsyms])
+	ffffa521381466b0 el0t_64_sync_handler+0xf0 ([kernel.kallsyms])
+	ffffa52136911e98 el0t_64_sync+0x1b8 ([kernel.kallsyms])
+	    e67ccfb12fc0 __memset_zva64+0x100 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada0f73 main+0x373 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.053166:     628883 cycles:P: 
+	    c06bcada0fd8 main+0x3d8 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.053408:     628883 cycles:P: 
+	    c06bcada0fd8 main+0x3d8 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.053636:     591148 cycles:P: 
+	    c06bcada0fd8 main+0x3d8 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.053887:     593404 cycles:P: 
+	    c06bcada1018 main+0x418 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.054131:     600422 cycles:P: 
+	    c06bcada10f4 main+0x4f4 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.054361:     603093 cycles:P: 
+	    c06bcada10f0 main+0x4f0 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.054592:     604902 cycles:P: 
+	    c06bcada10fc main+0x4fc (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.054827:     611604 cycles:P: 
+	    c06bcada10fc main+0x4fc (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.055081:     617861 cycles:P: 
+	    c06bcada10fc main+0x4fc (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.055321:     625730 cycles:P: 
+	    c06bcada10fc main+0x4fc (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.055560:     624574 cycles:P: 
+	    c06bcada10fc main+0x4fc (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.055799:     627851 cycles:P: 
+	    c06bcada10fc main+0x4fc (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.056057:     631507 cycles:P: 
+	    c06bcada10f8 main+0x4f8 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.056306:     636035 cycles:P: 
+	    c06bcada10fc main+0x4fc (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.056548:     633775 cycles:P: 
+	    c06bcada10fc main+0x4fc (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.056790:     633926 cycles:P: 
+	    c06bcada10ec main+0x4ec (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.057049:     636554 cycles:P: 
+	    c06bcada10fc main+0x4fc (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.057293:     639422 cycles:P: 
+	    c06bcada10f8 main+0x4f8 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.057536:     636544 cycles:P: 
+	    c06bcada10fc main+0x4fc (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.057779:     638529 cycles:P: 
+	    c06bcada10fc main+0x4fc (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.058042:     640908 cycles:P: 
+	    c06bcada10f8 main+0x4f8 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.058288:     643425 cycles:P: 
+	    c06bcada10fc main+0x4fc (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.058532:     639439 cycles:P: 
+	    c06bcada10fc main+0x4fc (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.058776:     640840 cycles:P: 
+	    c06bcada10f4 main+0x4f4 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.059037:     642865 cycles:P: 
+	    c06bcada10fc main+0x4fc (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.059284:     644656 cycles:P: 
+	    c06bcada10fc main+0x4fc (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.059529:     641078 cycles:P: 
+	    c06bcada10f0 main+0x4f0 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.059774:     642110 cycles:P: 
+	    c06bcada1134 main+0x534 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.060034:     643859 cycles:P: 
+	    c06bcada1134 main+0x534 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.060284:     645146 cycles:P: 
+	    c06bcada0fd8 main+0x3d8 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.060529:     642014 cycles:P: 
+	    c06bcada0fd8 main+0x3d8 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.060774:     642160 cycles:P: 
+	    c06bcada0fd8 main+0x3d8 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.061036:     643759 cycles:P: 
+	    c06bcada0fd8 main+0x3d8 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.061282:     645199 cycles:P: 
+	    c06bcada1018 main+0x418 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.061526:     641333 cycles:P: 
+	    c06bcada10fc main+0x4fc (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.061771:     642798 cycles:P: 
+	    c06bcada10fc main+0x4fc (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.062035:     644776 cycles:P: 
+	    c06bcada10fc main+0x4fc (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.062281:     646324 cycles:P: 
+	    c06bcada10f4 main+0x4f4 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.062526:     642018 cycles:P: 
+	    c06bcada10fc main+0x4fc (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.062771:     643307 cycles:P: 
+	    c06bcada10fc main+0x4fc (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.063033:     645071 cycles:P: 
+	    c06bcada10fc main+0x4fc (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.063280:     646418 cycles:P: 
+	    c06bcada10f0 main+0x4f0 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.063524:     642496 cycles:P: 
+	    c06bcada1070 main+0x470 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.063769:     643757 cycles:P: 
+	    c06bcada10fc main+0x4fc (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.064032:     645512 cycles:P: 
+	    c06bcada10fc main+0x4fc (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.064286:     646904 cycles:P: 
+	    c06bcada10f8 main+0x4f8 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.064530:     643094 cycles:P: 
+	    c06bcada10f0 main+0x4f0 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.064775:     641865 cycles:P: 
+	    c06bcada10f4 main+0x4f4 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.065037:     643526 cycles:P: 
+	    c06bcada10fc main+0x4fc (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.065284:     644730 cycles:P: 
+	    c06bcada10fc main+0x4fc (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.065528:     640879 cycles:P: 
+	    c06bcada10fc main+0x4fc (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.065773:     642136 cycles:P: 
+	    c06bcada10fc main+0x4fc (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.066035:     644014 cycles:P: 
+	    c06bcada10f0 main+0x4f0 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.066281:     645521 cycles:P: 
+	    c06bcada10fc main+0x4fc (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.066526:     641729 cycles:P: 
+	    c06bcada10f4 main+0x4f4 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.066771:     643119 cycles:P: 
+	    c06bcada10fc main+0x4fc (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.067035:     644829 cycles:P: 
+	    c06bcada1134 main+0x534 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.067280:     646170 cycles:P: 
+	    c06bcada1134 main+0x534 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.067524:     641816 cycles:P: 
+	    c06bcada0fd8 main+0x3d8 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.067769:     643367 cycles:P: 
+	    c06bcada0fd8 main+0x3d8 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.068032:     645431 cycles:P: 
+	    c06bcada0fc8 main+0x3c8 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.068284:     646887 cycles:P: 
+	    c06bcada0fbc main+0x3bc (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.068530:     643065 cycles:P: 
+	    c06bcada1010 main+0x410 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.068773:     642208 cycles:P: 
+	    c06bcada1010 main+0x410 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.069035:     643812 cycles:P: 
+	    c06bcada10fc main+0x4fc (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.069280:     645336 cycles:P: 
+	    c06bcada10f4 main+0x4f4 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.069524:     641893 cycles:P: 
+	    c06bcada10b4 main+0x4b4 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.069769:     643497 cycles:P: 
+	    c06bcada10fc main+0x4fc (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.070030:     645457 cycles:P: 
+	    c06bcada109c main+0x49c (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.070276:     647009 cycles:P: 
+	    c06bcada10fc main+0x4fc (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.070521:     643424 cycles:P: 
+	    c06bcada10fc main+0x4fc (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.070767:     644679 cycles:P: 
+	    c06bcada10f0 main+0x4f0 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.071029:     646347 cycles:P: 
+	    c06bcada10fc main+0x4fc (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.071276:     647653 cycles:P: 
+	    c06bcada10fc main+0x4fc (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.071521:     643762 cycles:P: 
+	    c06bcada10fc main+0x4fc (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.071766:     644942 cycles:P: 
+	    c06bcada10f0 main+0x4f0 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.072029:     646516 cycles:P: 
+	    c06bcada10fc main+0x4fc (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.072283:     647724 cycles:P: 
+	    c06bcada10fc main+0x4fc (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.072529:     643774 cycles:P: 
+	    c06bcada10fc main+0x4fc (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.072773:     642522 cycles:P: 
+	    c06bcada10fc main+0x4fc (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.073035:     644024 cycles:P: 
+	    c06bcada10fc main+0x4fc (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.073280:     645084 cycles:P: 
+	    c06bcada10f4 main+0x4f4 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.073524:     641541 cycles:P: 
+	    c06bcada10fc main+0x4fc (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.073769:     643075 cycles:P: 
+	    c06bcada10fc main+0x4fc (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.074032:     645084 cycles:P: 
+	    c06bcada10fc main+0x4fc (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.074278:     646665 cycles:P: 
+	    c06bcada10fc main+0x4fc (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.074523:     642648 cycles:P: 
+	    c06bcada1134 main+0x534 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.074767:     643897 cycles:P: 
+	    c06bcada1134 main+0x534 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.075028:     645626 cycles:P: 
+	    c06bcada0fe0 main+0x3e0 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.075275:     647328 cycles:P: 
+	    c06bcada0fd8 main+0x3d8 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.075521:     643904 cycles:P: 
+	    c06bcada0fd8 main+0x3d8 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.075767:     645018 cycles:P: 
+	    c06bcada0fd8 main+0x3d8 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.076028:     646453 cycles:P: 
+	    c06bcada1010 main+0x410 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.076279:     647671 cycles:P: 
+	    c06bcada10fc main+0x4fc (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.076523:     643995 cycles:P: 
+	    c06bcada10f4 main+0x4f4 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.076769:     643833 cycles:P: 
+	    c06bcada10fc main+0x4fc (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.077031:     645646 cycles:P: 
+	    c06bcada10fc main+0x4fc (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.077277:     646719 cycles:P: 
+	    c06bcada10fc main+0x4fc (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.077522:     642964 cycles:P: 
+	    c06bcada10fc main+0x4fc (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.077767:     644294 cycles:P: 
+	    c06bcada10f8 main+0x4f8 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.078029:     646040 cycles:P: 
+	    c06bcada10f8 main+0x4f8 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.078275:     647356 cycles:P: 
+	    c06bcada10f4 main+0x4f4 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.078520:     643674 cycles:P: 
+	    c06bcada10f0 main+0x4f0 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.078765:     644877 cycles:P: 
+	    c06bcada10f4 main+0x4f4 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.079028:     646663 cycles:P: 
+	    c06bcada10f4 main+0x4f4 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.079275:     648117 cycles:P: 
+	    c06bcada10f4 main+0x4f4 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.079519:     643982 cycles:P: 
+	    c06bcada10f4 main+0x4f4 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.079764:     645168 cycles:P: 
+	    c06bcada10fc main+0x4fc (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.080027:     646929 cycles:P: 
+	    c06bcada10fc main+0x4fc (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.080279:     648353 cycles:P: 
+	    c06bcada10fc main+0x4fc (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.080524:     644428 cycles:P: 
+	    c06bcada10f4 main+0x4f4 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.080770:     643815 cycles:P: 
+	    c06bcada10fc main+0x4fc (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.081032:     645328 cycles:P: 
+	    c06bcada10fc main+0x4fc (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.081278:     646241 cycles:P: 
+	    c06bcada10f4 main+0x4f4 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.081523:     642438 cycles:P: 
+	    c06bcada10fc main+0x4fc (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.081769:     643745 cycles:P: 
+	    c06bcada1134 main+0x534 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.082031:     645469 cycles:P: 
+	    c06bcada1134 main+0x534 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.082276:     646498 cycles:P: 
+	    c06bcada1134 main+0x534 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.082520:     642758 cycles:P: 
+	    c06bcada0fd8 main+0x3d8 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.082766:     644430 cycles:P: 
+	    c06bcada0fd8 main+0x3d8 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.083029:     646256 cycles:P: 
+	    c06bcada0fac main+0x3ac (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.083275:     647586 cycles:P: 
+	    c06bcada1010 main+0x410 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.083520:     643636 cycles:P: 
+	    c06bcada1010 main+0x410 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.083766:     644814 cycles:P: 
+	    c06bcada10f8 main+0x4f8 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.084027:     646571 cycles:P: 
+	    c06bcada10fc main+0x4fc (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.084279:     647684 cycles:P: 
+	    c06bcada1080 main+0x480 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.084524:     644216 cycles:P: 
+	    c06bcada10fc main+0x4fc (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.084769:     643487 cycles:P: 
+	    c06bcada10fc main+0x4fc (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.085032:     645101 cycles:P: 
+	    c06bcada10f4 main+0x4f4 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.085278:     646207 cycles:P: 
+	    c06bcada10fc main+0x4fc (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.085522:     642386 cycles:P: 
+	    c06bcada10fc main+0x4fc (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.085767:     643720 cycles:P: 
+	    c06bcada10f8 main+0x4f8 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.086031:     645530 cycles:P: 
+	    c06bcada10f4 main+0x4f4 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.086277:     647300 cycles:P: 
+	    c06bcada10fc main+0x4fc (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.086522:     642917 cycles:P: 
+	    c06bcada10fc main+0x4fc (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.086767:     644048 cycles:P: 
+	    c06bcada10f4 main+0x4f4 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.087029:     645885 cycles:P: 
+	    c06bcada10f8 main+0x4f8 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.087276:     647170 cycles:P: 
+	    c06bcada10f4 main+0x4f4 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.087520:     643327 cycles:P: 
+	    c06bcada10fc main+0x4fc (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.087765:     644570 cycles:P: 
+	    c06bcada10fc main+0x4fc (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.088027:     646242 cycles:P: 
+	    c06bcada10fc main+0x4fc (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.088292:     647894 cycles:P: 
+	    c06bcada10fc main+0x4fc (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.088538:     644241 cycles:P: 
+	    c06bcada10f4 main+0x4f4 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.088782:     639519 cycles:P: 
+	    c06bcada10fc main+0x4fc (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.089042:     640863 cycles:P: 
+	    c06bcada10fc main+0x4fc (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.089287:     641737 cycles:P: 
+	    c06bcada113c main+0x53c (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.089529:     638536 cycles:P: 
+	    c06bcada1134 main+0x534 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.089773:     640367 cycles:P: 
+	    c06bcada0fd8 main+0x3d8 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.090036:     642718 cycles:P: 
+	    c06bcada0fd8 main+0x3d8 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.090282:     645063 cycles:P: 
+	    c06bcada0fd8 main+0x3d8 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.090527:     640934 cycles:P: 
+	    c06bcada0fc8 main+0x3c8 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.090770:     642278 cycles:P: 
+	    c06bcada1010 main+0x410 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.091032:     644096 cycles:P: 
+	    c06bcada10fc main+0x4fc (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.091278:     646144 cycles:P: 
+	    c06bcada10f4 main+0x4f4 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.091522:     642389 cycles:P: 
+	    c06bcada10f4 main+0x4f4 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.091766:     643862 cycles:P: 
+	    c06bcada10fc main+0x4fc (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.092027:     645915 cycles:P: 
+	    c06bcada10f4 main+0x4f4 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.092279:     647668 cycles:P: 
+	    c06bcada10f8 main+0x4f8 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.092524:     644161 cycles:P: 
+	    c06bcada10f4 main+0x4f4 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.092769:     643454 cycles:P: 
+	    c06bcada10f4 main+0x4f4 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.093031:     645102 cycles:P: 
+	    c06bcada10fc main+0x4fc (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.093277:     646221 cycles:P: 
+	    c06bcada10fc main+0x4fc (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.093523:     642637 cycles:P: 
+	    c06bcada10fc main+0x4fc (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.093768:     644040 cycles:P: 
+	    c06bcada10f4 main+0x4f4 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.094029:     645316 cycles:P: 
+	    c06bcada10f4 main+0x4f4 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.094275:     646774 cycles:P: 
+	    c06bcada10f4 main+0x4f4 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.094520:     643194 cycles:P: 
+	    c06bcada10fc main+0x4fc (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.094766:     644500 cycles:P: 
+	    c06bcada10fc main+0x4fc (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.095028:     646238 cycles:P: 
+	    c06bcada10fc main+0x4fc (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.095274:     647571 cycles:P: 
+	    c06bcada10fc main+0x4fc (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.095519:     643778 cycles:P: 
+	    c06bcada10fc main+0x4fc (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.095771:     645087 cycles:P: 
+	    c06bcada10fc main+0x4fc (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.096034:     646733 cycles:P: 
+	    c06bcada10f4 main+0x4f4 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.096285:     645523 cycles:P: 
+	    c06bcada10fc main+0x4fc (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.096529:     641637 cycles:P: 
+	    c06bcada1134 main+0x534 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.096773:     641314 cycles:P: 
+	    c06bcada1134 main+0x534 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.097034:     643053 cycles:P: 
+	ffffa52136df3400 zap_present_ptes+0x68 ([kernel.kallsyms])
+	ffffa52136df3ecc zap_pte_range+0x30c ([kernel.kallsyms])
+	ffffa52136df4198 zap_pmd_range.isra.0+0xd0 ([kernel.kallsyms])
+	ffffa52136df457c unmap_page_range+0xec ([kernel.kallsyms])
+	ffffa52136df4754 unmap_single_vma.isra.0+0x94 ([kernel.kallsyms])
+	ffffa52136df48dc unmap_vmas+0x94 ([kernel.kallsyms])
+	ffffa52136e2554c vms_clear_ptes+0x134 ([kernel.kallsyms])
+	ffffa52136e26b40 vms_complete_munmap_vmas+0x88 ([kernel.kallsyms])
+	ffffa52136e27500 do_vmi_align_munmap+0x188 ([kernel.kallsyms])
+	ffffa52136e275e8 do_vmi_munmap+0xb8 ([kernel.kallsyms])
+	ffffa52136e2a378 __vm_munmap+0x148 ([kernel.kallsyms])
+	ffffa52136e01c6c __arm64_sys_munmap+0x2c ([kernel.kallsyms])
+	ffffa52136935234 invoke_syscall+0x74 ([kernel.kallsyms])
+	ffffa52136935334 el0_svc_common.constprop.0+0x4c ([kernel.kallsyms])
+	ffffa52136935450 do_el0_svc+0x28 ([kernel.kallsyms])
+	ffffa52138146060 el0_svc+0x40 ([kernel.kallsyms])
+	ffffa52138146680 el0t_64_sync_handler+0xc0 ([kernel.kallsyms])
+	ffffa52136911e98 el0t_64_sync+0x1b8 ([kernel.kallsyms])
+	    e67ccfb57d8c __munmap+0xc (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfb06f2f cfree@GLIBC_2.17+0x6f (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada11a0 main+0x5a0 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.097281:     644931 cycles:P: 
+	ffffa52136df3400 zap_present_ptes+0x68 ([kernel.kallsyms])
+	ffffa52136df3ecc zap_pte_range+0x30c ([kernel.kallsyms])
+	ffffa52136df4198 zap_pmd_range.isra.0+0xd0 ([kernel.kallsyms])
+	ffffa52136df457c unmap_page_range+0xec ([kernel.kallsyms])
+	ffffa52136df4754 unmap_single_vma.isra.0+0x94 ([kernel.kallsyms])
+	ffffa52136df48dc unmap_vmas+0x94 ([kernel.kallsyms])
+	ffffa52136e2554c vms_clear_ptes+0x134 ([kernel.kallsyms])
+	ffffa52136e26b40 vms_complete_munmap_vmas+0x88 ([kernel.kallsyms])
+	ffffa52136e27500 do_vmi_align_munmap+0x188 ([kernel.kallsyms])
+	ffffa52136e275e8 do_vmi_munmap+0xb8 ([kernel.kallsyms])
+	ffffa52136e2a378 __vm_munmap+0x148 ([kernel.kallsyms])
+	ffffa52136e01c6c __arm64_sys_munmap+0x2c ([kernel.kallsyms])
+	ffffa52136935234 invoke_syscall+0x74 ([kernel.kallsyms])
+	ffffa52136935334 el0_svc_common.constprop.0+0x4c ([kernel.kallsyms])
+	ffffa52136935450 do_el0_svc+0x28 ([kernel.kallsyms])
+	ffffa52138146060 el0_svc+0x40 ([kernel.kallsyms])
+	ffffa52138146680 el0t_64_sync_handler+0xc0 ([kernel.kallsyms])
+	ffffa52136911e98 el0t_64_sync+0x1b8 ([kernel.kallsyms])
+	    e67ccfb57d8c __munmap+0xc (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfb06f2f cfree@GLIBC_2.17+0x6f (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada11c0 main+0x5c0 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+
+main 1691705 389920.097525:     641544 cycles:P: 
+	ffffa52136d8c804 folios_put_refs+0x14c ([kernel.kallsyms])
+	ffffa52136e5ecb8 free_pages_and_swap_cache+0x100 ([kernel.kallsyms])
+	ffffa52136e05c14 __tlb_batch_free_encoded_pages+0x64 ([kernel.kallsyms])
+	ffffa52136e06dac tlb_finish_mmu+0x9c ([kernel.kallsyms])
+	ffffa52136e25580 vms_clear_ptes+0x168 ([kernel.kallsyms])
+	ffffa52136e26b40 vms_complete_munmap_vmas+0x88 ([kernel.kallsyms])
+	ffffa52136e27500 do_vmi_align_munmap+0x188 ([kernel.kallsyms])
+	ffffa52136e275e8 do_vmi_munmap+0xb8 ([kernel.kallsyms])
+	ffffa52136e2a378 __vm_munmap+0x148 ([kernel.kallsyms])
+	ffffa52136e01c6c __arm64_sys_munmap+0x2c ([kernel.kallsyms])
+	ffffa52136935234 invoke_syscall+0x74 ([kernel.kallsyms])
+	ffffa52136935334 el0_svc_common.constprop.0+0x4c ([kernel.kallsyms])
+	ffffa52136935450 do_el0_svc+0x28 ([kernel.kallsyms])
+	ffffa52138146060 el0_svc+0x40 ([kernel.kallsyms])
+	ffffa52138146680 el0t_64_sync_handler+0xc0 ([kernel.kallsyms])
+	ffffa52136911e98 el0t_64_sync+0x1b8 ([kernel.kallsyms])
+	    e67ccfb57d8c __munmap+0xc (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfb06f2f cfree@GLIBC_2.17+0x6f (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada11c0 main+0x5c0 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+	    e67ccfa984c4 __libc_start_call_main+0x74 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    e67ccfa98598 __libc_start_main@@GLIBC_2.34+0x98 (/usr/lib/aarch64-linux-gnu/libc.so.6)
+	    c06bcada12f0 _start+0x30 (/home/user/coding-labs/assignment4-profiling/lab2/main)
+

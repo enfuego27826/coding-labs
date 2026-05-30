@@ -150,28 +150,35 @@ static int branchy_score(const Packet& p, const std::vector<int>& lane_weight) {
     return score & 4095;
 }
 
-static int chase_dependency(int start, int steps, const std::vector<int>& next, const std::vector<int>& value) {
-    int idx = start & ((int)next.size() - 1);
-    int total = 0;
+static std::vector<int> precompute(const std::vector<int>& next,const std::vector<int>& value){
+    int n = next.size();
+    std::vector<int> perm(n);
+    int curr = 0;
 
-    for (int i = 0; i < steps; ++i) {
-        idx = next[idx];
-        total += value[idx];
+    for(int i = 0; i < n; ++i){
+        perm[i] = curr;
+        curr = next[curr]; //convert linked list to an array
     }
 
-    return total;
+    std::vector<int> pref(n);
+    int window = 0;
+
+    for(int i = 1; i < STEPS+1; ++i) window += value[perm[i]];
+    pref[0] = window;
+
+    for(int i = 1; i < n; ++i){
+        window -= value[perm[i]];
+        window += value[perm[((i+STEPS)%n)]];
+        pref[perm[i]] = window;
+    }
+
+    return pref;
 }
 
-static int cold_column_probe(const std::vector<int>& history, int rows, int cols, int seed) {
+static int cold_column_probe(const std::vector<int>& history) {
     int sum = 0;
-    int start_col = seed % cols;
-
-    for (int offset = 0; offset < cols; ++offset) {
-        int col = (start_col + offset) % cols;
-        for (int row = 0; row < rows; ++row) {
-            sum += history[row * cols + col] & 31;
-        }
-    }
+    
+    for(int i = 0; i < history.size(); ++i) sum += (history[i] & 31);
 
     return sum;
 }
@@ -179,8 +186,8 @@ static int cold_column_probe(const std::vector<int>& history, int rows, int cols
 static long long process_packets(
     const std::vector<Packet>& packets,
     const std::vector<int>& lane_weight,
-    const std::vector<int>& dependency_next,
-    const std::vector<int>& dependency_value
+    const std::vector<int>& pref,
+    int next_size
 ) {
     long long total = 0;
 
@@ -189,7 +196,8 @@ static long long process_packets(
         int score = branchy_score(p, lane_weight);
 
         if ((score ^ p.quality) & 7) {
-            score += chase_dependency(score + p.device_id, STEPS, dependency_next, dependency_value);
+            // score += chase_dependency(score + p.device_id, STEPS, dependency_next, dependency_value);
+            score += pref[(score+p.device_id) & (next_size - 1)];
         } else {
             score += lane_weight[p.lane];
         }
@@ -206,6 +214,7 @@ static long long run_epoch(
     const std::vector<int>& dependency_next,
     const std::vector<int>& dependency_value,
     std::vector<int>& history,
+    const std::vector<int>& pref,
     int history_cols
 ) {
     refresh_history(history, packets, history_cols);
@@ -213,12 +222,11 @@ static long long run_epoch(
     long long total = process_packets(
         packets,
         lane_weight,
-        dependency_next,
-        dependency_value
+        pref,
+        dependency_next.size()
     );
 
-    int rows = (int)history.size() / history_cols;
-    total += cold_column_probe(history, rows, history_cols, (int)(total & 1023));
+    total += cold_column_probe(history);
     return total;
 }
 
@@ -239,6 +247,8 @@ int main() {
     std::vector<int> dependency_value = build_dependency_value(dependency_count);
     std::vector<int> history(device_count * history_cols, 0);
 
+    std::vector<int> pref = precompute(dependency_next,dependency_value);
+
     long long answer = 0;
     for (int epoch = 0; epoch < epochs; ++epoch) {
         answer += run_epoch(
@@ -247,6 +257,7 @@ int main() {
             dependency_next,
             dependency_value,
             history,
+            pref,
             history_cols
         );
     }

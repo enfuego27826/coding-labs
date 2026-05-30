@@ -1,0 +1,574 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  ms/call  ms/call  name    
+ 56.67      0.17     0.17       12    14.17    17.08  precompute(std::vector<int, std::allocator<int> > const&, std::vector<int, std::allocator<int> > const&)
+ 23.33      0.24     0.07        6    11.67    13.88  refresh_history(std::vector<int, std::allocator<int> >&, std::vector<Packet, std::allocator<Packet> > const&, int)
+  6.67      0.26     0.02  1320000     0.00     0.00  branchy_score(Packet const&, std::vector<int, std::allocator<int> > const&)
+  3.33      0.27     0.01 20792617     0.00     0.00  std::_Vector_base<int, std::allocator<int> >::~_Vector_base()
+  3.33      0.28     0.01 10741918     0.00     0.00  std::vector<Packet, std::allocator<Packet> >::operator[](unsigned long)
+  3.33      0.29     0.01  2640012     0.00     0.00  std::vector<int, std::allocator<int> >::~vector()
+  3.33      0.30     0.01        1    10.00    10.00  Packet* std::__fill_n_a<Packet*, unsigned long, Packet>(Packet*, unsigned long, Packet const&, std::random_access_iterator_tag)
+  0.00      0.30     0.00  2640000     0.00     0.00  std::vector<int, std::allocator<int> >::operator[](unsigned long)
+  0.00      0.30     0.00  1154412     0.00     0.00  main
+  0.00      0.30     0.00   786430     0.00     0.00  std::_Vector_base<Packet, std::allocator<Packet> >::_M_deallocate(Packet*, unsigned long)
+  0.00      0.30     0.00   744287     0.00     0.00  mix32(unsigned int)
+  0.00      0.30     0.00   262143     0.00     0.00  std::vector<int, std::allocator<int> >::vector(unsigned long, std::allocator<int> const&)
+  0.00      0.30     0.00   220001     0.00     0.00  std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long)
+  0.00      0.30     0.00       15     0.00     0.00  std::vector<Packet, std::allocator<Packet> >::_M_default_initialize(unsigned long)
+  0.00      0.30     0.00        9     0.00     0.00  std::vector<Packet, std::allocator<Packet> >::_S_max_size(std::allocator<Packet> const&)
+  0.00      0.30     0.00        9     0.00     0.00  Packet* std::__uninitialized_default_n<Packet*, unsigned long>(Packet*, unsigned long)
+  0.00      0.30     0.00        6     0.00    30.97  cold_column_probe(std::vector<int, std::allocator<int> > const&)
+  0.00      0.30     0.00        6     0.00     1.67  std::__new_allocator<Packet>::allocate(unsigned long, void const*)
+  0.00      0.30     0.00        5     0.00     0.00  std::vector<int, std::allocator<int> >::size() const
+  0.00      0.30     0.00        5     0.00     0.00  std::_Vector_base<Packet, std::allocator<Packet> >::_M_allocate(unsigned long)
+  0.00      0.30     0.00        5     0.00     0.00  std::_Vector_base<Packet, std::allocator<Packet> >::~_Vector_base()
+  0.00      0.30     0.00        5     0.00     0.00  int* std::__uninitialized_default_n_1<false>::__uninit_default_n<int*, unsigned long>(int*, unsigned long)
+  0.00      0.30     0.00        5     0.00     0.00  std::vector<Packet, std::allocator<Packet> >::~vector()
+  0.00      0.30     0.00        5     0.00     0.00  std::vector<int, std::allocator<int> >::_S_max_size(std::allocator<int> const&)
+  0.00      0.30     0.00        5     0.00     0.00  std::vector<int, std::allocator<int> >::_S_check_init_len(unsigned long, std::allocator<int> const&)
+  0.00      0.30     0.00        5     0.00     0.00  decltype (::new ((void*)(0)) Packet()) std::construct_at<Packet>(Packet*)
+  0.00      0.30     0.00        5     0.00     0.00  std::is_constant_evaluated()
+  0.00      0.30     0.00        5     0.00     0.00  unsigned long const& std::min<unsigned long>(unsigned long const&, unsigned long const&)
+  0.00      0.30     0.00        5     0.00     0.00  std::enable_if<std::__and_<std::__not_<std::__is_tuple_like<int> >, std::is_move_constructible<int>, std::is_move_assignable<int> >::value, void>::type std::swap<int>(int&, int&)
+  0.00      0.30     0.00        5     0.00     0.00  int* std::fill_n<int*, unsigned long, int>(int*, unsigned long, int const&)
+  0.00      0.30     0.00        5     0.00     0.00  void std::_Destroy<Packet>(Packet*)
+  0.00      0.30     0.00        4     0.00     0.00  std::_Vector_base<Packet, std::allocator<Packet> >::_Vector_base(unsigned long, std::allocator<Packet> const&)
+  0.00      0.30     0.00        4     0.00     0.00  Packet* std::__uninitialized_default_n_1<true>::__uninit_default_n<Packet*, unsigned long>(Packet*, unsigned long)
+  0.00      0.30     0.00        4     0.00     0.00  std::vector<Packet, std::allocator<Packet> >::vector(unsigned long, std::allocator<Packet> const&)
+  0.00      0.30     0.00        4     0.00     0.00  decltype (::new ((void*)(0)) int((declval<int const&>)())) std::construct_at<int, int const&>(int*, int const&)
+  0.00      0.30     0.00        3     0.00     0.00  std::vector<Packet, std::allocator<Packet> >::_S_check_init_len(unsigned long, std::allocator<Packet> const&)
+  0.00      0.30     0.00        2     0.00     0.00  int* std::__uninitialized_fill_n_a<int*, unsigned long, int, int>(int*, unsigned long, int const&, std::allocator<int>&)
+  0.00      0.30     0.00        1     0.00     0.00  build_packets(int, int, int)
+  0.00      0.30     0.00        1     0.00     0.00  build_lane_weight(int)
+  0.00      0.30     0.00        1     0.00     1.46  build_dependency_next(int)
+  0.00      0.30     0.00        1     0.00     0.24  build_dependency_value(int)
+  0.00      0.30     0.00        1     0.00     0.00  std::vector<Packet, std::allocator<Packet> >::operator[](unsigned long) const
+  0.00      0.30     0.00        1     0.00     0.00  void std::_Destroy_aux<true>::__destroy<int*>(int*, int*)
+  0.00      0.30     0.00        1     0.00     0.00  std::_Vector_base<Packet, std::allocator<Packet> >::_Vector_impl::_Vector_impl(std::allocator<Packet> const&)
+  0.00      0.30     0.00        1     0.00     0.00  std::_Vector_base<int, std::allocator<int> >::_M_deallocate(int*, unsigned long)
+  0.00      0.30     0.00        1     0.00     0.00  std::_Vector_base<int, std::allocator<int> >::_M_create_storage(unsigned long)
+  0.00      0.30     0.00        1     0.00     0.00  std::__new_allocator<int>::deallocate(int*, unsigned long)
+  0.00      0.30     0.00        1     0.00     0.00  int* std::__uninitialized_fill_n<true>::__uninit_fill_n<int*, unsigned long, int>(int*, unsigned long, int const&)
+  0.00      0.30     0.00        1     0.00     0.00  int* std::__uninitialized_default_n_1<true>::__uninit_default_n<int*, unsigned long>(int*, unsigned long)
+  0.00      0.30     0.00        1     0.00     0.00  std::vector<int, std::allocator<int> >::_M_fill_initialize(unsigned long, int const&)
+  0.00      0.30     0.00        1     0.00     0.00  std::vector<int, std::allocator<int> >::_M_default_initialize(unsigned long)
+  0.00      0.30     0.00        1     0.00     0.00  std::vector<int, std::allocator<int> >::vector(unsigned long, int const&, std::allocator<int> const&)
+  0.00      0.30     0.00        1     0.00     0.00  void std::_Construct<int, int const&>(int*, int const&)
+  0.00      0.30     0.00        1     0.00     0.00  void std::destroy_at<int>(int*)
+  0.00      0.30     0.00        1     0.00     0.00  int* std::uninitialized_fill_n<int*, unsigned long, int>(int*, unsigned long, int const&)
+  0.00      0.30     0.00        1     0.00     0.00  int* std::__uninitialized_default_n<int*, unsigned long>(int*, unsigned long)
+  0.00      0.30     0.00        1     0.00     0.00  Packet* std::__uninitialized_default_n_a<Packet*, unsigned long, Packet>(Packet*, unsigned long, std::allocator<Packet>&)
+  0.00      0.30     0.00        1     0.00     0.00  Packet* std::fill_n<Packet*, unsigned long, Packet>(Packet*, unsigned long, Packet const&)
+  0.00      0.30     0.00        1     0.00     0.00  void std::_Destroy<Packet*>(Packet*, Packet*)
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012-2024 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 4 byte(s) for 3.33% of 0.30 seconds
+
+index % time    self  children    called     name
+                             1154376             precompute(std::vector<int, std::allocator<int> > const&, std::vector<int, std::allocator<int> > const&) [1]
+                0.09    0.02       6/12          cold_column_probe(std::vector<int, std::allocator<int> > const&) [3]
+                0.09    0.02       6/12          process_packets(std::vector<Packet, std::allocator<Packet> > const&, std::vector<int, std::allocator<int> > const&, std::vector<int, std::allocator<int> > const&, int) [4]
+[1]     68.3    0.17    0.03      12+1154376 precompute(std::vector<int, std::allocator<int> > const&, std::vector<int, std::allocator<int> > const&) [1]
+                0.02    0.00 1320000/1320000     branchy_score(Packet const&, std::vector<int, std::allocator<int> > const&) [6]
+                0.01    0.00 19472616/20792617     std::_Vector_base<int, std::allocator<int> >::~_Vector_base() [7]
+                0.01    0.00 1320006/2640012     std::vector<int, std::allocator<int> >::~vector() [8]
+                0.00    0.00 1154376/1374399     main <cycle 1> [18]
+                0.00    0.00 1320000/2640000     std::vector<int, std::allocator<int> >::operator[](unsigned long) [36]
+                             1154376             precompute(std::vector<int, std::allocator<int> > const&, std::vector<int, std::allocator<int> > const&) [1]
+-----------------------------------------------
+                                                 <spontaneous>
+[2]     61.9    0.00    0.19                 run_epoch(std::vector<Packet, std::allocator<Packet> >&, std::vector<int, std::allocator<int> > const&, std::vector<int, std::allocator<int> > const&, std::vector<int, std::allocator<int> > const&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> > const&, int) [2]
+                0.00    0.19       6/6           cold_column_probe(std::vector<int, std::allocator<int> > const&) [3]
+                0.00    0.00       1/1374399     main <cycle 1> [18]
+                0.00    0.00       1/1374399     std::vector<Packet, std::allocator<Packet> >::~vector() <cycle 1> [46]
+-----------------------------------------------
+                0.00    0.19       6/6           run_epoch(std::vector<Packet, std::allocator<Packet> >&, std::vector<int, std::allocator<int> > const&, std::vector<int, std::allocator<int> > const&, std::vector<int, std::allocator<int> > const&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> > const&, int) [2]
+[3]     61.9    0.00    0.19       6         cold_column_probe(std::vector<int, std::allocator<int> > const&) [3]
+                0.09    0.02       6/12          precompute(std::vector<int, std::allocator<int> > const&, std::vector<int, std::allocator<int> > const&) [1]
+                0.07    0.01       6/6           refresh_history(std::vector<int, std::allocator<int> >&, std::vector<Packet, std::allocator<Packet> > const&, int) [5]
+                0.00    0.00       6/1374399     main <cycle 1> [18]
+-----------------------------------------------
+                                                 <spontaneous>
+[4]     34.7    0.00    0.10                 process_packets(std::vector<Packet, std::allocator<Packet> > const&, std::vector<int, std::allocator<int> > const&, std::vector<int, std::allocator<int> > const&, int) [4]
+                0.09    0.02       6/12          precompute(std::vector<int, std::allocator<int> > const&, std::vector<int, std::allocator<int> > const&) [1]
+                0.00    0.00       1/1           build_dependency_next(int) [14]
+                0.00    0.00       1/1           build_dependency_value(int) [15]
+                0.00    0.00       1/1           build_lane_weight(int) [16]
+                0.00    0.00       1/1           build_packets(int, int, int) [19]
+-----------------------------------------------
+                0.07    0.01       6/6           cold_column_probe(std::vector<int, std::allocator<int> > const&) [3]
+[5]     27.8    0.07    0.01       6         refresh_history(std::vector<int, std::allocator<int> >&, std::vector<Packet, std::allocator<Packet> > const&, int) [5]
+                0.01    0.00 8906880/10741918     std::vector<Packet, std::allocator<Packet> >::operator[](unsigned long) [11]
+                0.01    0.00 1320006/2640012     std::vector<int, std::allocator<int> >::~vector() [8]
+                0.00    0.00       6/1374399     main <cycle 1> [18]
+                0.00    0.00 1320000/2640000     std::vector<int, std::allocator<int> >::operator[](unsigned long) [36]
+-----------------------------------------------
+                0.02    0.00 1320000/1320000     precompute(std::vector<int, std::allocator<int> > const&, std::vector<int, std::allocator<int> > const&) [1]
+[6]      6.9    0.02    0.00 1320000         branchy_score(Packet const&, std::vector<int, std::allocator<int> > const&) [6]
+                0.00    0.00 1320000/20792617     std::_Vector_base<int, std::allocator<int> >::~_Vector_base() [7]
+-----------------------------------------------
+                0.00    0.00       1/20792617     main <cycle 1> [18]
+                0.00    0.00 1320000/20792617     branchy_score(Packet const&, std::vector<int, std::allocator<int> > const&) [6]
+                0.01    0.00 19472616/20792617     precompute(std::vector<int, std::allocator<int> > const&, std::vector<int, std::allocator<int> > const&) [1]
+[7]      3.3    0.01    0.00 20792617         std::_Vector_base<int, std::allocator<int> >::~_Vector_base() [7]
+-----------------------------------------------
+                0.01    0.00 1320006/2640012     refresh_history(std::vector<int, std::allocator<int> >&, std::vector<Packet, std::allocator<Packet> > const&, int) [5]
+                0.01    0.00 1320006/2640012     precompute(std::vector<int, std::allocator<int> > const&, std::vector<int, std::allocator<int> > const&) [1]
+[8]      3.3    0.01    0.00 2640012         std::vector<int, std::allocator<int> >::~vector() [8]
+-----------------------------------------------
+                0.00    0.00       1/6           int* std::__fill_n_a<int*, unsigned long, int>(int*, unsigned long, int const&, std::random_access_iterator_tag) [13]
+                0.00    0.01       5/6           void std::_Construct<Packet>(Packet*) [12]
+[9]      3.3    0.00    0.01       6         std::__new_allocator<Packet>::allocate(unsigned long, void const*) [9]
+                0.01    0.00       1/1           Packet* std::__fill_n_a<Packet*, unsigned long, Packet>(Packet*, unsigned long, Packet const&, std::random_access_iterator_tag) [10]
+                0.00    0.00       5/5           decltype (::new ((void*)(0)) Packet()) std::construct_at<Packet>(Packet*) [49]
+-----------------------------------------------
+                0.01    0.00       1/1           std::__new_allocator<Packet>::allocate(unsigned long, void const*) [9]
+[10]     3.3    0.01    0.00       1         Packet* std::__fill_n_a<Packet*, unsigned long, Packet>(Packet*, unsigned long, Packet const&, std::random_access_iterator_tag) [10]
+-----------------------------------------------
+                0.00    0.00      32/10741918     build_lane_weight(int) [16]
+                0.00    0.00  262144/10741918     build_dependency_value(int) [15]
+                0.00    0.00 1572862/10741918     build_dependency_next(int) [14]
+                0.01    0.00 8906880/10741918     refresh_history(std::vector<int, std::allocator<int> >&, std::vector<Packet, std::allocator<Packet> > const&, int) [5]
+[11]     3.3    0.01    0.00 10741918         std::vector<Packet, std::allocator<Packet> >::operator[](unsigned long) [11]
+-----------------------------------------------
+                                                 <spontaneous>
+[12]     2.8    0.00    0.01                 void std::_Construct<Packet>(Packet*) [12]
+                0.00    0.01       5/6           std::__new_allocator<Packet>::allocate(unsigned long, void const*) [9]
+-----------------------------------------------
+                                                 <spontaneous>
+[13]     0.6    0.00    0.00                 int* std::__fill_n_a<int*, unsigned long, int>(int*, unsigned long, int const&, std::random_access_iterator_tag) [13]
+                0.00    0.00       1/6           std::__new_allocator<Packet>::allocate(unsigned long, void const*) [9]
+-----------------------------------------------
+                0.00    0.00       1/1           process_packets(std::vector<Packet, std::allocator<Packet> > const&, std::vector<int, std::allocator<int> > const&, std::vector<int, std::allocator<int> > const&, int) [4]
+[14]     0.5    0.00    0.00       1         build_dependency_next(int) [14]
+                0.00    0.00 1572862/10741918     std::vector<Packet, std::allocator<Packet> >::operator[](unsigned long) [11]
+                0.00    0.00       2/4           std::vector<Packet, std::allocator<Packet> >::vector(unsigned long, std::allocator<Packet> const&) [21]
+                0.00    0.00       1/1374399     std::vector<Packet, std::allocator<Packet> >::~vector() <cycle 1> [46]
+                0.00    0.00  262143/262143      std::vector<int, std::allocator<int> >::vector(unsigned long, std::allocator<int> const&) [26]
+                0.00    0.00  262143/744287      mix32(unsigned int) [37]
+-----------------------------------------------
+                0.00    0.00       1/1           process_packets(std::vector<Packet, std::allocator<Packet> > const&, std::vector<int, std::allocator<int> > const&, std::vector<int, std::allocator<int> > const&, int) [4]
+[15]     0.1    0.00    0.00       1         build_dependency_value(int) [15]
+                0.00    0.00  262144/10741918     std::vector<Packet, std::allocator<Packet> >::operator[](unsigned long) [11]
+                0.00    0.00       1/4           std::vector<Packet, std::allocator<Packet> >::vector(unsigned long, std::allocator<Packet> const&) [21]
+                0.00    0.00  262144/744287      mix32(unsigned int) [37]
+-----------------------------------------------
+                0.00    0.00       1/1           process_packets(std::vector<Packet, std::allocator<Packet> > const&, std::vector<int, std::allocator<int> > const&, std::vector<int, std::allocator<int> > const&, int) [4]
+[16]     0.0    0.00    0.00       1         build_lane_weight(int) [16]
+                0.00    0.00      32/10741918     std::vector<Packet, std::allocator<Packet> >::operator[](unsigned long) [11]
+                0.00    0.00       1/4           std::vector<Packet, std::allocator<Packet> >::vector(unsigned long, std::allocator<Packet> const&) [21]
+-----------------------------------------------
+[17]     0.0    0.00    0.00 1374399+54      <cycle 1 as a whole> [17]
+                0.00    0.00 1154412             main <cycle 1> [18]
+                0.00    0.00  220001+1           std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) <cycle 1> [38]
+                0.00    0.00       9             std::vector<Packet, std::allocator<Packet> >::_S_max_size(std::allocator<Packet> const&) <cycle 1> [40]
+                0.00    0.00       5             std::vector<Packet, std::allocator<Packet> >::~vector() <cycle 1> [46]
+                0.00    0.00       5             std::_Vector_base<Packet, std::allocator<Packet> >::~_Vector_base() <cycle 1> [44]
+                0.00    0.00       5             std::_Vector_base<Packet, std::allocator<Packet> >::_M_allocate(unsigned long) <cycle 1> [43]
+                0.00    0.00       4             Packet* std::__uninitialized_default_n_1<true>::__uninit_default_n<Packet*, unsigned long>(Packet*, unsigned long) <cycle 1> [54]
+                0.00    0.00       4             decltype (::new ((void*)(0)) int((declval<int const&>)())) std::construct_at<int, int const&>(int*, int const&) <cycle 1> [55]
+                0.00    0.00       3+1           std::vector<Packet, std::allocator<Packet> >::_S_check_init_len(unsigned long, std::allocator<Packet> const&) <cycle 1> [56]
+                0.00    0.00       2             int* std::__uninitialized_fill_n_a<int*, unsigned long, int, int>(int*, unsigned long, int const&, std::allocator<int>&) <cycle 1> [57]
+                0.00    0.00       1             void std::_Destroy_aux<true>::__destroy<int*>(int*, int*) <cycle 1> [59]
+                0.00    0.00       1             int* std::__uninitialized_default_n_1<true>::__uninit_default_n<int*, unsigned long>(int*, unsigned long) <cycle 1> [63]
+                0.00    0.00       1             int* std::uninitialized_fill_n<int*, unsigned long, int>(int*, unsigned long, int const&) <cycle 1> [69]
+-----------------------------------------------
+                                   1             std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) <cycle 1> [38]
+                                   1             int* std::uninitialized_fill_n<int*, unsigned long, int>(int*, unsigned long, int const&) <cycle 1> [69]
+                                   4             std::_Vector_base<Packet, std::allocator<Packet> >::_M_allocate(unsigned long) <cycle 1> [43]
+                                   4             decltype (::new ((void*)(0)) int((declval<int const&>)())) std::construct_at<int, int const&>(int*, int const&) <cycle 1> [55]
+                                   5             std::_Vector_base<Packet, std::allocator<Packet> >::~_Vector_base() <cycle 1> [44]
+                                   6             int* std::__uninitialized_default_n_1<true>::__uninit_default_n<int*, unsigned long>(int*, unsigned long) <cycle 1> [63]
+                0.00    0.00       1/1374399     run_epoch(std::vector<Packet, std::allocator<Packet> >&, std::vector<int, std::allocator<int> > const&, std::vector<int, std::allocator<int> > const&, std::vector<int, std::allocator<int> > const&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> > const&, int) [2]
+                0.00    0.00       1/1374399     std::_Vector_base<Packet, std::allocator<Packet> >::_M_deallocate(Packet*, unsigned long) [23]
+                0.00    0.00       1/1374399     std::__new_allocator<int>::deallocate(int*, unsigned long) [24]
+                0.00    0.00       6/1374399     refresh_history(std::vector<int, std::allocator<int> >&, std::vector<Packet, std::allocator<Packet> > const&, int) [5]
+                0.00    0.00       6/1374399     cold_column_probe(std::vector<int, std::allocator<int> > const&) [3]
+                0.00    0.00 1154376/1374399     precompute(std::vector<int, std::allocator<int> > const&, std::vector<int, std::allocator<int> > const&) [1]
+[18]     0.0    0.00    0.00 1154412         main <cycle 1> [18]
+                0.00    0.00       1/20792617     std::_Vector_base<int, std::allocator<int> >::~_Vector_base() [7]
+                0.00    0.00       1/5           std::is_constant_evaluated() [50]
+                0.00    0.00       1/5           std::vector<int, std::allocator<int> >::_S_max_size(std::allocator<int> const&) [47]
+                                   3             std::vector<Packet, std::allocator<Packet> >::~vector() <cycle 1> [46]
+                                   1             std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) <cycle 1> [38]
+-----------------------------------------------
+                0.00    0.00       1/1           process_packets(std::vector<Packet, std::allocator<Packet> > const&, std::vector<int, std::allocator<int> > const&, std::vector<int, std::allocator<int> > const&, int) [4]
+[19]     0.0    0.00    0.00       1         build_packets(int, int, int) [19]
+                0.00    0.00  220000/1374399     std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) <cycle 1> [38]
+                0.00    0.00       1/1           std::_Vector_base<int, std::allocator<int> >::_M_create_storage(unsigned long) [22]
+                0.00    0.00  220000/744287      mix32(unsigned int) [37]
+-----------------------------------------------
+                0.00    0.00       4/4           std::vector<Packet, std::allocator<Packet> >::vector(unsigned long, std::allocator<Packet> const&) [21]
+[20]     0.0    0.00    0.00       4         std::_Vector_base<Packet, std::allocator<Packet> >::_Vector_base(unsigned long, std::allocator<Packet> const&) [20]
+                0.00    0.00       4/1374399     std::vector<Packet, std::allocator<Packet> >::_S_max_size(std::allocator<Packet> const&) <cycle 1> [40]
+                0.00    0.00       4/15          std::vector<Packet, std::allocator<Packet> >::_M_default_initialize(unsigned long) [39]
+-----------------------------------------------
+                0.00    0.00       1/4           build_lane_weight(int) [16]
+                0.00    0.00       1/4           build_dependency_value(int) [15]
+                0.00    0.00       2/4           build_dependency_next(int) [14]
+[21]     0.0    0.00    0.00       4         std::vector<Packet, std::allocator<Packet> >::vector(unsigned long, std::allocator<Packet> const&) [21]
+                0.00    0.00       4/4           std::_Vector_base<Packet, std::allocator<Packet> >::_Vector_base(unsigned long, std::allocator<Packet> const&) [20]
+                0.00    0.00       4/5           std::is_constant_evaluated() [50]
+                0.00    0.00       4/5           std::vector<int, std::allocator<int> >::_S_max_size(std::allocator<int> const&) [47]
+-----------------------------------------------
+                0.00    0.00       1/1           build_packets(int, int, int) [19]
+[22]     0.0    0.00    0.00       1         std::_Vector_base<int, std::allocator<int> >::_M_create_storage(unsigned long) [22]
+                0.00    0.00       2/1374399     std::vector<Packet, std::allocator<Packet> >::_S_check_init_len(unsigned long, std::allocator<Packet> const&) <cycle 1> [56]
+                0.00    0.00       1/1           std::vector<Packet, std::allocator<Packet> >::operator[](unsigned long) const [58]
+-----------------------------------------------
+                0.00    0.00       1/786430      std::enable_if<std::__and_<std::__not_<std::__is_tuple_like<int> >, std::is_move_constructible<int>, std::is_move_assignable<int> >::value, void>::type std::swap<int>(int&, int&) [27]
+                0.00    0.00  786429/786430      std::vector<int, std::allocator<int> >::vector(unsigned long, std::allocator<int> const&) [26]
+[23]     0.0    0.00    0.00  786430         std::_Vector_base<Packet, std::allocator<Packet> >::_M_deallocate(Packet*, unsigned long) [23]
+                0.00    0.00       1/1374399     main <cycle 1> [18]
+                0.00    0.00       5/5           void std::_Destroy<Packet>(Packet*) [53]
+-----------------------------------------------
+                0.00    0.00       1/1           int* std::__addressof<int>(int&) [25]
+[24]     0.0    0.00    0.00       1         std::__new_allocator<int>::deallocate(int*, unsigned long) [24]
+                0.00    0.00       1/1374399     main <cycle 1> [18]
+                0.00    0.00       1/1           void std::destroy_at<int>(int*) [68]
+-----------------------------------------------
+                                                 <spontaneous>
+[25]     0.0    0.00    0.00                 int* std::__addressof<int>(int&) [25]
+                0.00    0.00       1/1           std::__new_allocator<int>::deallocate(int*, unsigned long) [24]
+-----------------------------------------------
+                0.00    0.00  262143/262143      build_dependency_next(int) [14]
+[26]     0.0    0.00    0.00  262143         std::vector<int, std::allocator<int> >::vector(unsigned long, std::allocator<int> const&) [26]
+                0.00    0.00  786429/786430      std::_Vector_base<Packet, std::allocator<Packet> >::_M_deallocate(Packet*, unsigned long) [23]
+-----------------------------------------------
+                0.00    0.00       5/5           std::_Vector_base<int, std::allocator<int> >::_Vector_base(unsigned long, std::allocator<int> const&) [28]
+[27]     0.0    0.00    0.00       5         std::enable_if<std::__and_<std::__not_<std::__is_tuple_like<int> >, std::is_move_constructible<int>, std::is_move_assignable<int> >::value, void>::type std::swap<int>(int&, int&) [27]
+                0.00    0.00       1/786430      std::_Vector_base<Packet, std::allocator<Packet> >::_M_deallocate(Packet*, unsigned long) [23]
+                0.00    0.00       1/15          std::vector<Packet, std::allocator<Packet> >::_M_default_initialize(unsigned long) [39]
+-----------------------------------------------
+                                                 <spontaneous>
+[28]     0.0    0.00    0.00                 std::_Vector_base<int, std::allocator<int> >::_Vector_base(unsigned long, std::allocator<int> const&) [28]
+                0.00    0.00       5/5           std::enable_if<std::__and_<std::__not_<std::__is_tuple_like<int> >, std::is_move_constructible<int>, std::is_move_assignable<int> >::value, void>::type std::swap<int>(int&, int&) [27]
+-----------------------------------------------
+                0.00    0.00 1320000/2640000     refresh_history(std::vector<int, std::allocator<int> >&, std::vector<Packet, std::allocator<Packet> > const&, int) [5]
+                0.00    0.00 1320000/2640000     precompute(std::vector<int, std::allocator<int> > const&, std::vector<int, std::allocator<int> > const&) [1]
+[36]     0.0    0.00    0.00 2640000         std::vector<int, std::allocator<int> >::operator[](unsigned long) [36]
+-----------------------------------------------
+                0.00    0.00  220000/744287      build_packets(int, int, int) [19]
+                0.00    0.00  262143/744287      build_dependency_next(int) [14]
+                0.00    0.00  262144/744287      build_dependency_value(int) [15]
+[37]     0.0    0.00    0.00  744287         mix32(unsigned int) [37]
+-----------------------------------------------
+                                   1             std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) <cycle 1> [38]
+                                   1             main <cycle 1> [18]
+                0.00    0.00  220000/1374399     build_packets(int, int, int) [19]
+[38]     0.0    0.00    0.00  220001+1       std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) <cycle 1> [38]
+                0.00    0.00       1/1           std::_Vector_base<Packet, std::allocator<Packet> >::_Vector_impl::_Vector_impl(std::allocator<Packet> const&) [60]
+                                   1             std::vector<Packet, std::allocator<Packet> >::_S_check_init_len(unsigned long, std::allocator<Packet> const&) <cycle 1> [56]
+                                   1             int* std::__uninitialized_fill_n_a<int*, unsigned long, int, int>(int*, unsigned long, int const&, std::allocator<int>&) <cycle 1> [57]
+                                   1             main <cycle 1> [18]
+                                   1             std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) <cycle 1> [38]
+-----------------------------------------------
+                0.00    0.00       1/15          std::enable_if<std::__and_<std::__not_<std::__is_tuple_like<int> >, std::is_move_constructible<int>, std::is_move_assignable<int> >::value, void>::type std::swap<int>(int&, int&) [27]
+                0.00    0.00       4/15          std::_Vector_base<Packet, std::allocator<Packet> >::_Vector_base(unsigned long, std::allocator<Packet> const&) [20]
+                0.00    0.00       5/15          std::vector<Packet, std::allocator<Packet> >::~vector() <cycle 1> [46]
+                0.00    0.00       5/15          std::_Vector_base<Packet, std::allocator<Packet> >::~_Vector_base() <cycle 1> [44]
+[39]     0.0    0.00    0.00      15         std::vector<Packet, std::allocator<Packet> >::_M_default_initialize(unsigned long) [39]
+-----------------------------------------------
+                                   5             std::vector<Packet, std::allocator<Packet> >::~vector() <cycle 1> [46]
+                0.00    0.00       4/1374399     std::_Vector_base<Packet, std::allocator<Packet> >::_Vector_base(unsigned long, std::allocator<Packet> const&) [20]
+[40]     0.0    0.00    0.00       9         std::vector<Packet, std::allocator<Packet> >::_S_max_size(std::allocator<Packet> const&) <cycle 1> [40]
+                0.00    0.00       5/9           Packet* std::__uninitialized_default_n<Packet*, unsigned long>(Packet*, unsigned long) [41]
+                                   4             std::_Vector_base<Packet, std::allocator<Packet> >::_M_allocate(unsigned long) <cycle 1> [43]
+-----------------------------------------------
+                0.00    0.00       4/9           Packet* std::__uninitialized_default_n_1<true>::__uninit_default_n<Packet*, unsigned long>(Packet*, unsigned long) <cycle 1> [54]
+                0.00    0.00       5/9           std::vector<Packet, std::allocator<Packet> >::_S_max_size(std::allocator<Packet> const&) <cycle 1> [40]
+[41]     0.0    0.00    0.00       9         Packet* std::__uninitialized_default_n<Packet*, unsigned long>(Packet*, unsigned long) [41]
+-----------------------------------------------
+                0.00    0.00       5/5           std::__size_to_integer(unsigned long) [95]
+[42]     0.0    0.00    0.00       5         std::vector<int, std::allocator<int> >::size() const [42]
+-----------------------------------------------
+                                   1             int* std::__uninitialized_fill_n_a<int*, unsigned long, int, int>(int*, unsigned long, int const&, std::allocator<int>&) <cycle 1> [57]
+                                   4             std::vector<Packet, std::allocator<Packet> >::_S_max_size(std::allocator<Packet> const&) <cycle 1> [40]
+[43]     0.0    0.00    0.00       5         std::_Vector_base<Packet, std::allocator<Packet> >::_M_allocate(unsigned long) <cycle 1> [43]
+                                   4             main <cycle 1> [18]
+                                   4             Packet* std::__uninitialized_default_n_1<true>::__uninit_default_n<Packet*, unsigned long>(Packet*, unsigned long) <cycle 1> [54]
+                                   1             void std::_Destroy_aux<true>::__destroy<int*>(int*, int*) <cycle 1> [59]
+-----------------------------------------------
+                                   5             std::vector<Packet, std::allocator<Packet> >::~vector() <cycle 1> [46]
+[44]     0.0    0.00    0.00       5         std::_Vector_base<Packet, std::allocator<Packet> >::~_Vector_base() <cycle 1> [44]
+                0.00    0.00       5/15          std::vector<Packet, std::allocator<Packet> >::_M_default_initialize(unsigned long) [39]
+                                   5             main <cycle 1> [18]
+-----------------------------------------------
+                0.00    0.00       1/5           int* std::__uninitialized_default_n<int*, unsigned long>(int*, unsigned long) [70]
+                0.00    0.00       4/5           Packet* std::__uninitialized_default_n_1<true>::__uninit_default_n<Packet*, unsigned long>(Packet*, unsigned long) <cycle 1> [54]
+[45]     0.0    0.00    0.00       5         int* std::__uninitialized_default_n_1<false>::__uninit_default_n<int*, unsigned long>(int*, unsigned long) [45]
+-----------------------------------------------
+                                   3             main <cycle 1> [18]
+                0.00    0.00       1/1374399     build_dependency_next(int) [14]
+                0.00    0.00       1/1374399     run_epoch(std::vector<Packet, std::allocator<Packet> >&, std::vector<int, std::allocator<int> > const&, std::vector<int, std::allocator<int> > const&, std::vector<int, std::allocator<int> > const&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> > const&, int) [2]
+[46]     0.0    0.00    0.00       5         std::vector<Packet, std::allocator<Packet> >::~vector() <cycle 1> [46]
+                0.00    0.00       5/15          std::vector<Packet, std::allocator<Packet> >::_M_default_initialize(unsigned long) [39]
+                                   5             std::vector<Packet, std::allocator<Packet> >::_S_max_size(std::allocator<Packet> const&) <cycle 1> [40]
+                                   5             std::_Vector_base<Packet, std::allocator<Packet> >::~_Vector_base() <cycle 1> [44]
+-----------------------------------------------
+                                   5             std::vector<int, std::allocator<int> >::_S_max_size(std::allocator<int> const&) [47]
+                0.00    0.00       1/5           main <cycle 1> [18]
+                0.00    0.00       4/5           std::vector<Packet, std::allocator<Packet> >::vector(unsigned long, std::allocator<Packet> const&) [21]
+[47]     0.0    0.00    0.00       5+5       std::vector<int, std::allocator<int> >::_S_max_size(std::allocator<int> const&) [47]
+                0.00    0.00       5/5           std::vector<int, std::allocator<int> >::_S_check_init_len(unsigned long, std::allocator<int> const&) [48]
+                0.00    0.00       5/5           unsigned long const& std::min<unsigned long>(unsigned long const&, unsigned long const&) [51]
+                                   5             std::vector<int, std::allocator<int> >::_S_max_size(std::allocator<int> const&) [47]
+-----------------------------------------------
+                                   5             std::vector<int, std::allocator<int> >::_S_check_init_len(unsigned long, std::allocator<int> const&) [48]
+                0.00    0.00       5/5           std::vector<int, std::allocator<int> >::_S_max_size(std::allocator<int> const&) [47]
+[48]     0.0    0.00    0.00       5+5       std::vector<int, std::allocator<int> >::_S_check_init_len(unsigned long, std::allocator<int> const&) [48]
+                                   5             std::vector<int, std::allocator<int> >::_S_check_init_len(unsigned long, std::allocator<int> const&) [48]
+-----------------------------------------------
+                0.00    0.00       5/5           std::__new_allocator<Packet>::allocate(unsigned long, void const*) [9]
+[49]     0.0    0.00    0.00       5         decltype (::new ((void*)(0)) Packet()) std::construct_at<Packet>(Packet*) [49]
+-----------------------------------------------
+                0.00    0.00       1/5           main <cycle 1> [18]
+                0.00    0.00       4/5           std::vector<Packet, std::allocator<Packet> >::vector(unsigned long, std::allocator<Packet> const&) [21]
+[50]     0.0    0.00    0.00       5         std::is_constant_evaluated() [50]
+-----------------------------------------------
+                0.00    0.00       5/5           std::vector<int, std::allocator<int> >::_S_max_size(std::allocator<int> const&) [47]
+[51]     0.0    0.00    0.00       5         unsigned long const& std::min<unsigned long>(unsigned long const&, unsigned long const&) [51]
+-----------------------------------------------
+                0.00    0.00       5/5           int* std::__uninitialized_default_n_1<true>::__uninit_default_n<int*, unsigned long>(int*, unsigned long) <cycle 1> [63]
+[52]     0.0    0.00    0.00       5         int* std::fill_n<int*, unsigned long, int>(int*, unsigned long, int const&) [52]
+-----------------------------------------------
+                0.00    0.00       5/5           std::_Vector_base<Packet, std::allocator<Packet> >::_M_deallocate(Packet*, unsigned long) [23]
+[53]     0.0    0.00    0.00       5         void std::_Destroy<Packet>(Packet*) [53]
+-----------------------------------------------
+                                   4             std::_Vector_base<Packet, std::allocator<Packet> >::_M_allocate(unsigned long) <cycle 1> [43]
+[54]     0.0    0.00    0.00       4         Packet* std::__uninitialized_default_n_1<true>::__uninit_default_n<Packet*, unsigned long>(Packet*, unsigned long) <cycle 1> [54]
+                0.00    0.00       4/9           Packet* std::__uninitialized_default_n<Packet*, unsigned long>(Packet*, unsigned long) [41]
+                0.00    0.00       4/5           int* std::__uninitialized_default_n_1<false>::__uninit_default_n<int*, unsigned long>(int*, unsigned long) [45]
+                                   4             decltype (::new ((void*)(0)) int((declval<int const&>)())) std::construct_at<int, int const&>(int*, int const&) <cycle 1> [55]
+-----------------------------------------------
+                                   4             Packet* std::__uninitialized_default_n_1<true>::__uninit_default_n<Packet*, unsigned long>(Packet*, unsigned long) <cycle 1> [54]
+[55]     0.0    0.00    0.00       4         decltype (::new ((void*)(0)) int((declval<int const&>)())) std::construct_at<int, int const&>(int*, int const&) <cycle 1> [55]
+                                   4             main <cycle 1> [18]
+-----------------------------------------------
+                                   1             std::vector<Packet, std::allocator<Packet> >::_S_check_init_len(unsigned long, std::allocator<Packet> const&) <cycle 1> [56]
+                                   1             std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) <cycle 1> [38]
+                0.00    0.00       2/1374399     std::_Vector_base<int, std::allocator<int> >::_M_create_storage(unsigned long) [22]
+[56]     0.0    0.00    0.00       3+1       std::vector<Packet, std::allocator<Packet> >::_S_check_init_len(unsigned long, std::allocator<Packet> const&) <cycle 1> [56]
+                0.00    0.00       1/1           std::vector<int, std::allocator<int> >::_M_fill_initialize(unsigned long, int const&) [64]
+                0.00    0.00       1/1           std::_Vector_base<int, std::allocator<int> >::_M_deallocate(int*, unsigned long) [61]
+                                   1             int* std::__uninitialized_fill_n_a<int*, unsigned long, int, int>(int*, unsigned long, int const&, std::allocator<int>&) <cycle 1> [57]
+                                   1             std::vector<Packet, std::allocator<Packet> >::_S_check_init_len(unsigned long, std::allocator<Packet> const&) <cycle 1> [56]
+-----------------------------------------------
+                                   1             std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) <cycle 1> [38]
+                                   1             std::vector<Packet, std::allocator<Packet> >::_S_check_init_len(unsigned long, std::allocator<Packet> const&) <cycle 1> [56]
+[57]     0.0    0.00    0.00       2         int* std::__uninitialized_fill_n_a<int*, unsigned long, int, int>(int*, unsigned long, int const&, std::allocator<int>&) <cycle 1> [57]
+                                   1             int* std::uninitialized_fill_n<int*, unsigned long, int>(int*, unsigned long, int const&) <cycle 1> [69]
+                                   1             std::_Vector_base<Packet, std::allocator<Packet> >::_M_allocate(unsigned long) <cycle 1> [43]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<int, std::allocator<int> >::_M_create_storage(unsigned long) [22]
+[58]     0.0    0.00    0.00       1         std::vector<Packet, std::allocator<Packet> >::operator[](unsigned long) const [58]
+                0.00    0.00       1/1           std::vector<int, std::allocator<int> >::_M_default_initialize(unsigned long) [65]
+-----------------------------------------------
+                                   1             std::_Vector_base<Packet, std::allocator<Packet> >::_M_allocate(unsigned long) <cycle 1> [43]
+[59]     0.0    0.00    0.00       1         void std::_Destroy_aux<true>::__destroy<int*>(int*, int*) <cycle 1> [59]
+                0.00    0.00       1/1           void std::_Construct<int, int const&>(int*, int const&) [67]
+                                   1             int* std::__uninitialized_default_n_1<true>::__uninit_default_n<int*, unsigned long>(int*, unsigned long) <cycle 1> [63]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) <cycle 1> [38]
+[60]     0.0    0.00    0.00       1         std::_Vector_base<Packet, std::allocator<Packet> >::_Vector_impl::_Vector_impl(std::allocator<Packet> const&) [60]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<Packet, std::allocator<Packet> >::_S_check_init_len(unsigned long, std::allocator<Packet> const&) <cycle 1> [56]
+[61]     0.0    0.00    0.00       1         std::_Vector_base<int, std::allocator<int> >::_M_deallocate(int*, unsigned long) [61]
+                0.00    0.00       1/1           void std::_Destroy<Packet*>(Packet*, Packet*) [73]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<Packet, std::allocator<Packet> >::_Vector_impl_data::_Vector_impl_data() [82]
+[62]     0.0    0.00    0.00       1         int* std::__uninitialized_fill_n<true>::__uninit_fill_n<int*, unsigned long, int>(int*, unsigned long, int const&) [62]
+-----------------------------------------------
+                                   1             void std::_Destroy_aux<true>::__destroy<int*>(int*, int*) <cycle 1> [59]
+[63]     0.0    0.00    0.00       1         int* std::__uninitialized_default_n_1<true>::__uninit_default_n<int*, unsigned long>(int*, unsigned long) <cycle 1> [63]
+                0.00    0.00       5/5           int* std::fill_n<int*, unsigned long, int>(int*, unsigned long, int const&) [52]
+                                   6             main <cycle 1> [18]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<Packet, std::allocator<Packet> >::_S_check_init_len(unsigned long, std::allocator<Packet> const&) <cycle 1> [56]
+[64]     0.0    0.00    0.00       1         std::vector<int, std::allocator<int> >::_M_fill_initialize(unsigned long, int const&) [64]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<Packet, std::allocator<Packet> >::operator[](unsigned long) const [58]
+[65]     0.0    0.00    0.00       1         std::vector<int, std::allocator<int> >::_M_default_initialize(unsigned long) [65]
+                0.00    0.00       1/1           Packet* std::__uninitialized_default_n_a<Packet*, unsigned long, Packet>(Packet*, unsigned long, std::allocator<Packet>&) [71]
+-----------------------------------------------
+                                   5             std::vector<int, std::allocator<int> >::vector(unsigned long, int const&, std::allocator<int> const&) [66]
+                0.00    0.00       1/1           std::_Vector_base<int, std::allocator<int> >::_M_get_Tp_allocator() [87]
+[66]     0.0    0.00    0.00       1+5       std::vector<int, std::allocator<int> >::vector(unsigned long, int const&, std::allocator<int> const&) [66]
+                                   5             std::vector<int, std::allocator<int> >::vector(unsigned long, int const&, std::allocator<int> const&) [66]
+-----------------------------------------------
+                0.00    0.00       1/1           void std::_Destroy_aux<true>::__destroy<int*>(int*, int*) <cycle 1> [59]
+[67]     0.0    0.00    0.00       1         void std::_Construct<int, int const&>(int*, int const&) [67]
+-----------------------------------------------
+                0.00    0.00       1/1           std::__new_allocator<int>::deallocate(int*, unsigned long) [24]
+[68]     0.0    0.00    0.00       1         void std::destroy_at<int>(int*) [68]
+-----------------------------------------------
+                                   1             int* std::__uninitialized_fill_n_a<int*, unsigned long, int, int>(int*, unsigned long, int const&, std::allocator<int>&) <cycle 1> [57]
+[69]     0.0    0.00    0.00       1         int* std::uninitialized_fill_n<int*, unsigned long, int>(int*, unsigned long, int const&) <cycle 1> [69]
+                                   1             main <cycle 1> [18]
+-----------------------------------------------
+                0.00    0.00       1/1           Packet* std::__uninitialized_default_n_a<Packet*, unsigned long, Packet>(Packet*, unsigned long, std::allocator<Packet>&) [71]
+[70]     0.0    0.00    0.00       1         int* std::__uninitialized_default_n<int*, unsigned long>(int*, unsigned long) [70]
+                0.00    0.00       1/5           int* std::__uninitialized_default_n_1<false>::__uninit_default_n<int*, unsigned long>(int*, unsigned long) [45]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<int, std::allocator<int> >::_M_default_initialize(unsigned long) [65]
+[71]     0.0    0.00    0.00       1         Packet* std::__uninitialized_default_n_a<Packet*, unsigned long, Packet>(Packet*, unsigned long, std::allocator<Packet>&) [71]
+                0.00    0.00       1/1           int* std::__uninitialized_default_n<int*, unsigned long>(int*, unsigned long) [70]
+-----------------------------------------------
+                0.00    0.00       1/1           int* std::__do_uninit_fill_n<int*, unsigned long, int>(int*, unsigned long, int const&) [96]
+[72]     0.0    0.00    0.00       1         Packet* std::fill_n<Packet*, unsigned long, Packet>(Packet*, unsigned long, Packet const&) [72]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<int, std::allocator<int> >::_M_deallocate(int*, unsigned long) [61]
+[73]     0.0    0.00    0.00       1         void std::_Destroy<Packet*>(Packet*, Packet*) [73]
+-----------------------------------------------
+                                   1             std::__new_allocator<int>::allocate(unsigned long, void const*) [89]
+[89]     0.0    0.00    0.00       0+1       std::__new_allocator<int>::allocate(unsigned long, void const*) [89]
+                                   1             std::__new_allocator<int>::allocate(unsigned long, void const*) [89]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function is in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+Copyright (C) 2012-2024 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+Index by function name
+
+   [1] precompute(std::vector<int, std::allocator<int> > const&, std::vector<int, std::allocator<int> > const&) (main.cpp) [7] std::_Vector_base<int, std::allocator<int> >::~_Vector_base() [36] std::vector<int, std::allocator<int> >::operator[](unsigned long)
+   [6] branchy_score(Packet const&, std::vector<int, std::allocator<int> > const&) (main.cpp) [9] std::__new_allocator<Packet>::allocate(unsigned long, void const*) [67] void std::_Construct<int, int const&>(int*, int const&)
+  [19] build_packets(int, int, int) (main.cpp) [24] std::__new_allocator<int>::deallocate(int*, unsigned long) [10] Packet* std::__fill_n_a<Packet*, unsigned long, Packet>(Packet*, unsigned long, Packet const&, std::random_access_iterator_tag)
+   [5] refresh_history(std::vector<int, std::allocator<int> >&, std::vector<Packet, std::allocator<Packet> > const&, int) (main.cpp) [62] int* std::__uninitialized_fill_n<true>::__uninit_fill_n<int*, unsigned long, int>(int*, unsigned long, int const&) [68] void std::destroy_at<int>(int*)
+  [16] build_lane_weight(int) (main.cpp) [45] int* std::__uninitialized_default_n_1<false>::__uninit_default_n<int*, unsigned long>(int*, unsigned long) [49] decltype (::new ((void*)(0)) Packet()) std::construct_at<Packet>(Packet*)
+   [3] cold_column_probe(std::vector<int, std::allocator<int> > const&) (main.cpp) [54] Packet* std::__uninitialized_default_n_1<true>::__uninit_default_n<Packet*, unsigned long>(Packet*, unsigned long) [55] decltype (::new ((void*)(0)) int((declval<int const&>)())) std::construct_at<int, int const&>(int*, int const&)
+  [14] build_dependency_next(int) (main.cpp) [63] int* std::__uninitialized_default_n_1<true>::__uninit_default_n<int*, unsigned long>(int*, unsigned long) [69] int* std::uninitialized_fill_n<int*, unsigned long, int>(int*, unsigned long, int const&)
+  [15] build_dependency_value(int) (main.cpp) [40] std::vector<Packet, std::allocator<Packet> >::_S_max_size(std::allocator<Packet> const&) [50] std::is_constant_evaluated()
+  [37] mix32(unsigned int) (main.cpp) [56] std::vector<Packet, std::allocator<Packet> >::_S_check_init_len(unsigned long, std::allocator<Packet> const&) [57] int* std::__uninitialized_fill_n_a<int*, unsigned long, int, int>(int*, unsigned long, int const&, std::allocator<int>&)
+  [58] std::vector<Packet, std::allocator<Packet> >::operator[](unsigned long) const [39] std::vector<Packet, std::allocator<Packet> >::_M_default_initialize(unsigned long) [41] Packet* std::__uninitialized_default_n<Packet*, unsigned long>(Packet*, unsigned long)
+  [42] std::vector<int, std::allocator<int> >::size() const [21] std::vector<Packet, std::allocator<Packet> >::vector(unsigned long, std::allocator<Packet> const&) [70] int* std::__uninitialized_default_n<int*, unsigned long>(int*, unsigned long)
+  [59] void std::_Destroy_aux<true>::__destroy<int*>(int*, int*) [46] std::vector<Packet, std::allocator<Packet> >::~vector() [71] Packet* std::__uninitialized_default_n_a<Packet*, unsigned long, Packet>(Packet*, unsigned long, std::allocator<Packet>&)
+  [43] std::_Vector_base<Packet, std::allocator<Packet> >::_M_allocate(unsigned long) [11] std::vector<Packet, std::allocator<Packet> >::operator[](unsigned long) [51] unsigned long const& std::min<unsigned long>(unsigned long const&, unsigned long const&)
+  [60] std::_Vector_base<Packet, std::allocator<Packet> >::_Vector_impl::_Vector_impl(std::allocator<Packet> const&) [47] std::vector<int, std::allocator<int> >::_S_max_size(std::allocator<int> const&) [27] std::enable_if<std::__and_<std::__not_<std::__is_tuple_like<int> >, std::is_move_constructible<int>, std::is_move_assignable<int> >::value, void>::type std::swap<int>(int&, int&)
+  [23] std::_Vector_base<Packet, std::allocator<Packet> >::_M_deallocate(Packet*, unsigned long) [48] std::vector<int, std::allocator<int> >::_S_check_init_len(unsigned long, std::allocator<int> const&) [72] Packet* std::fill_n<Packet*, unsigned long, Packet>(Packet*, unsigned long, Packet const&)
+  [20] std::_Vector_base<Packet, std::allocator<Packet> >::_Vector_base(unsigned long, std::allocator<Packet> const&) [64] std::vector<int, std::allocator<int> >::_M_fill_initialize(unsigned long, int const&) [52] int* std::fill_n<int*, unsigned long, int>(int*, unsigned long, int const&)
+  [44] std::_Vector_base<Packet, std::allocator<Packet> >::~_Vector_base() [65] std::vector<int, std::allocator<int> >::_M_default_initialize(unsigned long) [53] void std::_Destroy<Packet>(Packet*)
+  [38] std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) [66] std::vector<int, std::allocator<int> >::vector(unsigned long, int const&, std::allocator<int> const&) [73] void std::_Destroy<Packet*>(Packet*, Packet*)
+  [61] std::_Vector_base<int, std::allocator<int> >::_M_deallocate(int*, unsigned long) [26] std::vector<int, std::allocator<int> >::vector(unsigned long, std::allocator<int> const&) [18] main
+  [22] std::_Vector_base<int, std::allocator<int> >::_M_create_storage(unsigned long) [8] std::vector<int, std::allocator<int> >::~vector() [17] <cycle 1>
