@@ -229,7 +229,7 @@ int shortest_path_bfs(string &grid, int rows, int cols, const RouteRequest &requ
         }
     }
 
-    for(int i = 0; i < frontier_tail; ++i) distance[frontier[i]] = -1;
+    for(size_t i = 0; i < frontier_tail; ++i) distance[frontier[i]] = -1;
     return res;
 }
 
