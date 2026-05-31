@@ -1,26 +1,26 @@
-Before submitting this file, make sure that there are no more TODO
-placeholders remaining in the file (and remove this comment too).
-
 Unique Pointer
 --------------
 
 Q1. List one or two benefits of using RAII to manage memory instead manually calling `new` and `delete`.
-A1. TODO
+A1. raii frees memory when an object goes out of scope, so you don't really need to call delete, it also helps with leaks in the case of exceptions or early return
 
 Q2. When implementing move semantics for a `unique_ptr`, for example in the move constructor `unique_ptr(unique_ptr&& other)`, it is essential that we set the underlying pointer of the `other` parameter to `nullptr` before exiting the function. Explain in your own words what problem would arise if we did not.
-A2. TODO
+A2. if we don't set other.ptr_ to nullptr, both the unique_ptr will point to the same object (destroying semantics at the same time), and both of them will call delete on same memory when their destructor is called, causing double free problem.
 
 Q3. This method of recursive deallocation through RAII works great for small lists, but may pose a problem for longer lists. Why? Hint: what is the limit for how "deep" a recursive function's call stack can grow?
-A3. TODO
+A3. this can cause stack overflow in the case of a long list due to the long recursion
 
 Q4. What does `std::move` do in this context? Why is it safe to use `std::move` and move semantics here?
-A4. TODO
+A4. the classic answer, std::move actually does not move, its merely converting an object into rvalue so its resources can be transferred instead of being copied, it is 
+    safe here because like each unique_ptr has an exclusive ownership of its resources, so after moving the old pointer is set to nunllptr and making sure that no two pointers own same 
+    resource
 
 Q5. Why does `operator->` return `T*` (a pointer) rather than `T&` (a reference)? Walk through what the compiler does when it sees `ptr->member`.
-A5. TODO
+A5. because operator-> should return a pointer because compiler applied -> untill it gets a raw pointer
 
 Q6. Why does this class need BOTH `T& operator*()` and `const T& operator*() const`? Give a one-line code example that would fail to compile if one of them were missing, and explain which one.
-A6. TODO
+A6. we need both so dereferencing works for const and not const unique_ptr.
 
 Q7. We marked `operator bool()` as `explicit`. What kind of unintended code would compile if we had left the `explicit` off? Give a concrete example.
-A7. TODO
+A7. without it, unique_ptr can implicitly convert to bool, which is unexpected behavior, so we do explicit here so
+    even if we convert, the output is expected to be something we know
