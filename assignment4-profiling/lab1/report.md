@@ -2,7 +2,17 @@
 
 ## 1. Optimizations Made
 
-- TODO
+- changed the grid from a 2d vector of strings to a flat 1d array, which improved cache locality and reduced pointer chasing.
+- reused the bfs `distance` and `frontier` buffers instead of allocating them for every bfs call.
+- removed `visited` and used `distance != -1`
+- changed the congestion loop to use row major traversal so memory is accessed in a cache friendly order.
+- replaced divisions with bit shifts in `next_pressure_value`, which reduced instruction count but only gave negligble improvement
+- simplified the branching in `next_pressure_value` so the common case is cheaper but only gave negligble improvement
+- changed the heatmap and congestion buffers from `int` to `uint16_t`; this reduced memory usage but only gave negligble improvement
+- added `__restrict__` in congestion to help the compiler optimize memory access
+- used openmp to parallelize route, previously my time was at `0.16s` but now its 1 core its down to `0.55`, so now i changed the compiler flag so that it ignores pragmas for openmp.
+- enabled `-o3` and `-march=native`, this ended up giving one of the biggest speedups overall.
+- used a simple reset of the distance array, which turned out to be faster than resetting only visited nodes because of no scatter writes.
 
 ## 2. Methodology Walkthrough
 
@@ -448,8 +458,14 @@ the right side is about how much times a certain stat was measured (percentage o
 Q2.3 - 
 Its not because according to the above answer, perf can share events on the same PMU, so we have a certain percentage of data about the metric and then it scales accordingly, so its more of a statistical approximation rather than the actual quantity.
 
+Q3.1 -
+frame pointers point to current stack frame which have previous frame pointers, so it forms a chain through call stack, when we use perf -g, perf can walk through this chain which allows it to build call graph
+
 Q3.2 - 
 Inclusive cost is the time spent either in the function or the function it called so it includes children cost as well. Self cost is the time spent in that function only not in any other called function.
+
+Q4.1 -
+gprof inserts extra code at start of each function which records when we enter that function and what aclled it, while the program runs it also samples the program counter to estimate where time is spent. after execution it uses all that info with sampling data to build the call graph and estimate how much time was spent in each function and its children.
 
 Q4.2 -
 even though we have modern tools like perf or flamegraph, i used gprof here because it provides a neat and clean call graph which depicts how time is distributed accross a function and the stuff it calls, it also helps in finding hotspots in certain calls or certain type of calls thus capturing a more semantic and natural view of the program.
