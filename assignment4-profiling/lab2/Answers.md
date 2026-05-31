@@ -54,6 +54,7 @@ So the same observation as earlier. I didn't find the flamegraph to be too helpf
 2. I optimized cold_column_prose because it was literally just summing up the whole history array but in a really cache unfriendly manner, so i just ran a simple for loop and summed it all.
 3. So the scatter writes in history in `refresh_history` was really bad. So I just precomputed writes for each history cell and whenever `refresh_history` was called, it just summed those to the history cells, making it cache friendly and essentially we paid the cost once so that everything later on is free.
 4. I used `O3` which vectorized the loops when it could, so I didn't have to worry about writing SIMD code.
+5. Removed branching and replaced it with arithmetic operations although it didn't yield much performance.
 
 # Results 
 
@@ -87,12 +88,12 @@ Perf stats before -
 ```bash
 109654940      cycles                                                                  (38.47%)
 154657760      instructions                     #    1.41  insn per cycle              (39.57%)
-13468851      branches                                                                (39.54%)
-720172      branch-misses                    #    5.35% of all branches             (24.14%)
-52141431      cache-references                                                        (23.99%)
-19890926      cache-misses                     #   38.15% of all cache refs           (24.15%)
-47739399      L1-dcache-loads                                                         (24.30%)
-22418610      L1-dcache-load-misses            #   46.96% of all L1-dcache accesses   (24.31%)
+13468851       branches                                                                (39.54%)
+720172         branch-misses                    #    5.35% of all branches             (24.14%)
+52141431       cache-references                                                        (23.99%)
+19890926       cache-misses                     #   38.15% of all cache refs           (24.15%)
+47739399       L1-dcache-loads                                                         (24.30%)
+22418610       L1-dcache-load-misses            #   46.96% of all L1-dcache accesses   (24.31%)
 
 0.040702232 seconds time elapsed
 
@@ -123,8 +124,31 @@ user@anurag:~/coding-labs/assignment4-profiling/lab2$ perf stat -e cycles,instru
        0.002042000 seconds sys
 ```
 
-As you can see there are a lot of visible improvements. Branch misses can be improved but honestly that won't yield good improvement at this scale.
+As you can see there are a lot of visible improvements. Branch misses can be improved but honestly that won't yield good improvement at this scale and it just increased more cache-misses so I just removed it. Here's the perf details with branching removed - 
 
+```bash
+user@anurag:~/coding-labs/assignment4-profiling/lab2$ perf stat -e cycles,instructions,branches,branch-misses,cache-references,cache-misses,L1-dcache-loads,L1-dcache-load-misses ./main
+6040578838
+
+ Performance counter stats for './main':
+
+          45916091      cycles                                                                  (37.58%)
+          75735545      instructions                     #    1.65  insn per cycle              (42.65%)
+           9148617      branches                                                                (43.30%)
+              8186      branch-misses                    #    0.09% of all branches             (23.31%)
+          25839914      cache-references                                                        (22.67%)
+           2791985      cache-misses                     #   10.80% of all cache refs           (22.72%)
+          26475675      L1-dcache-loads                                                         (22.71%)
+           1848871      L1-dcache-load-misses            #    6.98% of all L1-dcache accesses   (22.64%)
+
+       0.017404134 seconds time elapsed
+
+       0.014063000 seconds user
+       0.004018000 seconds sys
+
+```
+
+As you can see, worse performance just branch-misses removed but at the cost of cache-misses.
 
 
 
