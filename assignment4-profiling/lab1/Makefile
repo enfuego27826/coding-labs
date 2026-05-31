@@ -1,18 +1,19 @@
 CXX := g++
 CXXFLAGS_BASE := -std=c++20 -Wall -Wextra -pedantic
-CXXFLAGS_RELEASE := $(CXXFLAGS_BASE) -O3 -march=native -fopenmp
+CXX2 = $(CXXFLAGS_BASE) -O2 -g
+CXXFLAGS_RELEASE := $(CXXFLAGS_BASE) -O3 -march=native -fopt-info-vec-optimized
 CXXFLAGS_DEBUG := $(CXXFLAGS_BASE) -O0 -g
 CXXFLAGS_PERF := $(CXXFLAGS_BASE) -O2 -g -fno-omit-frame-pointer
 CXXFLAGS_GPROF := $(CXXFLAGS_BASE) -O0 -g -pg
 CXXFLAGS_OPTIMIZED := $(CXXFLAGS_BASE) -O3 -g
 
-TARGET := grid_bfs
-SOURCE := grid_bfs.cpp
+TARGET := grid_bfs_unoptimized
+SOURCE := grid_bfs_unoptimized.cpp
 
 .PHONY: all debug perf gprof optimized test benchmark clean help
 
 all: $(SOURCE)
-	$(CXX) $(CXXFLAGS_RELEASE) $< -o $(TARGET)
+	$(CXX) $(CXX2) $< -o $(TARGET)
 
 debug: $(SOURCE)
 	$(CXX) $(CXXFLAGS_DEBUG) $< -o $(TARGET)
