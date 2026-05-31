@@ -5,6 +5,7 @@
 #include <ranges>
 #include <set>
 #include <vector>
+#include "utils.cpp"
 
 template <typename Iterator, typename UnaryPred>
 std::vector<Iterator> find_all(Iterator begin, Iterator end, UnaryPred pred);
@@ -68,7 +69,3 @@ std::set<Misspelling> spellcheck(const Corpus& source, const Dictionary& diction
   
   return std::set<Misspelling>(view.begin(),view.end());
 };
-
-/* Helper methods */
-
-#include "utils.cpp"
