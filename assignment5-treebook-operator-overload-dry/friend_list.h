@@ -1,17 +1,9 @@
 #include <iostream>
 #include <string>
+#include <vector>
 
 class FriendList{
 public: 
-  FriendList();
-
-  ~FriendList();
-  FriendList(const FriendList& FriendList);
-  FriendList& operator=(FriendList FriendList);
-  FriendList(FriendList&& FriendList) = delete;
-  FriendList& operator=(FriendList&& FriendList) = delete;
-
-
   void add_friend(const std::string& name);
   std::string get_name() const;
   size_t size() const;
@@ -26,7 +18,5 @@ public:
    friend void swap(FriendList& first, FriendList& second) noexcept;
 
 private:
-    std::string* _friends;
-    size_t _size;
-    size_t _capacity;
+    std::vector<std::string> _friends;
 };

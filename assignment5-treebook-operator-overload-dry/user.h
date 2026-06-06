@@ -12,12 +12,6 @@ class User
 public:
   User(const std::string& name);
 
-  ~User() = default;
-  User(const User&) = default;
-  User& operator=(const User&) = default;
-  User(User&& user) = delete;
-  User& operator=(User&& user) = delete;
-
 
   void add_friend(const std::string& name);
   std::string get_name() const;
