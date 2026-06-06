@@ -131,56 +131,56 @@ template <typename TUser> void test_move_assignment() {
   }
 }
 
-// template <typename T>
-// concept compound_assignable = requires(T a, T b) {
-//   { a += b } -> std::same_as<T&>;
-// };
+template <typename T>
+concept compound_assignable = requires(T a, T b) {
+  { a += b } -> std::same_as<T&>;
+};
 
-// template <typename TUser> void test_compound_assignment() {
-//   if constexpr (printable<TUser>) {
-//     if constexpr (compound_assignable<TUser>) {
-//       TUser a("Alice");
-//       TUser b("Bob");
-//       a += b;
-//       std::cout << a << "\n";
-//       std::cout << b << "\n";
-//     } else {
-//       std::cerr << "User does not have a valid operator+=. Function signature "
-//                    "should be:\n\n\tUser& operator+=(User& "
-//                    "other);\n\ninside the User class."
-//                 << "\n";
-//       std::exit(1);
-//     }
-//   } else {
-//     std::cerr << "User does not have a valid operator<<." << "\n";
-//     std::exit(1);
-//   }
-// }
+template <typename TUser> void test_compound_assignment() {
+  if constexpr (printable<TUser>) {
+    if constexpr (compound_assignable<TUser>) {
+      TUser a("Alice");
+      TUser b("Bob");
+      a += b;
+      std::cout << a << "\n";
+      std::cout << b << "\n";
+    } else {
+      std::cerr << "User does not have a valid operator+=. Function signature "
+                   "should be:\n\n\tUser& operator+=(User& "
+                   "other);\n\ninside the User class."
+                << "\n";
+      std::exit(1);
+    }
+  } else {
+    std::cerr << "User does not have a valid operator<<." << "\n";
+    std::exit(1);
+  }
+}
 
-// template <typename TUser>
-// concept comparable = requires(TUser a, TUser b) {
-//   { a < b } -> std::same_as<bool>;
-// };
+template <typename TUser>
+concept comparable = requires(TUser a, TUser b) {
+  { a < b } -> std::same_as<bool>;
+};
 
-// template <typename TUser> void test_comparable() {
-//   if constexpr (comparable<TUser>) {
-//     TUser a("A");
-//     TUser b("B");
-//     TUser c("C");
+template <typename TUser> void test_comparable() {
+  if constexpr (comparable<TUser>) {
+    TUser a("A");
+    TUser b("B");
+    TUser c("C");
 
-//     std::vector<std::pair<TUser, TUser>> pairs = {{a, b}, {b, a}, {b, c}, {c, b}, {c, a}, {a, c}};
-//     std::cout << std::boolalpha;
-//     for (const auto& [left, right] : pairs) {
-//       std::cout << left.get_name() << " < " << right.get_name() << " is " << (left < right) << "\n";
-//     }
-//   } else {
-//     std::cerr << "User does not have a valid operator<. Function signature "
-//                  "should be:\n\n\tbool operator<(const "
-//                  "User& other);\n\ninside the User class."
-//               << "\n";
-//     std::exit(1);
-//   }
-// }
+    std::vector<std::pair<TUser, TUser>> pairs = {{a, b}, {b, a}, {b, c}, {c, b}, {c, a}, {a, c}};
+    std::cout << std::boolalpha;
+    for (const auto& [left, right] : pairs) {
+      std::cout << left.get_name() << " < " << right.get_name() << " is " << (left < right) << "\n";
+    }
+  } else {
+    std::cerr << "User does not have a valid operator<. Function signature "
+                 "should be:\n\n\tbool operator<(const "
+                 "User& other);\n\ninside the User class."
+              << "\n";
+    std::exit(1);
+  }
+}
 
 const std::map<std::string, std::function<void()>> test_functions = {
     {"memory_leak_exit_code", test_memory_leak_exit_code},
@@ -190,8 +190,8 @@ const std::map<std::string, std::function<void()>> test_functions = {
     {"copy_assignment", test_copy_assignment<User>},
     {"move_constructor", test_move_constructor<User>},
     {"move_assignment", test_move_assignment<User>},
-    // {"compound_assignment", test_compound_assignment<User>},
-    // {"comparable", test_comparable<User>}
+    {"compound_assignment", test_compound_assignment<User>},
+    {"comparable", test_comparable<User>}
   };
 
 int run_all_tests() {

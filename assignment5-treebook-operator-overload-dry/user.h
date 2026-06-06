@@ -29,8 +29,10 @@ public:
    * Your custom operators and special member functions will go here!
    */
 
-   friend std::ostream& operator<<(std::ostream& os, const User& u);
-   friend void swap(User& first, User& second) noexcept;
+  friend std::ostream& operator<<(std::ostream& os, const User& u);
+  friend void swap(User& first, User& second) noexcept;
+  User& operator+=(User& rhs);
+  bool operator<(const User& rhs) const;
 
 private:
   std::string _name;

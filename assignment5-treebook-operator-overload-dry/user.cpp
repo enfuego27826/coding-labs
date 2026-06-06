@@ -59,3 +59,16 @@ std::ostream& operator<<(std::ostream& os, const User& u){
   os << u._friends << ")";
   return os;
 }
+
+User& User::operator+=(User& rhs){
+  if(this == &rhs) return *this;
+
+  _friends.add_friend(rhs.get_name());
+  rhs._friends.add_friend(_name);
+
+  return *this;
+}
+
+bool User::operator<(const User& rhs) const{
+  return _name < rhs._name;
+}
