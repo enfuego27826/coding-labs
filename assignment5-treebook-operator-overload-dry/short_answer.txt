@@ -9,6 +9,27 @@ Q1 (DRY — Part 3).
     why it is exception-safe.
 
     YOUR ANSWER:
+    the duplicated code between my copy ctor and copy assignment op was allocation and
+    copying of the friend array
+
+    _friends = new std::string[_capacity];
+
+    for (size_t i = 0; i < _size; ++i) {
+        _friends[i] = user._friends[i];
+    }
+
+    i chose the copy and swap idiom. the copy ctor contains the copying logic and copy assignment op
+    takes the argument by value and swaps its content with the current object 
+
+    User& User::operator=(User user) {
+        swap(*this, user);
+        return *this;
+    }
+
+    this removes the duplication of code. it is excpetion safe because the copy of user is 
+    created before any changes are made and if copying fails the current obj remains the same. 
+    also about memleaks, the temp object's destructor will be called at the end of function. it
+    probably adds more overhead but it looks really neat.
 
 
 Q2 (SRP — Part 4).
@@ -19,6 +40,12 @@ Q2 (SRP — Part 4).
     keep hand-written and why?
 
     YOUR ANSWER:
+    at the end of part 3 user had to manage a dynamic array of friends (everything of it, mem allocation
+    resize, copy, destruct, print) and stored the user name. the first responsibility then was given
+    to friendlist and now user only needed to manage its name and pass all the friend related ops
+    to friendlist. now we no longer needed dtor, copy ctor, copy assignment to be manually written
+    for user, these smfs can be defaulted, i kept only ops and methods related to printing, comparison and
+    compound assignment.
 
 
 Q3 (Rule of Zero — Part 6, if attempted).
@@ -29,3 +56,10 @@ Q3 (Rule of Zero — Part 6, if attempted).
     or the other in 2–4 sentences.
 
     YOUR ANSWER:
+    its because user owned a dynamic array through a raw pointer, default ctors or operators 
+    wouldve done shallow copies leading to double deletion problem.
+
+    after integrating rule of 0, user and friendlist had types such as string and vector 
+    which already manage their own resources correctly so compiler generated smfs are safe here.
+    we can now keep the move ctor and move assignment op because moving a string or vector is
+    safe and defined, so the automatically generated move ops/ctor are fine.
